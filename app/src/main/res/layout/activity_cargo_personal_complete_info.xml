@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/hfrenzheng">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/cargoCompleteTip"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/normal_textsize" />
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        style="@style/RegisterLinearLayoutStyle"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:linePosition="bottom|top"
+        app:lineTopLeft="@dimen/margin_15dp">
+
+        <TextView
+            android:id="@+id/tv_identify"
+            style="@style/RegisterTextKeyStyle"
+            android:text="@string/sfz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sfz_upload_hint"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/normal_textsize" />
+
+        <ImageView
+            android:id="@+id/identify_photo"
+            style="@style/RegisterTakePhotoStyle"
+            android:layout_marginRight="0dp" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:id="@+id/layout_date"
+        style="@style/RegisterLinearLayoutStyle"
+        android:layout_below="@+id/layout_photo"
+        app:linePosition="bottom">
+
+        <TextView
+            style="@style/RegisterTextKeyStyle"
+            android:text="@string/endDate" />
+
+        <TextView
+            android:id="@+id/tv_endDate_select"
+            style="@style/RegisterTextArrow"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:hint="@string/choose" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="@dimen/margin_15dp"
+        android:text="@string/truck_attention"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/small_textsize" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

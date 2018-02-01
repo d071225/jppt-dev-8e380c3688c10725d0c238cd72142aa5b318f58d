@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/recycler_item_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp"
+    android:paddingTop="10dp"
+    tools:ignore="RtlHardcoded">
+
+    <com.hletong.hyc.ui.widget.PriorityLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        app:orientation="horizontal">
+        <TextView
+            android:id="@+id/title"
+            style="@style/RecyclerItemTitle"/>
+        <TextView
+            android:id="@+id/flag"
+            style="@style/GuaJiaStaticItem"
+            android:layout_marginLeft="5dp"
+            app:priority="1"/>
+        <TextView
+            android:id="@+id/CargoWeight"
+            style="@style/CargoWeight"
+            app:priority="1"/>
+
+        <TextView
+            android:id="@+id/CargoRemain"
+            style="@style/CargoRemain"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            app:priority="1"/>
+    </com.hletong.hyc.ui.widget.PriorityLayout>
+    <TextView
+        android:id="@+id/startProvince"
+        style="@style/AddressProvince"
+        android:layout_below="@id/top"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/startCity"
+        style="@style/AddressCity"
+        android:layout_below="@id/startProvince"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/action"
+        style="@style/GuaJiaButton"
+        android:duplicateParentState="false"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/TimeLabelBelowAddress"
+        android:layout_below="@id/startCity"/>
+    <!--防止屏幕宽度不够 文字悬浮到action上面-->
+    <FrameLayout
+        android:id="@+id/endProvinceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/startProvince"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@id/action"
+        android:layout_toRightOf="@id/arrow">
+
+        <TextView
+            android:id="@+id/endProvince"
+            style="@style/AddressProvince"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/endCity"
+        style="@style/AddressCity"
+        android:layout_alignLeft="@id/endProvinceLayout"
+        android:layout_alignRight="@id/endProvinceLayout"
+        android:layout_alignTop="@id/startCity"
+        android:layout_below="@id/startProvince"
+        android:ellipsize="end"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/RecyclerArrowStyle"/>
+</RelativeLayout>

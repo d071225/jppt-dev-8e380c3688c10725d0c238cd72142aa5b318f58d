@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingTop="10dp"
+                tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/RecyclerItemTitle"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title"
+        android:layout_alignTop="@id/title"
+        android:layout_toRightOf="@id/title">
+
+        <TextView
+            android:id="@+id/CargoWeight"
+            style="@style/CargoWeight"
+            android:layout_gravity="center_vertical"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/startProvince"
+        style="@style/AddressProvince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/startCity"
+        style="@style/AddressCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startProvince"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/guajia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_arrow_right"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/TimeLabelBelowAddress"
+        android:layout_below="@id/startCity"/>
+
+    <TextView
+        android:id="@+id/endProvince"
+        style="@style/AddressProvince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/startProvince"
+        android:layout_marginRight="7dp"
+        android:layout_toRightOf="@id/arrow"/>
+
+    <TextView
+        android:id="@+id/endCity"
+        style="@style/AddressCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/endProvince"
+        android:layout_alignRight="@id/endProvince"
+        android:layout_alignTop="@id/startCity"
+        android:layout_below="@id/startProvince"
+        android:ellipsize="end"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/RecyclerArrowStyle"/>
+</RelativeLayout>

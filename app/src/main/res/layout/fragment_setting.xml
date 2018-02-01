@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarBottomColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="12dp"
+        android:tag="@string/hl_tag_login">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_evaluate"
+                layout="@layout/layout_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_userSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:tag="@string/hl_tag_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smaller_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_user_guide"
+                style="@style/normalTextViewJumpStyle"
+                android:layout_marginTop="@dimen/textjumper_margin"
+                android:drawableLeft="@drawable/ic_user_guide"
+                android:text="@string/userGuide"
+                app:linePosition="bottom|top" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_memberCert"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/ic_cert"
+                android:tag="@string/hl_tag_login"
+                android:text="@string/memberCert"
+                android:visibility="visible"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_historyOrder"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/ic_history_order"
+                android:tag="@string/hl_tag_login"
+                android:text="@string/historyOrder"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_kehufuwu"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/ic_kehufuwu"
+                android:text="@string/kehufuwu"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_applyHlCard"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/hl_card_apply"
+                android:text="@string/applyHlCard"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/toolbox"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/icon_toolbox"
+                android:tag="@string/hl_tag_login"
+                android:text="@string/toolbox"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_aboutHlet"
+                style="@style/normalTextViewJumpStyle"
+                android:drawableLeft="@drawable/ic_about_hlet"
+                android:text="@string/about_hlet"
+                app:linePosition="bottom" />
+
+            <com.hletong.mob.widget.BorderTextView
+                android:id="@+id/tv_dev_set"
+                style="@style/normalTextViewJumpStyle"
+                android:layout_marginTop="@dimen/textjumper_margin"
+                android:text="开发者设置页面"
+                android:visibility="gone"
+                app:linePosition="bottom|top" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

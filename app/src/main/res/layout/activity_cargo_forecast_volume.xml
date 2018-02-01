@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="right">
+    <EditText
+        style="@style/CargoForecastVolume"
+        android:hint="长"
+        android:id="@+id/length"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="20dp"
+        android:background="@color/divider"
+        android:layout_gravity="center_vertical"/>
+    <EditText
+        style="@style/CargoForecastVolume"
+        android:hint="宽"
+        android:id="@+id/width"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="20dp"
+        android:background="@color/divider"
+        android:layout_gravity="center_vertical"/>
+    <EditText
+        style="@style/CargoForecastVolume"
+        android:hint="高"
+        android:id="@+id/height"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/ev_id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.xcheng.view.widget.PagerSlidingTabStrip
+        android:id="@id/ev_id_tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_enjoy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_15dp"
+        app:ev_pstsDividerColor="@color/transparent"
+        app:ev_pstsDividerPadding="0dp"
+        app:ev_pstsIndicatorHeight="0dp"
+        app:ev_pstsShouldExpand="true"
+        app:ev_pstsUnderlineHeight="0px" />
+
+    <Button
+        android:id="@+id/btn_enjoy"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="立即体验"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.xcheng:easyview-1.9.7">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyview-1.9.7.aar/7a247b15bd7edddd6908134222401c37/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyview-1.9.7.aar/7a247b15bd7edddd6908134222401c37/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xcheng/easyview/1.9.7/dc723f2a2cdcc5a4c79e5a5a86f93fb81c11540d/easyview-1.9.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/truckrenzheng">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/truckCompleteTip"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/normal_textsize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_carNumber"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/hint_carNumber"
+                app:inputLabel="@string/carNum"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom|top"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_carOwner"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入车辆所有人"
+                app:inputLabel="@string/_truckOwner"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_memberPhoneNumber"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入会员手机号"
+                app:inputLabel="@string/_memberPhoneNumber"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_identifyNumber"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入身份证号"
+                app:inputLabel="@string/_identifyNumber"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_dlysxkz"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入道路运输许可证"
+                app:inputLabel="@string/_dlysxkz"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_address"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="@string/_address"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_truckInfo"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="@string/vehicle_info"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_papers"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="@string/certificateInfo"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_bankInfo"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="@string/bankCardInfo"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_otherInfos"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="其他信息"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.SmoothClickCheckBox
+                android:id="@+id/cb_company_truck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingTop="@dimen/margin_15dp"
+                android:text="该车辆落户在物流公司，实际为本人所有" />
+
+            <com.hletong.hyc.ui.widget.SmoothClickCheckBox
+                android:id="@+id/agreement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/margin_15dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:text="本人已阅读并同意签订" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

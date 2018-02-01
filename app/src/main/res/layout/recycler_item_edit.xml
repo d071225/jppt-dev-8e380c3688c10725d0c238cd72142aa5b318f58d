@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hletong.mob.widget.BorderLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp"
+    app:linePosition="top">
+
+    <TextView
+        android:id="@+id/setDefault"
+        style="@style/CargoEditModeAction"
+        android:drawableLeft="@drawable/checkbox_custom_circle"
+        android:textColor="@color/color_state_selected_accent_grey"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/edit"
+        style="@style/CargoEditModeAction"
+        android:drawableLeft="@drawable/ic_edit_cargo"
+        android:text="编辑"/>
+    <TextView
+        android:id="@+id/delete"
+        style="@style/CargoEditModeAction"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:drawableLeft="@drawable/ic_delete_cargo"
+        android:text="删除"/>
+</com.hletong.mob.widget.BorderLinearLayout>

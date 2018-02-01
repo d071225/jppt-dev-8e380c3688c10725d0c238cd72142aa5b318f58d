@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="品名"
+        app:inputHint="请输入品名"
+        android:id="@+id/cargoName"
+        app:inputIconSuffix="@drawable/take_photo"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="所属货方"
+        app:inputLabelHint="(选填)"
+        app:inputHint="请填写所属货方"
+        android:id="@+id/cargoOwner"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="长/宽/高"
+        app:inputHint="请填写长宽高"
+        app:inputTextSuffix="米"
+        app:inputCustomMethod="numberDecimal"
+        android:id="@+id/cargoVolume">
+        <include
+            layout="@layout/activity_cargo_forecast_volume"/>
+    </com.hletong.hyc.ui.widget.CommonInputView>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="数量/单位"
+        app:inputHint="请填写数量"
+        app:inputTextSuffix="吨"
+        app:inputIconSuffix="@drawable/icon_arrow_right"
+        app:inputCustomMethod="numberDecimal"
+        android:id="@+id/cargoCount"/>
+</LinearLayout>

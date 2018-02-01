@@ -1,0 +1,60 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="48dp"
+    android:padding="@dimen/margin_15dp"
+    android:id="@+id/mm_member_unit"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BlackTitle"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:text="会员管理单位信息"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_15dp">
+
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:text="单位名称　"
+            android:id="@+id/textView"/>
+
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:id="@+id/mm_name"
+            android:layout_marginLeft="@dimen/margin_15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_15dp">
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:text="地址　　　"/>
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:id="@+id/address"
+            android:layout_marginLeft="@dimen/margin_15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_15dp">
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:text="联系人　　"/>
+        <TextView
+            style="@style/PreDeListMemberManagementTextStyle"
+            android:id="@+id/contact"
+            android:layout_marginLeft="@dimen/margin_15dp"/>
+    </LinearLayout>
+</LinearLayout>

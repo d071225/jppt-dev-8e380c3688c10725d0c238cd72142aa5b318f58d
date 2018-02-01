@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="themeColor">#4d97ff</color>
+    <color name="bgColor">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#303F9F</color>
+    <color name="blue_dark">#327B8A</color>
+    <color name="yellow">#FF9A0D</color>
+    <color name="yellowDisable">#F2D4AA</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#0BD38A</color>
+    <color name="red_dark">#ffcc0000</color>
+    <color name="divider">#dae1e5</color>
+    <color name="text_black">#333333</color>
+    <color name="text_grey">#78848d</color>
+    <color name="text_hint">#c2c9cc</color>
+    <color name="text_blue">#00ACF9</color>
+    <color name="disabled_text_color">#c2c9cc</color>
+    <!--PagerSlidingTabStrip-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="rating">#fabb13</color>
+
+    <color name="dialog_bg_color">#80000000</color>
+    <color name="dialog_button_blue">#4d97ff</color>
+    <color name="dialog_grey_bg">#f7f7f7</color>
+    <color name="dialog_divider">#c2c9cc</color>
+
+    <color name="__picker_nav">#333333</color>
+    <color name="__picker_pager_bg">#CA000000</color>
+    <color name="__picker_selected_bg">#44000000</color>
+    <color name="__picker_black_40">#282828</color>
+    <color name="__picker_common_primary">#f3f3f3</color>
+    <color name="__picker_text_40">#282828</color>
+    <color name="__picker_text_80">#505050</color>
+    <color name="__picker_text_120">#787878</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="__picker_item_selected_cover">#99000000</color><!--70%BU透明度-->
+    <color name="__picker_item_unselected_center">#00000000</color><!--100%透明度-->
+    <color name="__picker_item_unselected_border">#40000000</color><!--25%透明度-->
+</resources>

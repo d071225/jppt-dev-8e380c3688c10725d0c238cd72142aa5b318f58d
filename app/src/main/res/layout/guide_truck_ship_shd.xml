@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用于车船会员在卸货地卸货完毕，\n对实际卸货量与收货人共同密码\n确认上传至平台。"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_textsize"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/line_guide_shd"/>
+
+</LinearLayout>

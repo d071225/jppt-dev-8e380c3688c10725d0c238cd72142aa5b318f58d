@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/cb_dialog_input_bg"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="73dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/l1"
+        style="@style/BlackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改竞价" />
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="right"
+        android:hint="请填写金额"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:textColor="@color/text_grey"
+        android:textColorHint="#ced6da"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元/吨"
+        android:textColor="@color/text_grey"
+        android:textSize="18sp" />
+</LinearLayout>

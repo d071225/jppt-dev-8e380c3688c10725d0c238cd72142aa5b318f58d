@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--各种Key-->
+    <string name="key_loginName">loginName</string>
+    <string name="key_passWord">passWord</string>
+    <string name="key_oldPassword">oldPassword</string>
+    <string name="key_newPassword">newPassword</string>
+    <string name="key_confirmPassword">confirmPassword</string>
+
+
+    <string name="key_isOrganization">is_organization</string>
+    <string name="key_isSoldier">is_soldier</string>
+    <string name="key_soldierInfo">soldier_info</string>
+    <string name="key_soldierKind">soldier_kind</string>
+    <string name="key_soldierArmy">soldier_army</string>
+    <string name="key_soldierLevel">soldier_level</string>
+
+
+</resources>

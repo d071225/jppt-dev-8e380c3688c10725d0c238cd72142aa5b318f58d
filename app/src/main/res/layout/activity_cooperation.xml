@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    tools:context="com.hletong.hyc.ui.activity.CooperationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/src_history" />
+
+</com.xcheng.view.widget.TopBarLayout>

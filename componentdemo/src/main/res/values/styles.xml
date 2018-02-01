@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--跳转TextViewItem-->
+    <style name="normalTextViewJumpStyle">
+        <item name="lineWidth">1dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawableRight">@drawable/ic_enter_arrow</item>
+    </style>
+
+    <style name="CommonInputViewNormalStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="linePosition">bottom</item>
+    </style>
+
+    <style name="CommonInputViewNormalStyle.White">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TransportForecast" parent="CommonInputViewNormalStyle.White">
+        <item name="android:layout_height">40dp</item>
+        <item name="mode">select</item>
+    </style>
+
+    <style name="TransportForecast.View">
+        <item name="mode">view</item>
+        <item name="inputAlignLeft">110dp</item>
+        <item name="inputGravity">start|center_vertical</item>
+    </style>
+    <declare-styleable name="CommonInputView">
+        <attr name="inputLabel" format="string"/>
+        <attr name="inputLabelHint" format="string"/>
+        <attr name="mode">
+            <flag name="select" value="1"/>//用作选择器
+            <flag name="view" value="2"/>//view用于查看数据
+            <flag name="input" value="3"/>//默认
+        </attr>
+        <attr name="alignTextCount" format="integer"/>//view模式用到
+        <attr name="inputHint" format="string"/>
+        <attr name="inputText" format="string"/>
+        <attr name="inputTextSuffix" format="string"/>
+        <attr name="inputIconSuffix" format="reference"/>
+        <attr name="inputCustomMethod">//输入的内容限制
+            <flag name="none" value="0"/>
+            <flag name="number" value="1"/>
+            <flag name="numberDecimal" value="2"/>
+            <flag name="numberPassword" value="3"/>
+            <flag name="phone" value="4"/>
+            <flag name="money" value="5"/>//保留两位小数，其他类型能输入小数的保留三位
+        </attr>
+        <attr name="inputCustomLength" format="integer"/>//能够输入的最大长度
+        <attr name="inputLabelAsTitle" format="boolean"/>//将label设为粗体
+        <attr name="inputGravity">
+            <flag name="start" value="1"/>
+            <flag name="end" value="2"/>
+            <flag name="center_vertical" value="4"/>
+        </attr>
+        <attr name="inputLabelDrawable" format="reference"/>
+        <attr name="inputTextSize" format="dimension"/>
+        <attr name="inputTextColor" format="color"/>
+        <attr name="inputAlignLeft" format="dimension"/>
+    </declare-styleable>
+    <style name="CommonInputView" parent="android:Widget">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

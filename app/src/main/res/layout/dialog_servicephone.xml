@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:background="@drawable/shape_bg_white_corner_lb_rb_15dp"
+        android:gravity="center"
+        android:text="@string/contactService"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/larger_textsize" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/divider"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/tv_PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:background="@drawable/shape_bg_white_corner_lb_rb_15dp"
+        android:gravity="center"
+        android:text="@string/phoneService"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_bg_white_corners_15dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize" />
+</LinearLayout>

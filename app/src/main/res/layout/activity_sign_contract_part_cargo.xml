@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/input_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/password_title"
+        style="@style/BlackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/set_cargo_psw"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/ship_password"
+        app:inputHint="@string/ship_password_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/ship_psw"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/confirm_password"
+        app:inputHint="@string/ship_password_confirm_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/ship_psw_confirm"
+        android:visibility="gone"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/receive_password"
+        app:inputHint="@string/receive_password_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/receive_psw"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/confirm_password"
+        app:inputHint="@string/receive_password_confirm_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/receive_psw_confirm"/>
+</LinearLayout>

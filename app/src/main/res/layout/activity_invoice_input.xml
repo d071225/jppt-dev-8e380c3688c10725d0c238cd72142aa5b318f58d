@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/invoiceInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_invoicePersonName"
+                style="@style/TransportForecast.View"
+                app:inputCustomLength="20"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*受票人名称"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom|top"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_nsrsbh"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*纳税人识别号"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_openingbank"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*开户行"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_cardNumber"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*银行账号"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_tel"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*联系电话"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_address"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="*地址"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/layout_photo"
+                style="@style/RegisterLinearLayoutStyle"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="*开票图片" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/upload_photo_please"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <ImageView
+                    android:id="@+id/iv_invoiceCert"
+                    style="@style/RegisterTakePhotoStyle"
+                    android:layout_marginRight="0dp" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

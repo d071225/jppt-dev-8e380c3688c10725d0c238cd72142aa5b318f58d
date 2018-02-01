@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.hletong.hyc.ui.activity.CompleteCompanyInfoActivity">
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--style="@style/fitSystemWindowToolbar">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/completeincompanyformation"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/title_textsize"/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--style="@style/LayoutKeyValueDisplay"-->
+                <!--app:lineBottomLeft="0dp">-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextKeyDisplay"-->
+                    <!--android:text="@string/companyname"-->
+                    <!--android:textColor="@color/text_black"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_username"-->
+                    <!--style="@style/TextValueDisplay"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="@string/main_titlename"/>-->
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--style="@style/LayoutKeyValueDisplay"-->
+                <!--app:lineBottomLeft="0dp">-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextKeyDisplay.BlackText"-->
+                    <!--android:text="@string/cmpanyphonenumber"/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_add_phonenumber"-->
+                    <!--style="@style/normalEditTextStyle.RightInput"-->
+                    <!--android:hint="@string/addcmpanyphonenumber"-->
+                    <!--android:inputType="number"/>-->
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--android:id="@+id/yyzz"-->
+                <!--style="@style/completeBusInformationLeftStytle"-->
+                <!--android:layout_marginTop="@dimen/textjumper_margin"-->
+                <!--app:lineBottomLeft="@dimen/marginLeftAndRight"-->
+                <!--app:linePosition="bottom|top"-->
+                <!--app:lineTopLeft="0dp">-->
+
+                <!--<TextView-->
+                    <!--style="@style/personalInformationLeftTextStytle"-->
+                    <!--android:text="@string/yingyezhizhao"-->
+                    <!--android:textColor="@color/text_black"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_yyzz"-->
+                    <!--style="@style/uploadingPhotoStytle"/>-->
+
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--android:id="@+id/zzjgdmz"-->
+                <!--style="@style/completeBusInformationLeftStytle"-->
+                <!--app:lineBottomLeft="@dimen/marginLeftAndRight"-->
+                <!--app:linePosition="bottom">-->
+
+                <!--<TextView-->
+                    <!--style="@style/personalInformationLeftTextStytle"-->
+                    <!--android:text="@string/zuzhijigoudaimazheng"-->
+                    <!--android:textColor="@color/text_black"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_zzjgdmz"-->
+                    <!--style="@style/uploadingPhotoStytle"/>-->
+
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--android:id="@+id/swdjz"-->
+                <!--style="@style/completeBusInformationLeftStytle"-->
+                <!--app:lineBottomLeft="@dimen/marginLeftAndRight"-->
+                <!--app:linePosition="bottom">-->
+
+                <!--<TextView-->
+                    <!--style="@style/personalInformationLeftTextStytle"-->
+                    <!--android:text="@string/shuiwudengjizheng"-->
+                    <!--android:textColor="@color/text_black"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_swdjz"-->
+                    <!--style="@style/uploadingPhotoStytle"/>-->
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+            <!--<com.hletong.mob.widget.BorderLinearLayout-->
+                <!--android:id="@+id/dlysjyxkz"-->
+                <!--style="@style/completeBusInformationLeftStytle"-->
+                <!--app:lineBottomLeft="0dp"-->
+                <!--app:linePosition="bottom">-->
+
+                <!--<TextView-->
+                    <!--style="@style/personalInformationLeftTextStytle"-->
+                    <!--android:text="@string/daoluyunshuxukezheng"-->
+                    <!--android:textColor="@color/text_black"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_ysxkz"-->
+                    <!--style="@style/uploadingPhotoStytle"/>-->
+            <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/submit"-->
+        <!--style="@style/submitStyle"-->
+        <!--android:text="@string/commit"/>-->
+</LinearLayout>

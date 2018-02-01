@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/topBarStyle"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="会员办理惠龙卡"
+                android:textColor="@color/dialog_body_text_color"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_hl_deposit_introduce_5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_hl_deposit_card"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="@dimen/margin_15dp"
+                android:text="@string/hl_deposit_card_introduce_advantage"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/DepositCardIntroduceImageStyle"
+                    android:src="@drawable/ic_hl_deposit_card_introduce_1"/>
+
+                <TextView
+                    style="@style/DepositCardIntroduceTextStyle"
+                    android:text="@string/hl_deposit_card_introduce_1"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DepositCardIntroduceItemDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/DepositCardIntroduceImageStyle"
+                    android:src="@drawable/ic_hl_deposit_card_introduce_2"/>
+
+                <TextView
+                    style="@style/DepositCardIntroduceTextStyle"
+                    android:text="@string/hl_deposit_card_introduce_2"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DepositCardIntroduceItemDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/DepositCardIntroduceImageStyle"
+                    android:src="@drawable/ic_hl_deposit_card_introduce_3"/>
+
+                <TextView
+                    style="@style/DepositCardIntroduceTextStyle"
+                    android:text="@string/hl_deposit_card_introduce_3"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DepositCardIntroduceItemDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/DepositCardIntroduceImageStyle"
+                    android:src="@drawable/ic_hl_deposit_card_introduce_4"/>
+
+                <TextView
+                    style="@style/DepositCardIntroduceTextStyle"
+                    android:text="@string/hl_deposit_card_introduce_4"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DepositCardIntroduceItemDivider"
+                android:layout_marginLeft="0dp"/>
+
+            <include
+                android:id="@+id/mm_member_unit"
+                layout="@layout/member_management_info_block"/>
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/unit_ct"
+        android:layout_marginTop="0dp"
+        style="@style/SourcePreview.Small"
+        app:inputLabel="@string/carry_number"/>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/unit_price"
+        style="@style/SourcePreview.Small"
+        app:inputLabel="运费单价"/>
+</LinearLayout>

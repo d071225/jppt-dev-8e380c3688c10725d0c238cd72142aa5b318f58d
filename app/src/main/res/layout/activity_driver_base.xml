@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    android:background="@color/white"
+    app:ev_topBarTitle="@string/goodDriver">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+                <TextView
+                    android:id="@+id/tv_voter_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/onlineVoter"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/ev_largeSize" />
+
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="活动规则"
+                    android:textColor="@color/login_text_selector"
+                    android:textSize="@dimen/ev_largeSize" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_voterTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="报名时间：X月X日-X月X日"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/ev_largeSize" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_plate"
+                style="@style/TransportForecast.Input"
+                app:inputHint="请输入车牌号"
+                app:inputLabel="@string/plate"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_chinaName"
+                style="@style/TransportForecast.Input"
+                app:inputHint="请输入姓名"
+                app:inputLabel="姓名"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp" />
+
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_mobile"
+                style="@style/TransportForecast.Input"
+                app:inputCustomMethod="phone"
+                app:inputHint="请输入手机号"
+                app:inputLabel="手机号"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp" />
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/verificationCode" />
+
+                <EditText
+                    android:id="@+id/et_verifyCode"
+                    style="@style/normalEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/hint_verificationCode"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+                <com.xcheng.view.processbtn.FlatButton
+                    android:id="@+id/tv_getVerificationCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/get_verificationCode"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_textsize"
+                    app:ev_pb_colorNormal="@color/yellow"
+                    app:ev_pb_cornerRadius="5dp" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_feeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="参选感言"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/ev_normalSize" />
+
+            <EditText
+                android:id="@+id/et_feeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15dp"
+                android:background="@color/bgColor"
+                android:gravity="left"
+                android:hint="请输入参选感言"
+                android:lines="4"
+                android:maxLength="300"
+                android:padding="10dp"
+                android:textSize="@dimen/normal_textsize" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:id="@+id/pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_15dp"
+                    android:paddingTop="@dimen/margin_15dp"
+                    app:layout_widthPercent="50%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本人照片"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/normal_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_selfPic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_upload_photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pic1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_15dp"
+                    android:paddingTop="@dimen/margin_15dp"
+                    app:layout_widthPercent="50%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行驶证"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/normal_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_driverLicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_upload_photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_15dp"
+                    android:paddingTop="@dimen/margin_15dp"
+                    app:layout_widthPercent="50%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/normal_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_idCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_upload_photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/pic2"
+                    android:layout_below="@+id/pic2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_15dp"
+                    android:paddingTop="@dimen/margin_15dp"
+                    app:layout_widthPercent="50%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="从业资格证"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/normal_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_cyzgz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_upload_photo" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <Button
+                style="@style/submitStyle"
+                android:layout_marginTop="0dp"
+                android:text="立即报名" />
+
+            <TextView
+                android:id="@+id/tv_voterRule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/voterTip"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/ev_smallSize" />
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

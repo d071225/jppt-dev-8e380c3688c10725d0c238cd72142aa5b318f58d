@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/recycler_item_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp"
+    android:paddingTop="10dp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BlackTitle"
+        android:id="@+id/carrier"/>
+    <com.hletong.hyc.ui.widget.RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:layout_alignTop="@id/carrier"
+        android:layout_alignBottom="@id/carrier"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/carrier"
+        android:layout_marginLeft="4dp"
+        app:asIndicator="true"
+        app:starDrawable="@drawable/star_small"
+        app:starMargin="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:layout_below="@id/carrier"
+        android:layout_marginTop="8dp"
+        android:id="@+id/favor_rate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:layout_alignTop="@id/favor_rate"
+        android:layout_toRightOf="@id/favor_rate"
+        android:id="@+id/trade_ct"
+        android:layout_marginLeft="@dimen/margin_15dp"/>
+
+    <TextView
+        android:id="@+id/startProvince"
+        style="@style/AddressProvince"
+        android:layout_below="@id/favor_rate"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/startCity"
+        style="@style/AddressCity"
+        android:layout_below="@id/startProvince"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_call"/>
+
+    <TextView
+        android:id="@+id/endProvince"
+        style="@style/AddressProvince"
+        android:layout_alignTop="@id/startProvince"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_toLeftOf="@id/call"/>
+
+    <TextView
+        android:id="@+id/endCity"
+        style="@style/AddressCity"
+        android:layout_alignLeft="@id/endProvince"
+        android:layout_alignRight="@id/endProvince"
+        android:layout_alignTop="@id/startCity"
+        android:layout_below="@id/startProvince"
+        android:ellipsize="end"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/startProvince"
+        android:layout_toLeftOf="@id/endProvince"
+        android:layout_toRightOf="@id/startProvince"
+        android:src="@drawable/icon_address_arrow"/>
+</RelativeLayout>

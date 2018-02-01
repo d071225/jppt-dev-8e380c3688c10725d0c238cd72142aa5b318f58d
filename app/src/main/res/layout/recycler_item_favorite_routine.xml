@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:textSize="?normalSize"
+    android:textColor="@color/text_black"
+    android:drawableRight="@drawable/ic_enter_arrow"
+    android:maxLines="1"
+    android:background="@color/white"
+    android:ellipsize="end"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp">
+</TextView>

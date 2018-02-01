@@ -1,0 +1,69 @@
+import java.text.SimpleDateFormat
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        // classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
+        }
+
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+def releaseTime() {
+    SimpleDateFormat formatter = new SimpleDateFormat("MMddHH", Locale.CHINA);
+    formatter.setTimeZone(TimeZone.getTimeZone("GMT+8"));
+    return new String(formatter.format(new Date()));
+}
+//在这里统一配置共享的版本信息
+ext {
+    android = [compileSdkVersion: 26,
+               buildToolsVersion: '26.0.2',
+               minSdkVersion    : 14,
+               targetSdkVersion : 24,
+               versionCode      : 300000027,// 201801048 //300000002
+               versionName      : '4.1.6' // 1.0.2017010f4 //3.0.20170510// 3.3.0
+    ]
+    //签名信息
+    truckSignConfig = [
+            keyAlias     : 'android',
+            keyPassword  : 'hlet@201608@0831',
+            storeFile    : '/Users/chengxin/Documents/Android/apkSign/truck/android.keystore',
+            storePassword: 'hlet@201608@0831'
+    ]
+
+    shipSignConfig = [
+            keyAlias     : 'android',
+            keyPassword  : 'pass@hlet201609',
+            storeFile    : '/Users/chengxin/Documents/Android/apkSign/ship/android.keystore',
+            storePassword: 'pass@hlet201609'
+    ]
+
+    defaultSignConfig = truckSignConfig
+
+    //dependencies
+    supportLibraryVersion = '26.1.0'
+    glideVersion = '3.7.0'
+    butterKnifeVersion = '8.8.1'
+    junitVersion = '4.12'
+    espresso = '2.2.2'
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="label" type="id"/>
+    <item name="image" type="id"/>
+    <item name="input" type="id"/>
+    <item name="separator" type="id"/>
+    <item name="image_path" type="id"/>
+    <item name="image_index" type="id"/>
+    <item name="picker_data" type="id"/>
+</resources>

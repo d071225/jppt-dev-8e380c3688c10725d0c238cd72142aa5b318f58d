@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/name"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputHint="请输入公司名称"
+        app:inputLabel="公司名称"/>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/taxCode"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputHint="请输入纳税识别号"
+        app:inputLabel="纳税识别号"
+        app:inputLabelHint="(选填)"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="添加"/>
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,3 @@
+-keep interface com.nineoldandroids.view.** { *; }
+-dontwarn com.nineoldandroids.**
+-keep class com.nineoldandroids.** { *; }

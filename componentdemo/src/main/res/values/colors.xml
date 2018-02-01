@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="themeColor">@color/colorAccent</color>
+    <string name="write">#e5e5e5</string>
+    <string name="blue">#303F9F</string>
+    <string name="green">#0BD38A</string>
+    <string name="yellow">#FF9A0D</string>
+    <string name="red_dark">#ffcc0000</string>
+    <string name="black">#000000</string>
+    <string name="gray">#50000000</string>
+
+    <!--#d5d4d4-->
+    <color name="pressedGreycolor">#e5e5e5</color>
+
+</resources>

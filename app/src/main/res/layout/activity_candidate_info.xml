@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    android:background="@color/white"
+    app:ev_topBarTitle="@string/goodDriver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_15dp">
+
+        <ImageView
+            android:id="@id/ev_id_headerPhoto"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:background="@color/ev_text_hint"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="40dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/ev_normalSize" />
+
+            <TextView
+                android:id="@+id/tv_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/ev_smallSize" />
+
+            <TextView
+                android:id="@+id/tv_vote_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/ev_smallSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_feeling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        android:background="@color/bgColor"
+        android:ellipsize="end"
+        android:lines="5"
+        android:padding="@dimen/margin_15dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_textsize" />
+
+    <com.xcheng.view.processbtn.FlatButton
+        style="@style/flatBtnStyle"
+        android:text="立即投票" />
+</com.xcheng.view.widget.TopBarLayout>

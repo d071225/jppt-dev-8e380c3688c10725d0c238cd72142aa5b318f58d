@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:tools="http://schemas.android.com/tools"
+                                     style="@style/topBarStyle"
+                                     tools:context="com.hletong.hyc.ui.activity.ApplyExitActivity">
+
+    <EditText
+        android:id="@+id/et_exitReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入退会原因"
+        android:lines="8"
+        android:padding="10dp"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_grey"
+        android:textSize="@dimen/normal_textsize"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="@string/exitMember"/>
+
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hletong.mob.widget.BorderLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recycler_item_status_bar_height"
+    android:background="@color/white"
+    app:linePosition="bottom"
+    app:lineBottomColor="@color/divider"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/status_start"
+        android:layout_weight="1"
+        style="@style/StatusItemStyle"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/status_end"
+        style="@style/StatusItemStyle"
+        android:layout_gravity="end"
+        android:textColor="@color/text_hint"/>
+</com.hletong.mob.widget.BorderLinearLayout>

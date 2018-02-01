@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="卸货地"
+        app:inputHint="请选择卸货地"
+        app:mode="select"
+        android:id="@+id/unloadAddress"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="联系人"
+        app:inputHint="请选择卸货地联系人"
+        app:mode="view"
+        android:id="@+id/unloadContact"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="联系人电话"
+        app:inputHint="请选择卸货地联系人手机号"
+        app:inputCustomMethod="phone"
+        app:mode="view"
+        android:id="@+id/unloadContactTel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="路径规划"
+        android:gravity="center"
+        android:id="@+id/routePlan"
+        android:layout_gravity="right"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"/>
+</LinearLayout>

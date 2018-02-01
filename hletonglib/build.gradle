@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android['compileSdkVersion']
+    buildToolsVersion rootProject.ext.android['buildToolsVersion']
+
+    defaultConfig {
+        consumerProguardFile 'proguard-rules.pro'
+        minSdkVersion rootProject.ext.android['minSdkVersion']
+        targetSdkVersion rootProject.ext.android['targetSdkVersion']
+    }
+    buildTypes {
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    api "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    api "com.android.support:percent:$rootProject.ext.supportLibraryVersion"
+    api 'org.greenrobot:eventbus:3.0.0'
+    api 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    api "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+    api 'com.isanwenyu.highlight:highlight:1.5.2'
+    api 'com.orhanobut:logger:2.1.1'
+    api 'com.amap.api:location:latest.integration'
+    api 'com.xcheng:easyokhttp:1.8.2'
+    api 'com.xcheng:easyview:1.9.7'
+    api 'com.xcheng:easypermission:1.0.2'
+    api 'in.srain.cube:ultra-ptr:1.0.11'
+}

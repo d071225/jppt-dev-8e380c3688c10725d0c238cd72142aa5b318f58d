@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:textColor="@color/text_black"
+        android:textSize="?normalSize"
+        android:background="@null"
+        android:hint="联系人"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textColor="@color/text_black"
+        android:textSize="?normalSize"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="11"
+        android:background="@null"
+        android:textColor="@color/text_black"
+        android:textSize="?normalSize"
+        android:inputType="phone"
+        android:hint="联系电话"
+        android:maxLength="11"/>
+</LinearLayout>

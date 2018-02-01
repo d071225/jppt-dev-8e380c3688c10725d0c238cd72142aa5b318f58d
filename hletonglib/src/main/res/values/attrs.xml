@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--公用的上划线 下划线属性资源-->
+    <attr name="linePosition">
+        <flag name="none" value="0x00" />
+        <flag name="left" value="0x1" />
+        <flag name="top" value="0x2" />
+        <flag name="right" value="0x4" />
+        <flag name="bottom" value="0x8" />
+    </attr>
+    <attr name="lineWidth" format="dimension" />
+
+    <attr name="lineTopColor" format="color" />
+
+    <attr name="lineTopLeft" format="dimension" />
+    <attr name="lineTopRight" format="dimension" />
+
+    <attr name="lineBottomColor" format="color" />
+    <attr name="lineBottomLeft" format="dimension" />
+    <attr name="lineBottomRight" format="dimension" />
+    <!--end-->
+    <declare-styleable name="BorderLinearLayout">
+        <attr name="linePosition" />
+        <attr name="lineWidth" />
+        <attr name="lineTopColor" />
+        <attr name="lineTopLeft" />
+        <attr name="lineTopRight" />
+
+        <attr name="lineBottomColor" />
+        <attr name="lineBottomLeft" />
+        <attr name="lineBottomRight" />
+    </declare-styleable>
+    <declare-styleable name="BorderTextView">
+        <attr name="linePosition" />
+        <attr name="lineWidth" />
+        <attr name="lineTopColor" />
+        <attr name="lineTopLeft" />
+        <attr name="lineTopRight" />
+
+        <attr name="lineBottomColor" />
+        <attr name="lineBottomLeft" />
+        <attr name="lineBottomRight" />
+    </declare-styleable>
+    <!--需要更随主题字体大小改变的TexTView textSize="?normalSize",然后在主题中需要有对应的属性设置-->
+    <declare-styleable name="ThemeTextSize">
+        <attr name="largerSize" format="dimension" />
+        <attr name="largeSize" format="dimension" />
+        <attr name="normalSize" format="dimension" />
+        <attr name="smallSize" format="dimension" />
+        <attr name="smallerSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="UndoTextView">
+        <attr name="toRightTopX" format="dimension" />
+        <attr name="toRightTopY" format="dimension" />
+        <attr name="bubbleDrawableId" format="reference" />
+        <attr name="radius" format="dimension" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+    <!--自定义表单验证空间的属性-->
+    <declare-styleable name="ValidateView">
+        <attr name="val_name" format="string" />
+        <attr name="val_key" format="string" />
+        <attr name="val_order" format="integer" />
+        <attr name="val_emptyMsg" format="string" />
+        <attr name="val_from" format="integer" />
+        <attr name="val_to" format="integer" />
+        <attr name="val_outRangeMsg" format="string" />
+        <attr name="val_resultType">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+            <enum name="decimal" value="2" />
+            <enum name="map" value="3" />
+            <enum name="list" value="4" />
+        </attr>
+        <!--表单验证属性-->
+        <attr name="val_inputType">
+            <enum name="none" value="0" />
+            <enum name="number" value="1" />
+            <enum name="decimal" value="2" />
+            <enum name="cellphone" value="3" />
+            <enum name="telephone" value="4" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ValEditText">
+        <attr name="val_name" />
+        <attr name="val_key" />
+        <attr name="val_order" />
+        <attr name="val_emptyMsg" />
+        <attr name="val_from" />
+        <attr name="val_to" />
+        <attr name="val_outRangeMsg" />
+        <attr name="val_resultType" />
+        <!--表单验证属性-->
+        <attr name="val_inputType" />
+    </declare-styleable>
+    <declare-styleable name="ValFrameLayout">
+        <attr name="val_name" />
+        <attr name="val_key" />
+        <attr name="val_order" />
+        <attr name="val_from" />
+        <attr name="val_emptyMsg" />
+        <attr name="val_resultType" />
+    </declare-styleable>
+</resources>

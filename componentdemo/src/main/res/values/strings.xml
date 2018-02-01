@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComponentDemo</string>
+    <string name="please_input">请输入</string>
+    <string name="ton">吨</string>
+    <string name="meter">米</string>
+
+</resources>

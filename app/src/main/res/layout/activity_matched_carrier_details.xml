@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/topBarStyle"
+    >
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/vf"
+        android:layout="@layout/activity_matched_carrier_details_forecast"/>
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/vm"
+        android:layout="@layout/activity_matched_carrier_details_matched"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:id="@+id/call"
+        android:background="@color/normal_btn_dark">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_call"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/edit_login_padding_12dp"
+            android:textColor="@color/white"
+            android:text="联系车船"/>
+    </LinearLayout>
+</com.xcheng.view.widget.TopBarLayout>

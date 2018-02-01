@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/upload_image"
+    style="@style/LayoutKeyValueDisplay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/upload_title"
+        style="@style/TextKeyDisplay.BlackText"
+        android:minWidth="0dp"/>
+
+    <TextView
+        android:id="@+id/upload_hint"
+        style="@style/TextKeyDisplay.BlackText"
+        android:layout_toRightOf="@id/upload_title"
+        android:text="@string/hint_shipping_doc"
+        android:textColor="@color/text_grey"
+        android:visibility="gone"/>
+
+    <com.hletong.mob.gallery.widget.PickerRecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_GridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upload_title"/>
+</RelativeLayout>

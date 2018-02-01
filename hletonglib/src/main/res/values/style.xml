@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme.基础主题. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="normalSize">@dimen/normal_textsize</item>
+        <item name="smallSize">@dimen/small_textsize</item>
+        <item name="smallerSize">@dimen/smaller_textsize</item>
+        <item name="largeSize">@dimen/large_textsize</item>
+        <item name="largerSize">@dimen/larger_textsize</item>
+        <item name="android:listDivider">@color/divider</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="BaseAppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BaseToolbarStyle">
+        <item name="android:id">@id/ev_id_toolBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="popupTheme">@style/BaseAppTheme.PopupOverlay</item>
+        <item name="theme">@style/BaseAppTheme.Toolbar</item>
+        <item name="navigationIcon">@drawable/nav_back_arrow</item>
+        <item name="navigationContentDescription">Navigation</item>
+    </style>
+
+    <style name="BaseAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="BaseAppTheme.Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_textsize</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CommonTitleStyle" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/large_textsize</item>
+        <item name="android:textColor">#606a6f</item>
+    </style>
+
+    <style name="NavBottomSelectorStyle">
+        <item name="android:paddingTop">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textColor">@color/nav_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AlertDialogButton" parent="android:Widget">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dialog_button_blue</item>
+    </style>
+
+    <style name="__picker_ToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/__picker_nav</item>
+        <item name="colorPrimaryDark">@color/__picker_nav</item>
+    </style>
+
+    <style name="__picker_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/__picker_nav</item>
+        <item name="colorPrimaryDark">@color/__picker_nav</item>
+        <item name="colorAccent">@color/__picker_nav</item>
+    </style>
+
+    <style name="__picker_popAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        //退出时的动画
+    </style>
+</resources>

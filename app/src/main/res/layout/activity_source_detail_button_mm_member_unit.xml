@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="bottom"
+    android:background="@color/normal_btn_dark"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:text="申请会员管理单位垫付保证金"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

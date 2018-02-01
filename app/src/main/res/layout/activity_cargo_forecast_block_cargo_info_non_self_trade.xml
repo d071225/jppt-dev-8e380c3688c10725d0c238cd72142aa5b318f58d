@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:linePosition="bottom">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                layout="@layout/recycler_item_cargo_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="点此添加货源"
+                android:textColor="@color/text_grey" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:src="@drawable/icon_arrow_right" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/bookRefType"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputHint="请选择摘牌依据"
+        app:inputLabel="计费依据"
+        app:mode="select" />
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/cargoTotalValue"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputCustomMethod="numberDecimal"
+        app:inputHint="请填写货物价值"
+        app:inputLabel="货物价值"
+        app:inputTextSuffix="万元" />
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/cargoNumber"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputCustomMethod="numberDecimal"
+        app:inputHint="请填写"
+        app:inputLabel="数量|单位" />
+    <!-- fix bug 4611 app:inputTextSuffix="吨"-->
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/cargoWeight"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputCustomMethod="numberDecimal"
+        app:inputHint="请填写货物质量"
+        app:inputLabel="重量"
+        app:inputTextSuffix="吨" />
+
+</LinearLayout>

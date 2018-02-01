@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     style="@style/topBarStyle"
+                                     android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_limitTime"
+        style="@style/TextValueDisplay"
+        android:background="@color/bgColor"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="@dimen/small_textsize"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_contract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingTop="@dimen/margin_15dp"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/large_textsize"/>
+
+            <ViewStub
+                android:id="@+id/part_cargo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout="@layout/activity_sign_contract_part_cargo"/>
+
+            <ViewStub
+                android:id="@+id/part_transport"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout="@layout/activity_sign_contract_part_transport"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/wrtr_hint"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/hint_transport_contract"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_sign"
+                style="@style/submitStyle"
+                android:text="@string/signContract"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@id/ev_id_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/__picker_arrow_back"
+        app:theme="@style/__picker_ToolbarTheme">
+
+        <TextView
+            android:id="@id/ev_id_titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/__picker_title"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

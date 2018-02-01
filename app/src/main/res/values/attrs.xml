@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonTextView">
+        <attr name="bg_startColor" format="color" />
+        <attr name="bg_endColor" format="color" />
+        <attr name="button_title" format="string" />
+        <attr name="button_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="LabelInputView">
+        <attr name="hint" format="string" />
+        <attr name="required" format="boolean" />
+        <attr name="labelText" format="string" />
+        <attr name="editable" format="boolean" />
+        <attr name="align_with_characters" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CommonInputView">
+        <attr name="inputLabel" format="string" />
+        <attr name="inputLabelHint" format="string" />
+        <attr name="mode">
+            <flag name="select" value="1" />//用作选择器
+            <flag name="view" value="2" />//view用于查看数据
+            <flag name="input" value="3" />//默认
+        </attr>
+        <attr name="alignTextCount" format="integer" />//view模式用到
+        <attr name="inputHint" format="string" />
+        <attr name="inputText" format="string" />
+        <attr name="inputTextSuffix" format="string" />
+        <attr name="inputIconSuffix" format="reference" />
+        <attr name="inputCustomMethod">//输入的内容限制
+            <flag name="none" value="0" />
+            <flag name="number" value="1" />
+            <flag name="numberDecimal" value="2" />
+            <flag name="numberPassword" value="3" />
+            <flag name="phone" value="4" />
+            <flag name="money" value="5" />//保留两位小数，其他类型能输入小数的保留三位
+        </attr>
+        <attr name="inputCustomLength" format="integer" />//能够输入的最大长度
+        <attr name="inputLabelAsTitle" format="boolean" />//将label设为粗体
+        <attr name="inputGravity">
+            <flag name="start" value="1" />
+            <flag name="end" value="2" />
+            <flag name="center_vertical" value="4" />
+        </attr>
+        <attr name="inputLabelDrawable" format="reference" />
+        <attr name="inputTextSize" format="dimension" />
+        <attr name="inputTextColor" format="color" />
+        <attr name="inputAlignLeft" format="dimension" />
+        <attr name="val_name" />
+        <attr name="val_key" />
+        <attr name="val_order" />
+        <attr name="val_emptyMsg" />
+        <attr name="val_from" />
+        <attr name="val_to" />
+        <attr name="val_outRangeMsg" />
+        <attr name="val_resultType" />
+        <!--表单验证属性-->
+        <attr name="val_inputType" />
+    </declare-styleable>
+    <declare-styleable name="DatePickerView">
+        <attr name="pickerType">
+            <flag name="time" value="1" />
+            <flag name="date" value="2" />
+        </attr>
+        <attr name="pickerSeparator" format="string" />
+    </declare-styleable>
+    <declare-styleable name="PriorityLayout">
+        <attr name="orientation">
+            <flag name="vertical" value="0" />
+            <flag name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PriorityLayout_Layout">
+        <attr name="priority" format="integer" />
+        <attr name="centerInParent" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <attr name="starDrawable" format="reference" />
+        <attr name="starMargin" format="dimension" />
+        <attr name="stars" format="integer" />
+        <attr name="progress" format="float" />
+        <attr name="asIndicator" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SmoothClickCheckBox">
+        <attr name="buttonDrawable" format="reference" />
+        <attr name="spanColor" format="color" />
+        <attr name="spans" format="reference" />
+    </declare-styleable>
+</resources>

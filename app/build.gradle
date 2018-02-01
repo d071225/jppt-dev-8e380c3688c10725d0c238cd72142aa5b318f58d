@@ -1,0 +1,258 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            keyAlias rootProject.ext.defaultSignConfig['keyAlias']
+            keyPassword rootProject.ext.defaultSignConfig['keyPassword']
+            storeFile file(rootProject.ext.defaultSignConfig['storeFile'])
+            storePassword rootProject.ext.defaultSignConfig['storePassword']
+        }
+    }
+    compileSdkVersion rootProject.ext.android['compileSdkVersion']
+    buildToolsVersion rootProject.ext.android['buildToolsVersion']
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android['minSdkVersion']
+        targetSdkVersion rootProject.ext.android['targetSdkVersion']
+        applicationId "com.hletong.jppt"
+        versionCode rootProject.ext.android['versionCode']
+        versionName rootProject.ext.android['versionName']
+        resConfig "zh"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        //个推的配置
+        manifestPlaceholders = getAppConfig()
+    }
+
+    flavorDimensions 'app_type', 'env'
+
+    productFlavors {
+        //外网开发地址
+        dev {
+            dimension 'env'
+            buildConfigField("String", "config", "\"DEV\"");
+            ndk {
+                abiFilters "armeabi", "x86", "x86_64"
+            }
+        }
+        //外网业务测试
+        busi {
+            dimension 'env'
+            buildConfigField("String", "config", "\"BUSI\"");
+            ndk {
+                abiFilters "armeabi", "x86", "x86_64"
+            }
+        }
+        //外网技术测试
+        product {
+            dimension 'env'
+            buildConfigField("String", "config", "\"PRODUCT\"");
+            ndk {
+                abiFilters "armeabi", "x86", "x86_64"
+            }
+        }
+        cargo {
+            dimension 'app_type'
+            applicationId "com.hletong.jppt.cargo"
+            manifestPlaceholders = [
+                    appName     : "惠龙易通货主版",
+                    appIcon     : "@mipmap/ic_launcher_cargo",
+                    shareScheme : "cargo",
+                    TD_APP_ID   : "1286297F3A3B41A08997CFCA1DA501B5",
+                    AMap_ID     : "693bca4e820345f42a680ec4cfe2c23e",
+                    PACKAGE_NAME: applicationId]
+            buildConfigField("int", "app_type", "1");//app类型
+            buildConfigField("int", "carrier_type", "-1");//运力类型，货方不存在这个东西
+            buildConfigField("String", "carrier", "\"\"")//运力
+            buildConfigField("String", "carrier_name", "\"承运车船\"")//运力名称
+            buildConfigField("String", "transporter_label", "\"\"")//运力预报-运力标签
+            buildConfigField("int", "transporter_empty_view", "com.hletong.hyc.R.drawable.icon_empty_cars")
+            //运力历史-空页面
+            buildConfigField("String", "transporter_empty_data", "\"\"")//运力-空数据提示，货方不存在这个东西
+            buildConfigField("String", "transporter_require", "\"车型要求\"")//货源详情-运力要求
+            buildConfigField("String", "multi_transport_label", "\"整车运输\"")//货源详情-整车运输
+            buildConfigField("String", "user_type", "\"货方会员\"")//会员类型-货方会员
+            buildConfigField("int", "splash", "com.hletong.hyc.R.drawable.splash_cargo")//闪屏界面
+            buildConfigField("String", "unsigned_contract_type", "\"05\"")//未签合同的type字段
+            buildConfigField("int", "icon_model", "com.hletong.hyc.R.drawable.truck_model")
+            //货源详情车辆模型
+            buildConfigField("int", "icon_transport_days", "com.hletong.hyc.R.drawable.transport_days_truck")
+            //货源详情运输天数
+            resValue("string", "_build_hintLoginName", "请输入会员名")
+        }
+        truck {
+            dimension 'app_type'
+            applicationId "com.hletong.jppt.vehicle"
+            manifestPlaceholders = [
+                    appName     : "惠龙易通车主版",
+                    appIcon     : "@mipmap/ic_launcher_truck",
+                    shareScheme : "hyc",
+                    TD_APP_ID   : "9C106235084E44B5818FF2BCB0633ED6",
+                    AMap_ID     : "877d475369bb735546a582426c1a89fb",
+                    PACKAGE_NAME: applicationId]
+            buildConfigField("int", "app_type", "2");//app类型
+            buildConfigField("int", "carrier_type", "1");//运力类型
+            buildConfigField("String", "carrier", "\"车辆\"")//运力
+            buildConfigField("String", "carrier_name", "\"车牌号\"")//运力名称
+            buildConfigField("String", "transporter_label", "\"承运车辆\"")//运力预报-运力标签
+            buildConfigField("int", "transporter_empty_view", "com.hletong.hyc.R.drawable.icon_empty_cars")
+            //运力历史-空页面
+            buildConfigField("String", "transporter_empty_data", "\"不存在可用车辆，请先添加车辆\"")//运力-空数据提示
+            buildConfigField("String", "transporter_require", "\"车型要求\"")//货源详情-运力要求
+            buildConfigField("String", "multi_transport_label", "\"整车运输\"")//货源详情-整车运输
+            buildConfigField("String", "user_type", "\"车辆会员\"")//会员类型-车辆会员
+            buildConfigField("int", "splash", "com.hletong.hyc.R.drawable.splash_truck")//闪屏界面
+            buildConfigField("String", "unsigned_contract_type", "\"02\"")//未签合同的type字段
+            buildConfigField("int", "icon_model", "com.hletong.hyc.R.drawable.truck_model")
+            //货源详情车辆模型
+            buildConfigField("int", "icon_transport_days", "com.hletong.hyc.R.drawable.transport_days_truck")
+            //货源详情运输天数
+            resValue("string", "_build_hintLoginName", "请输入会员名/车号")
+        }
+        ship {
+            dimension 'app_type'
+            applicationId "com.hletong.jppt.ship"
+            manifestPlaceholders = [
+                    appName     : "惠龙易通船主版",
+                    appIcon     : "@mipmap/ic_launcher_ship",
+                    shareScheme : "hych",
+                    TD_APP_ID   : "86F5AC266B224BD4BCF0381397D1575B",
+                    AMap_ID     : "177e3b623037a9cc2f58c6884a0fa69f",
+                    PACKAGE_NAME: applicationId]
+            buildConfigField("int", "app_type", "3");//app类型
+            buildConfigField("int", "carrier_type", "2");//运力类型
+            buildConfigField("String", "carrier", "\"船舶\"")//运力
+            buildConfigField("String", "carrier_name", "\"船舶号\"")//运力名称
+            buildConfigField("String", "transporter_label", "\"承运船舶\"")//运力预报-运力标签
+            buildConfigField("int", "transporter_empty_view", "com.hletong.hyc.R.drawable.icon_empty_ships")
+            //运力历史-空页面
+            buildConfigField("String", "transporter_empty_data", "\"不存在可用船舶，请先添加船舶\"")//运力-空数据提示
+            buildConfigField("String", "transporter_require", "\"船型要求\"")//货源详情-运力要求
+            buildConfigField("String", "multi_transport_label", "\"整船运输\"")//货源详情-整船运输
+            buildConfigField("String", "user_type", "\"船舶会员\"")//会员类型-船舶会员
+            buildConfigField("int", "splash", "com.hletong.hyc.R.drawable.splash_ship")//闪屏界面
+            buildConfigField("String", "unsigned_contract_type", "\"02\"")//未签合同的type字段
+            buildConfigField("int", "icon_model", "com.hletong.hyc.R.drawable.ship_model")//货源详情车辆模型
+            buildConfigField("int", "icon_transport_days", "com.hletong.hyc.R.drawable.transport_days_ship")
+            //货源详情运输天数
+            resValue("string", "_build_hintLoginName", "请输入会员名/船名")
+        }
+    }
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [appHost: "test.hletong.com"]
+        }
+        release {
+            manifestPlaceholders = [appHost: "jp.hletong.com"]
+
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFile 'proguard-butterknife-7.pro'
+            proguardFile 'proguard-eventbus.pro'
+            proguardFile 'proguard-glide.pro'
+            proguardFile 'proguard-gson.pro'
+            proguardFile 'proguard-nineoldandroids.pro'
+            proguardFile 'proguard-okhttp3.pro'
+            proguardFile 'proguard-support-design.pro'
+            proguardFile 'proguard-support-v7-appcompat.pro'
+            proguardFile 'proguard-talking-data.pro'
+            proguardFile 'proguard-getui.pro'
+            proguardFile 'proguard-unicorn.pro'
+
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        String flavors0 = variant.productFlavors[0].name
+                        String prefix0 = ""
+                        if (flavors0 == "truck") {
+                            prefix0 = "车主版"
+                        } else if (flavors0 == "ship") {
+                            prefix0 = "船主版"
+                        } else if (flavors0 == "cargo") {
+                            prefix0 = "货主版"
+                        }
+                        String flavors1 = variant.productFlavors[1].name;
+
+                        String prefix1 = ""
+                        if (flavors1 == "dev") {
+                            prefix1 = "测试"
+                        } else if (flavors1 == "busi") {
+                            prefix1 = "业务"
+                        } else if (flavors1 == "product") {
+                            prefix1 = "生产"
+                        }
+                        output.outputFileName = "Android_${prefix0}_${prefix1}_${rootProject.releaseTime()}.apk"
+                    }
+                }
+            }
+        }
+    }
+}
+
+//返回个推的配置，车船货（区分正式版和测试版）
+def getAppConfig() {
+    String taskName = getGradle().getStartParameter().getTaskRequests().toString()
+    String appType = getAppType();
+    println("appType:" + appType)
+    if (taskName.contains("Product")) {//生产环境
+        if ("cargo" == appType)
+            return [GETUI_APP_ID    : "NOjUv9JkLO7qtaXNSA9QM8",
+                    GETUI_APP_KEY   : "DozVvWnN3x5lR0bgAcSJX5",
+                    GETUI_APP_SECRET: "6IFSI1yTBm9rYrGyQx2V51"]
+        else if ("ship" == appType)
+            return [GETUI_APP_ID    : "UKcjhwuHyH71NpntWA4um4",
+                    GETUI_APP_KEY   : "ZeB6t4MzzA9fiksYaC8g6",
+                    GETUI_APP_SECRET: "TgBBcDivcI9vdYLqii9qAA"]
+        else
+            return [GETUI_APP_ID    : "FPeFLksw9zAMatPrRKmQz6",
+                    GETUI_APP_KEY   : "666qfvBHosAGH46Ylk9Hy9",
+                    GETUI_APP_SECRET: "8GDl7ReRBC8WI0UKlkVMq"]
+    } else {//测试环境(外网开发环境和业务测试环境)
+        if ("cargo" == appType)
+            return [GETUI_APP_ID    : "qof4XaxZbh5bWtKgRSHBY3",
+                    GETUI_APP_KEY   : "yaHjJUVBgb8DO0QCgihgk1",
+                    GETUI_APP_SECRET: "vDoti6GrkIA7zbM4kkesrA"]
+        else if ("ship" == appType)
+            return [GETUI_APP_ID    : "ZZQYioM94J7bntWHS77D7",
+                    GETUI_APP_KEY   : "0BehX0zQRa7lljmZoIoJY2",
+                    GETUI_APP_SECRET: "PR7UTbpyzfA94Ksk618mwA"]
+        else
+            return [GETUI_APP_ID    : "aB9UEa92tS97dfSM55Jfv1",
+                    GETUI_APP_KEY   : "5rdHNyjw3W7BQZnIJ8DMv3",
+                    GETUI_APP_SECRET: "nQBooeWZB96S5UMiUu0Yr3"]
+    }
+}
+
+def getAppType() {
+    String task = getGradle().getStartParameter().getTaskRequests().toString();
+    def matcher = /assemble(Ship|Cargo|Truck)(Product|Busi|Dev)(Debug|Release)/
+    def result = task =~ /$matcher/
+    if (result) {
+        def name = result.toMatchResult().group(0)
+        def words = name.split("(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")
+        return words[1].toLowerCase()
+    }
+}
+
+dependencies {
+//    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':hletonglib')
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+    implementation 'com.wdullaer:materialdatetimepicker:2.5.0'
+    implementation 'com.google.android:flexbox:0.3.0-alpha2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.evernote:android-job:1.1.11'
+    implementation 'com.getui:sdk:2.10.2.0'
+    implementation 'com.qiyukf.unicorn:unicorn:3.9.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

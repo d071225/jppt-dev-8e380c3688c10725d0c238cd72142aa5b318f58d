@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        android:id="@+id/contact"
+        app:inputLabel="联系人"
+        app:inputHint="联系人姓名"
+        app:inputIconSuffix="@drawable/icon_arrow_right"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        android:id="@+id/tel"
+        app:inputLabel="电话"
+        app:inputCustomMethod="phone"
+        app:inputHint="联系人电话"/>
+</LinearLayout>

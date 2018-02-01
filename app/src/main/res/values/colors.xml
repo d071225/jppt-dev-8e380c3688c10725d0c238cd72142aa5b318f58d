@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/themeColor</color>
+    <!--状态栏的颜色-->
+    <color name="colorPrimaryDark">@color/themeColor</color>
+    <color name="colorAccent">@color/themeColor</color>
+    <color name="dark_orange">#ff7559</color>
+    <color name="dark_orange_15p">#ff7559</color>
+
+    <color name="colorAccentbg">#c9e0ff</color>
+    <color name="colorAccenttp">#334d97ff</color>
+
+    <color name="toolbarTopColor">#418dd9</color>
+    <color name="toolbarBottomColor">#365fd9</color>
+
+    <!--#d5d4d4-->
+    <color name="navLinecolor">#cfcece</color>
+    <color name="tip_title_color">#436580</color>
+    <color name="pressedcolor">#4587e5</color>
+    <color name="pressedGreycolor">#e5e5e5</color>
+
+    <color name="disablecolor">#ba4d97ff</color>
+
+    <color name="reddark_trans">#80cc0000</color>
+    <color name="dtmf_dialer_display_text">#000000</color>
+    <color name="bg_dialog_setitnglmbao">#50000000</color>
+    <color name="search_bg_color">#e9e9e9</color>
+
+    <color name="stroke_step">#DAE1E5</color>
+    <color name="disabled_view_bg_color">#24c2c9cc</color>
+    <color name="dialog_body_text_color">#606a6f</color>
+    <color name="check_out_signout">#c9e0ff</color>
+    <color name="zhaipai_color">#bbecdb</color>
+    <color name="normal_btn_dark">#1f2733</color>
+    <color name="pressed_btn_grey">#bbbec1</color>
+    <color name="common_white">#f7f7f7</color>
+</resources>

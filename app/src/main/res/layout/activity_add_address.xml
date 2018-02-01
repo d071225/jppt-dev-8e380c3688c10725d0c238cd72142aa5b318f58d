@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     style="@style/topBarStyle">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/select"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputHint="请选择地址"
+        app:inputLabel="省市区"
+        app:mode="select"/>
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="请填写详细地址"
+        android:minHeight="96dp"
+        android:padding="@dimen/margin_15dp"
+        android:textSize="16sp"/>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/contact"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputHint="请填写联系人"
+        app:inputLabel="联系人"
+        app:linePosition="top|bottom"/>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/contact_tel"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputCustomMethod="phone"
+        app:inputHint="请填写联系人电话"
+        app:inputLabel="电话"/>
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/harbor"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputCustomMethod="numberDecimal"
+        app:inputHint="不是港口则不填"
+        app:inputLabel="装货地水深"
+        app:inputLabelHint="(选填)"
+        app:inputTextSuffix="米"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="保存"/>
+</com.xcheng.view.widget.TopBarLayout>

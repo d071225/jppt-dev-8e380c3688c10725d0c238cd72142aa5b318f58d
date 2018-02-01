@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/des"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccenttp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="16dp"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"/>
+
+    <include
+        layout="@layout/common_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/modify_price"
+        app:linePosition="top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/cb_modify_price"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+</LinearLayout>

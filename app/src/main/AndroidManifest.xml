@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hletong.hyc">
+
+    <!-- Change package ! -->
+    <uses-permission android:name="org.linphone.permission.C2D_MESSAGE" />
+    <!-- Change package ! -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 需要运行时注册的权限 -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于提高GPS定位速度-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--tools:replace="android:label" 覆盖类中的属性，不然会包冲突错误-->
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".HyApplication"
+        android:allowBackup="true"
+        android:icon="${appIcon}"
+        android:label="${appName}"
+        android:supportsRtl="false"
+        android:theme="@style/HLETAppTheme.NormalSize"
+        tools:replace="android:label">
+        <!--TD统计数据配置开始-->
+        <service
+            android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService">  <!--用户质量评估Service可以配置在主进程或者单独进程-->
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="${TD_APP_ID}" />
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="test" />
+        <!--TD统计配置完毕-->
+        <!-- 高德定位key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${AMap_ID}" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hletong.app"
+                    android:path="/cargoforecast/notice/list"
+                    android:scheme="${shareScheme}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.dialog.SessionTimeoutDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_CommonStyle" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PhoneVerifyCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddressSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ship.ForecastShipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.truck.ForecastTruckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.ship.ShipBiddingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckBiddingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckQuoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipQuoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.InvoiceUploadActivityNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CargoContractActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.TransportContractActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ThirdPartyContractActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CompleteVehicleInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ModifyLoginPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CompanyHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CooperationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ApplyExitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ModifyTextSizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ReceiptUploadActivityNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CommonWrapFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- end -->
+        <activity
+            android:name=".ui.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MessageInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--<receiver-->
+        <!--android:name=".receiver.GeTuiReceiver"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".ui.activity.VehicleInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SelectCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CardDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BasicInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.UploadPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.truck.RegisterTruckInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ship.RegisterShipInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.AddFavoriteRoutineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterContractActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ApplyDepositCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CargoForecastActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddCargoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CargoForecastEditContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SourcePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SuitableCarrierActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MatchedCarrierDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SelfTradeComplainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CargoRefusedReasonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PathPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ToolboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddressChooserForRoutePlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TransporterEvaluationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.QuoteProgressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CargoForecastPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CargoPersonCompleteInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CargoCompanyCompleteInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckCompleteInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.AddTruckInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipCompleteInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.AddShipInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckPersonalChildCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckInfoAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.PapersAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.BankCardAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.BankCardInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.InvoiceCertAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.InvoiceCertInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.cargo.CargoCompanyCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.cargo.CargoPersonalCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckCompanyChildCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipCompanyChildCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.truck.TruckCompanyChildCertTruckManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipInfoAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipCompanyChildCertShipManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipPersonalChildCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ship.ShipCompanyMainCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.truck.TruckCompanyMainCertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.DevSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SoldierInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.OtherInfoRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.GoodDriverActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.CandidateInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ActionRuleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ETCIntroducePaperActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.AdShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.hletong.jppt.vehicle.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ForgetPswActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ReceiptRefuseActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.hletong.hyc.ui.activity.test.CargoMatchActivity"
+            android:screenOrientation="portrait"
+            />
+
+
+
+        <service android:name=".service.UploadLocationService" />
+        <service android:name=".service.ApkDownloadService" />
+        <service android:name=".service.GTDataService" />
+    </application>
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="介绍信模板"
+    tools:context="com.hletong.hyc.ui.activity.ETCIntroducePaperActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/textjumper_margin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/etc_introduce_paper" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        style="@style/submitStyle"
+        android:text="下载《介绍信》" />
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="装货日期"
+        android:id="@+id/loadDT_">
+        <com.hletong.hyc.ui.widget.DatePickerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadDT"/>
+    </com.hletong.hyc.ui.widget.CommonInputView>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="装货时间"
+        android:id="@+id/loadTM_">
+        <com.hletong.hyc.ui.widget.DatePickerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pickerType="time"
+            android:id="@+id/loadTM"/>
+    </com.hletong.hyc.ui.widget.CommonInputView>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="装货地"
+        app:inputHint="请选择装货地"
+        app:mode="select"
+        android:id="@+id/loadAddress"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="联系人"
+        app:inputHint="请选择联系人"
+        app:mode="view"
+        android:id="@+id/loadContact"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="联系人电话"
+        app:inputHint="请选择联系人手机号"
+        app:inputCustomMethod="phone"
+        app:mode="view"
+        android:id="@+id/loadContactTel"/>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="货方认证">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/cargoCompleteTip"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/normal_textsize" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_memberName"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*会员名"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom|top"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_companyName"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入公司名称"
+                app:inputLabel="*公司名称"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_address"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="*公司地址"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_busiContact"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*业务联系人"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_busiContactPhone"
+                style="@style/TransportForecast.View"
+                app:inputCustomMethod="number"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="请输入"
+                app:inputLabel="*业务联系人手机"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_paperSingleType"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="*证件类型"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_paperNumber"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/please_input"
+                app:inputLabel="*证件号码"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="input" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_papers"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="@string/certificateInfo"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_invoiceInfo"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="开票信息"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:lineBottomRight="@dimen/margin_15dp"
+                app:linePosition="bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.SmoothClickCheckBox
+                android:id="@+id/agreement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingBottom="@dimen/margin_15dp"
+                android:text="本人已阅读并同意签订" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

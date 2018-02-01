@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.component.simple.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/BaseToolbarStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="便捷的图库选择器"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3张-可拍照"
+            android:textColor="@color/text_grey"
+            android:textSize="18sp"/>
+
+        <com.hletong.mob.gallery.widget.PickerRecyclerView
+            android:id="@+id/pv_3_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5张-可拍照"
+            android:textColor="@color/text_grey"
+            android:textSize="18sp"/>
+
+        <com.hletong.mob.gallery.widget.PickerRecyclerView
+            android:id="@+id/pv_5_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5张-仅预览"
+            android:textColor="@color/text_grey"
+            android:textSize="18sp"/>
+
+        <com.hletong.mob.gallery.widget.PickerRecyclerView
+            android:id="@+id/pv_5_preView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5张-不可拍照"
+            android:textColor="@color/text_grey"
+            android:textSize="18sp"/>
+
+        <com.hletong.mob.gallery.widget.PickerRecyclerView
+            android:id="@+id/pv_5_no_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

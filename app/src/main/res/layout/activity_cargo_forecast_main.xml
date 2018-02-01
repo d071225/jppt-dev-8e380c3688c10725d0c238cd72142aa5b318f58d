@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:ev_topBarLayout="@layout/activity_toolbar">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/billingType"
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="请选择开票方式"
+        app:mode="select" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewStub
+                android:id="@+id/block_CargoInfo_SelfTrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_cargo_info_self_trade" />
+
+            <ViewStub
+                android:id="@+id/block_CargoInfo_NoneSelfTrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_cargo_info_non_self_trade" />
+
+            <ViewStub
+                android:id="@+id/block_CargoOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_cargo_owner_info" />
+
+            <ViewStub
+                android:id="@+id/block_load"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_load" />
+
+            <ViewStub
+                android:id="@+id/block_unload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_unload" />
+
+            <ViewStub
+                android:id="@+id/block_transport_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_transport_fee" />
+
+            <ViewStub
+                android:id="@+id/block_transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_transport" />
+
+            <ViewStub
+                android:id="@+id/block_billingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_billing_info" />
+
+            <ViewStub
+                android:id="@+id/block_settle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_settle" />
+
+            <ViewStub
+                android:id="@+id/block_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout="@layout/activity_cargo_forecast_block_other" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/hint_self_trade_contract"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/preview"
+            style="@style/submitStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cargo_foreast_preview"
+            android:text="预览"
+            android:textColor="@color/text_grey" />
+        <com.xcheng.view.processbtn.SubmitProcessButton
+            android:id="@+id/submit"
+            style="@style/greenCompleteBtnStyle"
+            android:layout_width="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="2"
+            android:text="发布" />
+    </LinearLayout>
+</com.xcheng.view.widget.TopBarLayout>

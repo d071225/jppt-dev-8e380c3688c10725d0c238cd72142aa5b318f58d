@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/margin_15dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_etc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_white_corner_lt_rt_15dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_15dp"
+        android:text="申请ETC"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/login"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_white_corner_lb_rb_15dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/register"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize"
+        />
+
+    <TextView
+        android:id="@id/id_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_bg_white_corners_15dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/cancel"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/larger_textsize"/>
+
+</LinearLayout>

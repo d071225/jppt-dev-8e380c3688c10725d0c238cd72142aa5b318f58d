@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/icon_star_empty"/>
+    </item>
+    <item>
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/icon_star_fill"
+            android:gravity="start"/>
+    </item>
+</layer-list>

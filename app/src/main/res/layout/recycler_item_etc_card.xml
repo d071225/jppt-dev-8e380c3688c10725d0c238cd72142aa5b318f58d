@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/iv_hlCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/toplogo_margin"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/yunli_item_space"
+            android:layout_marginTop="@dimen/toplogo_margin" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_hlCard"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/yunli_item_space"
+            android:layout_toRightOf="@id/divider"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:textColor="@color/recycler_item_etc_title_text_color"
+                android:textSize="@dimen/title_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cardIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/yunli_item_space"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLines="3"
+                android:textColor="@color/recycler_item_etc_content_text_color"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:button="@drawable/bg_circle_checkbox_selector"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/see_detail"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/small_textsize"
+        app:linePosition="top"
+        app:lineWidth="1dp" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="交易类型"
+        app:inputHint="请选择交易类型"
+        app:mode="select"
+        android:id="@+id/tradeType"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="特别要求"
+        app:inputLabelHint="(选填)"
+        app:mode="view"
+        android:id="@+id/specialRequestTitle"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="96dp"
+        android:hint="请填写特别要求"
+        android:padding="@dimen/margin_15dp"
+        android:textColorHint="@color/text_hint"
+        android:gravity="left|top"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:id="@+id/specialRequest"/>
+</LinearLayout>

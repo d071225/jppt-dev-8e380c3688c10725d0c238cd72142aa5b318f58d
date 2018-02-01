@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+    <include
+        layout="@layout/nav_contact"
+        android:visibility="visible"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/cargo_code"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel="@string/business_doc_no"/>
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/cargo_name"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel="@string/cargo_name"/>
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/plate"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel=""/>
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/des"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel="@string/cargo_des"/>
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/address"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel="@string/loading_address"/>
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    android:id="@+id/date"
+                    style="@style/ReceiptStyle"
+                    app:inputLabel="@string/loading_date"/>
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/contract_block"
+                style="@style/LayoutKeyValueDisplay"
+                android:gravity="end"
+                android:paddingBottom="@dimen/botton_marjin"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingTop="@dimen/botton_marjin"
+                app:linePosition="top"
+                app:lineTopLeft="@dimen/margin_15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/contract"
+                    android:layout_width="64dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_contract_review"
+                    android:gravity="center"
+                    android:text="@string/contract_review"
+                    android:textColor="@color/colorAccent"/>
+
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/unit_ct"
+                style="@style/CommonInputViewNormalStyle"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                app:inputCustomMethod="number"
+                app:inputHint="@string/cargo_number"
+                app:inputLabel="@string/count"/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/weight"
+                style="@style/CommonInputViewNormalStyle"
+                android:background="@color/white"
+                app:inputCustomMethod="numberDecimal"
+                app:inputHint="@string/cargo_weight"
+                app:inputLabel="@string/weight"
+                app:inputTextSuffix="吨"/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/deliver_psw"
+                style="@style/CommonInputViewNormalStyle"
+                android:background="@color/white"
+                app:inputCustomLength="6"
+                app:inputCustomMethod="numberPassword"
+                app:inputHint="请输入发货密码"
+                app:inputLabel="@string/loading_psw"
+                android:visibility="gone"/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/loading_psw"
+                style="@style/CommonInputViewNormalStyle"
+                android:background="@color/white"
+                app:inputCustomLength="6"
+                app:inputCustomMethod="numberPassword"
+                app:inputHint="@string/transport_password_hint"
+                app:inputLabel="@string/transport_password"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/submitStyle"
+                android:text="@string/commit"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,110 @@
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle"
+    android:background="@color/white"
+    app:ev_topBarTitle="@string/login_member">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/toplogo_margin"
+        android:layout_marginTop="@dimen/toplogo_margin"
+        android:src="@drawable/logo_login" />
+
+    <com.xcheng.view.widget.CommonView
+        android:id="@+id/cv_loginName"
+        style="@style/CVStyle"
+        app:ev_cv_hint="@string/_build_hintLoginName"
+        app:ev_cv_label="@string/login_name"
+        app:ev_cv_labelWidth="45dp">
+
+        <ImageView
+            android:id="@+id/iv_popList"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="3dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_pop_down" />
+    </com.xcheng.view.widget.CommonView>
+
+    <com.xcheng.view.widget.CommonView
+        android:id="@+id/cv_password"
+        style="@style/CVStyle"
+        app:ev_cv_hint="@string/hint_password"
+        app:ev_cv_inputType="textPassword"
+        app:ev_cv_label="@string/password"
+        app:ev_cv_labelWidth="45dp">
+
+        <ImageView
+            android:id="@+id/iv_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:src="@drawable/ic_eye_selector" />
+    </com.xcheng.view.widget.CommonView>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/submitStyle"
+        android:layout_marginBottom="@dimen/submit_marginTop"
+        android:layout_marginTop="@dimen/submit_marginTop"
+        android:text="@string/login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <TextView
+            android:id="@+id/tv_noAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/no_account"
+            android:textColor="@color/login_grey_selector"
+            android:textSize="?smallSize" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_noAccount"
+            android:clickable="true"
+            android:text="@string/goRegister"
+            android:textColor="@color/login_text_selector"
+            android:textSize="?smallSize" />
+
+        <TextView
+            android:id="@+id/tv_forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="@string/forgetPassword"
+            android:textColor="@color/login_grey_selector"
+            android:textSize="?smallSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/relative_service"
+            style="@style/LoginApplyEtcTextStyle"
+            android:drawableTop="@drawable/shape_bg_service_hot_line"
+            android:text="@string/service_hot_line" />
+
+        <TextView
+            android:id="@+id/official_website"
+            style="@style/LoginApplyEtcTextStyle"
+            android:drawableTop="@drawable/shape_bg_official_website"
+            android:text="@string/hlet_official_website" />
+    </LinearLayout>
+</com.xcheng.view.widget.TopBarLayout>

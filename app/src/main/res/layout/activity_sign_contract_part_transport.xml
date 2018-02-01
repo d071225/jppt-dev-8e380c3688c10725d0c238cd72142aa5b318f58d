@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/input_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/password_title"
+        style="@style/BlackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/set_transport_psw"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/transport_password"
+        app:inputHint="@string/transport_password_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/trans_password"
+        app:linePosition="bottom|top"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle"
+        app:inputLabel="@string/confirm_password"
+        app:inputHint="@string/transport_password_confirm_hint"
+        app:inputCustomLength="6"
+        app:inputCustomMethod="numberPassword"
+        android:id="@+id/trans_password_confirm"/>
+</LinearLayout>

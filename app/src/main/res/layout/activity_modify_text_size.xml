@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hletong.hyc.ui.activity.ModifyTextSizeActivity">
+
+    <android.support.v7.widget.Toolbar style="@style/fitSystemWindowToolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_size"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ev_id_toolBar"
+        android:orientation="vertical"
+        tools:ignore="UnknownId">
+
+        <com.hletong.mob.widget.BorderTextView
+            android:id="@+id/tv_PreView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_15dp"
+            android:text="@string/list_text_size"
+            android:textSize="?normalSize"
+            app:linePosition="bottom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/id_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <com.hletong.mob.widget.BorderLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sb_textSize"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:linePosition="top">
+
+            <TextView
+                android:id="@+id/tv_smallSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/small_size"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <TextView
+                android:id="@+id/tv_middleSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/standard_size"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_textsize" />
+
+            <TextView
+                android:id="@+id/tv_largeSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/large_size"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_textsize" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+        <com.hletong.hyc.ui.widget.SeekBarView
+            android:id="@+id/sb_textSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>

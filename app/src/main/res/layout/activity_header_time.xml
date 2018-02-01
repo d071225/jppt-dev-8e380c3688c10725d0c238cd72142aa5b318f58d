@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@id/id_header_time"
+          android:background="@color/toolbarBottomColor"
+          android:textColor="@color/white"
+          android:textSize="12sp"
+          android:gravity="top|center"
+          android:layout_width="match_parent"
+          android:layout_height="20dp">
+
+</TextView>

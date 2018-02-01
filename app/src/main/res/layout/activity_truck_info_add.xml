@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:context=".ui.activity.truck.RegisterTruckInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_truckType"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="*车辆类型"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="select" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_truckColor"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="*车牌颜色"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="select" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_sexType"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="*驾驶员性别"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="select" />
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_sbdhNumber"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="*车辆识别代号"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_truckLength"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*车厢长度"
+            app:inputTextSuffix="@string/meter"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_et_vehicleMass"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*车辆载重量"
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_et_loadedVehicleQuality"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*满载车辆重量"
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_et_load_ton"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*载重吨位"
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_et_cyzgzh"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="@string/_cyzgzh"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_et_dlyszh"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="@string/_dlyszh"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="保存" />
+</com.xcheng.view.widget.TopBarLayout>

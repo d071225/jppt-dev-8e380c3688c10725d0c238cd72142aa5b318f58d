@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/nav_contact"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <include
+                    layout="@layout/activity_source_details_basic_info"/>
+                <!--正常内容-->
+                <ViewStub
+                    android:id="@+id/extra_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout="@layout/activity_source_details_extra_normal"/>
+                <!--自主交易的内容-->
+                <ViewStub
+                    android:id="@+id/extra_zzjy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/activity_source_details_extra_zzjy"/>
+                <com.hletong.mob.gallery.widget.PickerRecyclerView
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <ViewStub
+                android:layout="@layout/member_management_info_block"
+                android:id="@+id/member_management_unit"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub
+        android:id="@+id/cb_hall"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout="@layout/activity_source_detail_button_cb"/>
+
+    <ViewStub
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout="@layout/alert_dialog_two_button"/>
+
+    <ViewStub
+        android:id="@+id/borrow_insurance_money"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout="@layout/activity_source_detail_button_mm_member_unit"/>
+</LinearLayout>

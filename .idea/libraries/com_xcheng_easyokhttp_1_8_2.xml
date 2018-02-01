@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.xcheng:easyokhttp-1.8.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyokhttp-1.8.2.aar/2681182001e91e11bee9839e4ef2d163/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyokhttp-1.8.2.aar/2681182001e91e11bee9839e4ef2d163/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xcheng/easyokhttp/1.8.2/4f5ea69d9fa327c05f81999f71c25057e6cbbd90/easyokhttp-1.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

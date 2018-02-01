@@ -1,0 +1,1100 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="HLETAppTheme" parent="BaseAppTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="HLETAppTheme.NormalSize">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="HLETAppTheme.LargeSize">
+        <!-- Customize your theme here. -->
+        <item name="normalSize">18sp</item>
+        <item name="smallSize">16sp</item>
+        <item name="smallerSize">14sp</item>
+        <item name="largeSize">20sp</item>
+        <item name="largerSize">22sp</item>
+    </style>
+
+    <style name="HLETAppTheme.SmallSize">
+        <!-- Customize your theme here. -->
+        <item name="normalSize">14sp</item>
+        <item name="smallSize">12sp</item>
+        <item name="smallerSize">10sp</item>
+        <item name="largeSize">16sp</item>
+        <item name="largerSize">18sp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="BaseToolbarStyle">
+        <item name="android:background">@drawable/shape_bg_toolbar</item>
+    </style>
+
+    <style name="fitSystemWindowToolbar" parent="ToolbarStyle">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+    </style>
+
+    <style name="topBarStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="ev_topBarLayout">@layout/activity_toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="CommonTextView" parent="android:Widget">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">?smallSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="NormalSizeCommonTextView" parent="CommonTextView">
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="FavoriteRoutineTextView" parent="NormalSizeCommonTextView">
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/height_button_min</item>
+        <item name="android:background">@drawable/btn_submit_selector</item>
+        <item name="android:textSize">@dimen/large_textsize</item>
+    </style>
+
+    <style name="submitStyle" parent="buttonStyle">
+        <item name="android:id">@id/ev_id_submit</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <!--自定义的shape button样式-->
+    <style name="flatBtnStyle" parent="submitStyle">
+        <item name="android:background">@null</item>
+        <item name="ev_pb_colorNormal">@color/themeColor</item>
+        <item name="ev_pb_colorComplete">@color/themeColor</item>
+        <item name="ev_pb_colorError">@color/themeColor</item>
+        <item name="ev_pb_cornerRadius">4dp</item>
+    </style>
+
+    <style name="processBtnStyle" parent="flatBtnStyle">
+        <item name="ev_pb_colorProgress">@color/green</item>
+        <item name="ev_pb_disableWhenProgress">true</item>
+        <item name="ev_pb_maskWhenProgress">true</item>
+    </style>
+
+    <style name="greenCompleteBtnStyle" parent="processBtnStyle">
+        <item name="ev_pb_colorComplete">@color/green</item>
+        <item name="ev_pb_disableWhenProgress">false</item>
+        <item name="ev_pb_textComplete">上传成功</item>
+        <item name="android:text">@string/commit</item>
+    </style>
+
+    <style name="normalEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/edit_login_padding_12dp</item>
+        <item name="android:paddingLeft">@dimen/edit_login_padding_12dp</item>
+        <item name="android:paddingRight">@dimen/edit_login_padding_12dp</item>
+        <item name="android:paddingBottom">@dimen/edit_login_padding_12dp</item>
+        <item name="android:drawablePadding">@dimen/edit_login_padding_12dp</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">?normalSize</item>
+    </style>
+
+    <style name="SourceBigTextItem">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SourceItemMainAddress" parent="SourceBigTextItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppNavItem">
+        <item name="android:paddingTop">15dp</item>
+        <item name="toRightTopX">-8dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_widthPercent">33%</item>
+        <item name="android:textSize">?normalSize</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="InvoiceLabel" parent="CommonTextView">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="ButtonTextStyle">
+        <item name="android:textSize">?normalSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonTextStyle.Dark" parent="ButtonTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MainSquare">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_text_jump_selecetor</item>
+    </style>
+
+    <style name="StatusItemStyle" parent="CommonTextView">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="BlackTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="CommonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">?normalSize</item>
+    </style>
+
+    <style name="CommonBlackTextStyle" parent="CommonTextStyle">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="SourceFilterTextLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/smaller_textsize</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="SourceFilterTextItem">
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textColor">@color/text_color_grey_white</item>
+        <item name="android:background">@drawable/bg_select_grey_accent_5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="RecyclerItemTitle" parent="CommonTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?largeSize</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BiddingTitleItem" parent="android:Widget">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="BiddingTitleTextView" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?largeSize</item>
+        <item name="android:textColor">#606a6f</item>
+    </style>
+
+    <style name="TextButtonBasic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:minWidth">55dp</item>
+        <item name="android:textSize">?smallSize</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="StaticTextItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?smallerSize</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="JingJiaStaticItem" parent="StaticTextItem">
+        <item name="android:text">竞</item>
+        <item name="android:textColor">@color/recycler_item_jingjia_static_text_color</item>
+        <item name="android:background">@drawable/recycler_item_jingjia_text_bg</item>
+    </style>
+
+    <style name="QuoteStaticItem" parent="StaticTextItem">
+        <item name="android:text">议</item>
+        <item name="android:textColor">@color/recycler_item_quote_text_color</item>
+        <item name="android:background">@drawable/recycler_item_bg_quote</item>
+    </style>
+
+    <style name="JingJiaButton" parent="TextButtonBasic">
+        <item name="android:text">竞价</item>
+        <!--<item name="android:textColor">@color/recycler_item_jingjia_text_color</item>-->
+        <item name="android:textColor">#ff9a0d</item>
+        <item name="android:background">@drawable/recycler_item_jingjia_border</item>
+    </style>
+
+    <style name="QuoteButton" parent="TextButtonBasic">
+        <item name="android:text">议价</item>
+        <!--<item name="android:textColor">@color/recycler_item_jingjia_text_color</item>-->
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/recycler_item_quote_border</item>
+    </style>
+
+    <style name="GuaJiaStaticItem" parent="StaticTextItem">
+        <item name="android:text">挂</item>
+        <item name="android:textColor">@color/recycler_item_guajia_static_text_color</item>
+        <item name="android:background">@drawable/recycler_item_guajia_text_bg</item>
+    </style>
+
+    <style name="GuaJiaButton" parent="TextButtonBasic">
+        <item name="android:text">摘牌</item>
+        <!--<item name="android:textColor">@color/recycler_item_guajia_text_color</item>-->
+        <item name="android:textColor">#1dbf89</item>
+        <item name="android:background">@drawable/recycler_item_guajia_border</item>
+    </style>
+
+    <style name="ContractSignButton" parent="TextButtonBasic">
+        <item name="android:text">签约</item>
+        <!--<item name="android:textColor">@color/recycler_item_contract_sign_text_color</item>-->
+        <item name="android:textColor">@color/text_color_accent</item>
+        <item name="android:background">@drawable/recycler_item_contract_btn_bg</item>
+    </style>
+
+    <style name="CargoTrackButton" parent="ContractSignButton">
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="InformButton" parent="CargoTrackButton">
+        <item name="android:background">@drawable/recycler_item_bg_inform_button</item>
+    </style>
+
+    <style name="InvoiceUpload" parent="ContractSignButton">
+        <item name="android:text">@string/upload</item>
+    </style>
+
+    <style name="CargoWeight" parent="StaticTextItem">
+        <item name="android:minHeight">16dp</item>
+        <item name="android:textColor">@color/recycler_item_cargo_weight_text_color</item>
+        <item name="android:background">@drawable/recycler_item_cargo_weight_bg</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CargoRemain" parent="CargoWeight">
+        <item name="android:background">@drawable/bg_recycler_item_cargo_remain</item>
+    </style>
+
+    <style name="AddressIndicator" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="AddressProvince" parent="android:Widget">
+        <item name="android:textSize">?largeSize</item>
+        <item name="android:textColor">@color/recycler_item_address_province_text_color</item>
+        <item name="android:maxEms">4</item>
+        <item name="android:minEms">4</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="AddressCity" parent="android:Widget">
+        <item name="android:textSize">?smallSize</item>
+        <item name="android:textColor">@color/recycler_item_address_city_text_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TimeLabelBelowAddress" parent="AddressCity">
+        <item name="android:textSize">?smallerSize</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:maxEms">100</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#78848d</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="YunLiContainer">
+        <item name="android:background">@drawable/bottom_divider_with_start_padding</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="YunLiLabel" parent="CommonTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:id">@id/label</item>
+    </style>
+
+    <style name="YunLiImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_arrow_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:id">@id/image</item>
+    </style>
+
+    <style name="YunLiInput" parent="CommonTextStyle">
+        <item name="android:textColor">#78848d</item>
+        <item name="android:textColorHint">#c2c9cc</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:id">@id/input</item>
+        <item name="android:layout_toLeftOf">@id/image</item>
+        <item name="android:layout_toRightOf">@id/label</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <style name="YunLiDateSeparator" parent="YunLiInput">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:id">@id/separator</item>
+        <item name="android:layout_toRightOf">@null</item>
+    </style>
+
+    <style name="YunLiEndDate" parent="YunLiInput">
+        <item name="android:layout_toRightOf">@null</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:hint">选择日期</item>
+    </style>
+
+    <style name="YunLiStartDate" parent="YunLiEndDate">
+        <item name="android:layout_toLeftOf">@id/separator</item>
+    </style>
+
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="BiddingHallItem" parent="CommonTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">?largeSize</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <!--展示 key value页面样式 兼容value为1行和多行的情况，但是 key和value字体大小需要一致-->
+    <style name="LayoutKeyValueDisplay">
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="linePosition">bottom</item>
+        <item name="lineBottomLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextKeyDisplay">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--key为黑色字体-->
+    <style name="TextKeyDisplay.BlackText">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="TextValueDisplay">
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextValueDisplay.Unit">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="UploadReceiptImageItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/icon_take_pic</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="normalEditTextStyle.RightInput">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="PasswordInput" parent="normalEditTextStyle.RightInput">
+        <item name="android:maxLength">6</item>
+        <item name="android:inputType">numberPassword</item>
+    </style>
+
+    <!--跳转TextViewItem-->
+    <style name="normalTextViewJumpStyle">
+        <item name="android:minHeight">@dimen/height_button_min</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_text_jump_selecetor</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">?normalSize</item>
+        <item name="android:drawableRight">@drawable/ic_enter_arrow</item>
+    </style>
+
+    <!--个人资料-->
+    <style name="personInformationStytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="personInformationTextStytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="personalInformationLeftTextStytle">
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="personInformationRightTextStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="completeBusInformationLeftStytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="uploadingPhotoStytle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:src">@drawable/ic_upload_photo</item>
+    </style>
+
+    <style name="normalUnitStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">@dimen/large_textsize</item>
+    </style>
+    <!--end-->
+
+    <style name="PictureSelector" parent="CommonTitleStyle">
+        <item name="android:background">@drawable/btn_text_jump_selecetor</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="NoTitleDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="normalButtonStytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/normal_btn_dark</item>
+    </style>
+
+    <style name="NormalLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingTop">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="SourceDetailTextKeyStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SourceDetailTextValueStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <style name="SourceDetailKeyStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">9dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="SourceDetailValueStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="BasicEtcCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="EtcCardTextStyle" parent="BasicEtcCardStyle">
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:padding">@dimen/margin_15dp</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="EtcTitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/yunli_item_space</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EtcCardTitleTextValueStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/yunli_item_space</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/small_textsize</item>
+    </style>
+
+    <style name="EtcCardLinearLayoutStyle" parent="BasicEtcCardStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="EtcCardBorderTextViewStyle" parent="BasicEtcCardStyle">
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:paddingBottom">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/small_textsize</item>
+        <item name="linePosition">bottom</item>
+        <item name="lineBottomLeft">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="EtcTitleKeyTextStyle" parent="BasicEtcCardStyle">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_15dp</item>
+        <item name="android:background">@color/themeColor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EtcTextViewTitleStyle" parent="BasicEtcCardStyle">
+        <item name="android:padding">@dimen/margin_15dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SelectEtcCardImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/toplogo_margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_marginRight">@dimen/yunli_item_space</item>
+        <item name="android:layout_marginTop">@dimen/toplogo_margin</item>
+    </style>
+
+    <style name="SelectCardDividerStyle">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/yunli_item_space</item>
+        <item name="android:layout_marginTop">@dimen/yunli_item_space</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="EtcBasicInfoTextKeyStyle" parent="TextKeyDisplay">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="EtcBasicInfoTextValueStyle" parent="TextValueDisplay">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="RegisterLinearLayoutStyle">
+        <item name="linePosition">bottom</item>
+        <item name="lineBottomLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegisterDividerStyle">
+        <item name="ev_position">bottom</item>
+        <item name="ev_bottomToLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegisterTextKeyStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">?normalSize</item>
+    </style>
+
+    <style name="CVStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="ev_cv_paddingTop">12dp</item>
+        <item name="ev_cv_paddingBottom">12dp</item>
+        <item name="ev_cv_labelWidth">80dp</item>
+        <item name="ev_position">bottom</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="ev_topToLeft">@dimen/margin_15dp</item>
+        <item name="ev_topToRight">@dimen/margin_15dp</item>
+        <item name="ev_bottomToLeft">@dimen/margin_15dp</item>
+        <item name="ev_bottomToRight">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="CVStyle.WhiteBg">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CVStyle.WhiteBg.Select">
+        <item name="ev_cv_gravity">end</item>
+        <item name="ev_cv_mode">display</item>
+        <item name="ev_cv_suffixIcon">@drawable/ev_enter_arrow</item>
+    </style>
+
+    <style name="RegisterTextArrow" parent="normalEditTextStyle">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:drawableRight">@drawable/ic_enter_arrow</item>
+        <item name="android:minWidth">80dp</item>
+    </style>
+
+    <style name="RegisterChooseAddStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/edit_login_padding_12dp</item>
+        <item name="android:text">(选填)</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+    </style>
+
+    <style name="RegisterTakePhotoStyle">
+        <item name="android:background">@drawable/shape_take_photo</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+        <item name="android:src">@drawable/take_photo</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="LoginApplyEtcTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/yunli_item_space</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">@dimen/smaller_textsize</item>
+    </style>
+
+    <style name="PreDeListMemberManagementTextStyle" parent="android:Widget">
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textColor">@color/dialog_body_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DepositCardIntroduceImageStyle">
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+    </style>
+
+    <style name="DepositCardIntroduceTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:layout_marginRight">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="DepositCardIntroduceItemDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_marginLeft">52dp</item>
+    </style>
+
+    <style name="NoInsuranceMoneyDialogButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dialog_button_blue</item>
+    </style>
+
+    <style name="MessageFlag" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">?smallerSize</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/shape_flag_message_blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SourceFilterAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="BillingLabel">
+        <item name="android:textSize">@dimen/small_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BillingMoney" parent="BillingLabel">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="CargoInformationItem">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">?smallSize</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CargoInformationItem.Right">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="CommonInputView" parent="android:Widget">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="CommonInputViewNormalStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="linePosition">bottom</item>
+    </style>
+
+    <style name="CommonInputViewNormalStyle.White">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CargoForecastBlockLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/smaller_textsize</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:paddingTop">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="DatePickerWidget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TradeTypeItemStyle">
+        <item name="android:textColor">@color/recycler_item_trade_type_text_color</item>
+        <item name="android:textSize">?normalSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TradeTypeItemStyle.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?largeSize</item>
+    </style>
+
+    <style name="CargoEditModeAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="CargoForecastRecyclerTitle" parent="BlackTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?largeSize</item>
+    </style>
+
+    <style name="CargoForecastRecyclerItem" parent="CargoForecastRecyclerTitle">
+        <item name="android:textSize">?smallSize</item>
+    </style>
+
+    <style name="CargoForecastVolume">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">9</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="SourcePreview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="inputGravity">start</item>
+        <item name="mode">view</item>
+    </style>
+
+    <style name="SourcePreview.Large">
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="inputTextSize">18sp</item>
+        <item name="inputLabelAsTitle">true</item>
+    </style>
+
+    <style name="SourcePreview.Small">
+        <item name="android:layout_marginTop">11.25dp</item>
+        <item name="inputTextSize">14sp</item>
+        <item name="inputAlignLeft">96dp</item>
+        <item name="inputTextColor">@color/text_grey</item>
+    </style>
+
+    <style name="QuoteProgressItemStyle" parent="CommonBlackTextStyle">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="ModifyOffer" parent="CommonInputViewNormalStyle">
+        <item name="android:layout_height">48dp</item>
+        <item name="inputAlignLeft">100dp</item>
+        <item name="inputGravity">start|center_vertical</item>
+        <item name="mode">view</item>
+    </style>
+
+    <style name="DraftButtons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TransportForecast" parent="CommonInputViewNormalStyle.White">
+        <item name="android:layout_height">48dp</item>
+        <item name="mode">select</item>
+    </style>
+
+    <style name="TransportForecast.View">
+        <item name="mode">view</item>
+        <item name="inputAlignLeft">110dp</item>
+        <item name="inputGravity">start|center_vertical</item>
+    </style>
+
+    <style name="TransportForecast.Input">
+        <item name="mode">input</item>
+        <item name="inputAlignLeft">110dp</item>
+        <item name="inputGravity">end|center_vertical</item>
+    </style>
+
+    <style name="TransportForecast.Select">
+        <item name="mode">select</item>
+        <item name="inputAlignLeft">110dp</item>
+        <item name="inputGravity">end|center_vertical</item>
+    </style>
+
+    <style name="ReceiptStyle" parent="CommonInputViewNormalStyle">
+        <item name="mode">view</item>
+        <item name="inputAlignLeft">110dp</item>
+        <item name="inputGravity">start</item>
+        <item name="inputTextSize">?smallSize</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="linePosition">none</item>
+    </style>
+
+    <style name="RecyclerArrowStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/startProvince</item>
+        <item name="android:layout_alignBottom">@id/startProvince</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:src">@drawable/icon_address_arrow</item>
+    </style>
+
+    <style name="Evaluation" parent="CommonInputViewNormalStyle">
+        <item name="linePosition">none</item>
+        <item name="inputTextSize">?smallSize</item>
+        <item name="inputAlignLeft">90dp</item>
+        <item name="inputGravity">start</item>
+        <item name="mode">view</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="RatingBarStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_15dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="starDrawable">@drawable/star</item>
+        <item name="starMargin">20dp</item>
+    </style>
+
+    <style name="CommonInputViewNormalStyle.White.Password">
+        <item name="inputCustomMethod">numberPassword</item>
+        <item name="inputCustomLength">6</item>
+    </style>
+
+    <style name="UpdateFragmentTextView" parent="CommonTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+</resources>

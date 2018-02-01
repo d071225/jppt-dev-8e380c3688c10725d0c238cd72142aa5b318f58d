@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:ev_topBarTitle="报价进度"
+    app:ev_topBarLayout="@layout/activity_toolbar">
+    <include
+        layout="@layout/activity_source_details_basic_info"
+        android:id="@+id/p1"
+        android:visibility="invisible"/>
+    <!--<include-->
+        <!--layout="@layout/activity_source_details_extra_zzjy"-->
+        <!--android:id="@+id/p2"-->
+        <!--android:visibility="invisible"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"/>
+</com.xcheng.view.widget.TopBarLayout>

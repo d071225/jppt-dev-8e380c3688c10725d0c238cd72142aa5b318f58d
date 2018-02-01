@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:ignore="RtlHardcoded">
+
+    <include
+        layout="@layout/nav_contact"
+        android:visibility="visible"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/cargo_code"
+                    app:inputLabel="@string/business_doc_no"/>
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/cargo_name"
+                    app:inputLabel="@string/cargo_name"/>
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/plate"
+                    app:inputLabel=""/>
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/des"
+                    app:inputLabel="@string/cargo_des"/>
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/address"
+                    app:inputLabel="卸货地"/>
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/ReceiptStyle"
+                    android:id="@+id/date"
+                    app:inputLabel="@string/loading_date"/>
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/LayoutKeyValueDisplay"
+                android:gravity="end"
+                android:paddingBottom="@dimen/botton_marjin"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingTop="@dimen/botton_marjin"
+                app:linePosition="top"
+                android:visibility="gone"
+                android:id="@+id/contract_block"
+                app:lineTopLeft="@dimen/margin_15dp">
+
+                <TextView
+                    android:id="@+id/contract"
+                    android:layout_width="64dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_contract_review"
+                    android:gravity="center"
+                    android:text="@string/contract_review"
+                    android:textColor="@color/colorAccent"/>
+
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                style="@style/CommonInputViewNormalStyle"
+                app:inputLabel="@string/arrival_ct"
+                app:inputHint="@string/cargo_number"
+                app:inputCustomMethod="number"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:id="@+id/unit_ct"/>
+            <com.hletong.hyc.ui.widget.CommonInputView
+                style="@style/CommonInputViewNormalStyle"
+                app:inputLabel="@string/arrival_weight"
+                app:inputHint="@string/cargo_weight"
+                app:inputCustomMethod="numberDecimal"
+                app:inputTextSuffix="吨"
+                android:background="@color/white"
+                android:id="@+id/weight"/>
+            <com.hletong.hyc.ui.widget.CommonInputView
+                style="@style/CommonInputViewNormalStyle"
+                app:inputLabel="@string/receive_password"
+                app:inputHint="@string/receive_password_hint"
+                app:inputCustomMethod="numberPassword"
+                app:inputCustomLength="6"
+                android:background="@color/white"
+                android:id="@+id/receive_psw"
+                android:visibility="gone"/>
+            <com.hletong.hyc.ui.widget.CommonInputView
+                style="@style/CommonInputViewNormalStyle"
+                app:inputLabel="@string/transport_password"
+                app:inputHint="@string/transport_password_hint"
+                app:inputCustomMethod="numberPassword"
+                app:inputCustomLength="6"
+                android:background="@color/white"
+                android:id="@+id/loading_psw"
+                android:visibility="gone"/>
+            <include
+                layout="@layout/block_image_upload"
+                android:visibility="gone"
+                android:id="@+id/primary"/>
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/block_image_upload"
+                android:id="@+id/secondary"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"/>
+
+            <RelativeLayout
+                android:id="@+id/confirm_block"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:background="@color/white"
+                android:padding="@dimen/margin_15dp">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/confirm_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/checkbox"
+                    android:textColor="@color/dialog_body_text_color"
+                    android:textSize="@dimen/title_textsize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/confirm_title"
+                    android:layout_below="@id/confirm_title"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/fee_delay_content"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/smaller_textsize"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"/>
+            <com.xcheng.view.processbtn.SubmitProcessButton
+                android:id="@+id/submit"
+                android:visibility="gone"
+                style="@style/greenCompleteBtnStyle" />
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>
+

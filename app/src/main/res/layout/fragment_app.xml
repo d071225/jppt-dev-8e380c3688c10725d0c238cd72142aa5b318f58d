@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/ylyb"
+            style="@style/AppNavItem"
+            android:drawableTop="@drawable/home_yunliyubao"
+            android:text="@string/transport_forecast"
+            app:button_text="运" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/gjzp"
+            style="@style/AppNavItem"
+            android:layout_toRightOf="@id/ylyb"
+            android:drawableTop="@drawable/home_guajiazhaipai"
+            android:text="@string/gjzp" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/jjtb"
+            style="@style/AppNavItem"
+            android:layout_toRightOf="@id/gjzp"
+            android:drawableTop="@drawable/home_jingjiatoubiao"
+            android:text="@string/competitive_bidding" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/wqcy"
+            style="@style/AppNavItem"
+            android:layout_below="@id/ylyb"
+            android:drawableTop="@drawable/home_wangqianchengyun"
+            android:text="@string/contract_block" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/hygg"
+            style="@style/AppNavItem"
+            android:layout_below="@id/gjzp"
+            android:layout_toRightOf="@id/wqcy"
+            android:drawableTop="@drawable/home_huoyuangonggao"
+            android:text="@string/cargo_block" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/fhd"
+            style="@style/AppNavItem"
+            android:layout_below="@id/jjtb"
+            android:layout_toRightOf="@id/hygg"
+            android:drawableTop="@drawable/home_fahuodan"
+            android:text="@string/invoice_block" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/shd"
+            style="@style/AppNavItem"
+            android:layout_below="@id/wqcy"
+            android:drawableTop="@drawable/home_shouhuodan"
+            android:text="@string/receipt_block" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/xx"
+            style="@style/AppNavItem"
+            android:layout_below="@id/hygg"
+            android:layout_toRightOf="@id/shd"
+            android:drawableTop="@drawable/home_xinxi"
+            android:text="@string/message_block" />
+
+        <com.hletong.mob.widget.UndoTextView
+            android:id="@+id/zf"
+            style="@style/AppNavItem"
+            android:layout_below="@id/fhd"
+            android:layout_toRightOf="@id/xx"
+            android:drawableTop="@drawable/home_zhifu"
+            android:text="@string/payment_block" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/anim_container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom|left">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/src_action_driver_car" />
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/src_action_driver_text"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</FrameLayout>

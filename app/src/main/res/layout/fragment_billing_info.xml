@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="26dp"
+        android:paddingBottom="26dp"
+        android:background="@color/toolbarBottomColor">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/BillingLabel"
+                android:text="@string/billing_total_money"/>
+            <TextView
+                style="@style/BillingMoney"
+                android:id="@+id/total_billing_money"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/BillingLabel"
+                android:text="@string/wait_billing_money"/>
+            <TextView
+                style="@style/BillingMoney"
+                android:id="@+id/wait_billing_money"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/recycler_item_cargo_track_status"/>
+    <include
+        layout="@layout/common_recycler_list"/>
+</LinearLayout>

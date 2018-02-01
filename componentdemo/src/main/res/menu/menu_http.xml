@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/string"
+        android:title="String"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/image"
+        android:title="Image"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/jsonItem"
+        android:title="jsonItem"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/jsonList"
+        android:title="jsonList"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="其他信息"
+    tools:context="com.hletong.hyc.ui.activity.AboutUsActivity">
+
+    <com.hletong.mob.validator.view.ValFrameLayout
+        android:id="@+id/val_organization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:val_emptyMsg="请选择是否为共产党员"
+        app:val_key="@string/key_isOrganization"
+        app:val_resultType="text">
+        <com.hletong.hyc.ui.widget.CommonInputView
+            style="@style/TransportForecast.View"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="共产党员"
+            app:linePosition="bottom|top"
+            app:mode="select" />
+    </com.hletong.mob.validator.view.ValFrameLayout>
+
+    <com.hletong.mob.validator.view.ValFrameLayout
+        android:id="@+id/val_soldier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:val_emptyMsg="请选择是否为退伍军人"
+        app:val_key="@string/key_soldierInfo"
+        app:val_resultType="map">
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            style="@style/TransportForecast.View"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="退伍军人"
+            app:linePosition="bottom|top"
+            app:mode="select" />
+    </com.hletong.mob.validator.view.ValFrameLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:layout_marginBottom="@dimen/submit_marginTop"
+        android:layout_marginTop="@dimen/submit_marginTop"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/topBarStyle">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="请输入具体内容"
+        android:minHeight="96dp"
+        android:padding="6dp"/>
+
+    <View
+        android:layout_width="@dimen/margin_15dp"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <com.hletong.mob.gallery.widget.PickerRecyclerView
+        android:id="@+id/picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+    <com.xcheng.view.processbtn.SubmitProcessButton
+        android:id="@+id/submit"
+        style="@style/greenCompleteBtnStyle" />
+</com.xcheng.view.widget.TopBarLayout>

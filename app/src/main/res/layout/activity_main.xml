@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/main_title">
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/ev_id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xcheng.view.widget.PagerSlidingTabStrip
+            android:id="@id/ev_id_tab_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:ev_pstsDividerColor="@color/transparent"
+            app:ev_pstsIndicatorHeight="0dp"
+            app:ev_pstsShouldExpand="true"
+            app:ev_pstsUnderlineHeight="0dp" />
+
+        <TextView
+            android:id="@+id/tv_redUndo"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+</com.xcheng.view.widget.TopBarLayout>

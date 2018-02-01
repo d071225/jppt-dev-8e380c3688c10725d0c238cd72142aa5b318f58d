@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.component.simple.MainActivity">
+
+    <android.support.v7.widget.Toolbar style="@style/BaseToolbarStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="自定义View"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="end|center_vertical"
+        app:inputHint="右侧输入会员名"
+        app:inputLabel="会员名"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom|top"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="start|center_vertical"
+        app:inputHint="左侧输入会员名"
+        app:inputLabel="会员名"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="start|center_vertical"
+        app:inputHint="分割先为主题色"
+        app:inputLabel="会员名"
+        app:lineBottomColor="@color/themeColor"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="start|center_vertical"
+        app:inputHint="分割线高度为5px"
+        app:inputLabel="会员名"
+        app:lineBottomColor="@color/themeColor"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:lineWidth="5px"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        android:layout_marginTop="20dp"
+        app:inputGravity="start|center_vertical"
+        app:inputHint="分割线距离控件左侧为100px"
+        app:inputLabel="会员名"
+        app:lineBottomColor="@color/themeColor"
+        app:lineBottomLeft="100px"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        android:layout_marginTop="20dp"
+        app:inputGravity="start|center_vertical"
+        app:inputHint="上下都有分割线"
+        app:inputLabel="会员名"
+        app:lineBottomColor="@color/themeColor"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom|top"
+        app:lineTopColor="@color/green"
+        app:lineTopLeft="@dimen/margin_15dp"
+        app:lineTopRight="@dimen/margin_15dp"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="end|center_vertical"
+        app:inputHint="带单位的输入框"
+        app:inputLabel="重量"
+        app:inputTextSuffix="吨"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:mode="input" />
+
+    <com.component.simple.CommonInputView
+        style="@style/TransportForecast.View"
+        app:inputGravity="end|center_vertical"
+        app:inputHint="请选择"
+        app:inputLabel="车辆类型"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:lineBottomRight="@dimen/margin_15dp"
+        app:linePosition="bottom"
+        app:mode="select" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.hletong.mob.widget.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@color/transparent"
+            app:civ_border_color="@color/blue"
+            app:civ_border_width="2dp" />
+
+        <com.hletong.mob.widget.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/circle"
+            app:civ_border_color="@color/red_dark"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+</LinearLayout>

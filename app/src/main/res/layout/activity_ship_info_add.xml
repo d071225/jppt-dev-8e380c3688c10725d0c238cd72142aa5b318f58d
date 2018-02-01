@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="船舶信息"
+    tools:context=".ui.activity.truck.RegisterTruckInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_shipType"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/choose"
+            app:inputLabel="*船舶类型"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="select" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_shipLength"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="船长"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:inputTextSuffix="@string/meter"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_loadedWater"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*满载吃水"
+            app:inputTextSuffix="@string/meter"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_newTonnage"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="净吨重"
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_loadTon"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*载重吨位"
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            android:id="@+id/cv_gjzsh"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*国籍证书号"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="保存" />
+</com.xcheng.view.widget.TopBarLayout>

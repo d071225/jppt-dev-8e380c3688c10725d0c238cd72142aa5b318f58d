@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayoutt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:context="com.hletong.hyc.ui.activity.CompleteVehicleInfoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/carNumber"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/TextValueDisplay"
+                    android:gravity="right"
+                    android:hint="@string/hint_plate" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/sfzCard" />
+
+                <EditText
+                    android:id="@+id/et_sfzId"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/addSfzID"
+                    android:inputType="number"
+                    android:paddingRight="0dp" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/LayoutKeyValueDisplay"
+                app:lineBottomLeft="0dp">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/et_add_phonenumber"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="number" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/LayoutKeyValueDisplay"
+                android:layout_marginTop="@dimen/textjumper_margin"
+                app:linePosition="bottom|top"
+                app:lineTopLeft="0dp">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/truckType"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    style="@style/TextValueDisplay"
+                    android:gravity="right"
+                    android:textColor="@color/text_grey" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/max_capacity" />
+
+                <EditText
+                    android:id="@+id/et_maxweight"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/hint_max_capacity"
+                    android:inputType="number"
+                    android:paddingRight="6dp" />
+
+                <TextView
+                    style="@style/normalUnitStytle"
+                    android:text="@string/ton" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/truck_length" />
+
+                <EditText
+                    android:id="@+id/et_carlength"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/hint_truck_length"
+                    android:inputType="number"
+                    android:paddingRight="6dp" />
+
+                <TextView
+                    style="@style/normalUnitStytle"
+                    android:text="@string/meter" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/truck_width" />
+
+                <EditText
+                    android:id="@+id/et_carwidth"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/hint_truck_width"
+                    android:inputType="number"
+                    android:paddingRight="6dp" />
+
+                <TextView
+                    style="@style/normalUnitStytle"
+                    android:text="@string/meter" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/LayoutKeyValueDisplay"
+                app:lineBottomLeft="0dp">
+
+                <TextView
+                    style="@style/TextKeyDisplay.BlackText"
+                    android:text="@string/truck_height" />
+
+                <EditText
+                    android:id="@+id/et_carheight"
+                    style="@style/normalEditTextStyle.RightInput"
+                    android:hint="@string/hint_truck_height"
+                    android:inputType="number"
+                    android:paddingRight="6dp" />
+
+                <TextView
+                    style="@style/normalUnitStytle"
+                    android:text="@string/meter" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/bl_xsz"
+                style="@style/completeBusInformationLeftStytle"
+                android:layout_marginTop="@dimen/textjumper_margin"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom|top"
+                app:lineTopLeft="0dp">
+
+                <TextView
+                    style="@style/personalInformationLeftTextStytle"
+                    android:text="@string/xsz"
+                    android:textColor="@color/text_black" />
+
+                <ImageView
+                    android:id="@+id/iv_xsz"
+                    style="@style/uploadingPhotoStytle" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/bl_jsz"
+                style="@style/completeBusInformationLeftStytle"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom">
+
+                <TextView
+                    style="@style/personalInformationLeftTextStytle"
+                    android:text="@string/jsz"
+                    android:textColor="@color/text_black" />
+
+                <ImageView
+                    android:id="@+id/iv_jsz"
+                    style="@style/uploadingPhotoStytle" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/bl_sfz"
+                style="@style/completeBusInformationLeftStytle"
+                app:lineBottomLeft="0dp"
+                app:linePosition="bottom">
+
+                <TextView
+                    style="@style/personalInformationLeftTextStytle"
+                    android:text="@string/sfz"
+                    android:textColor="@color/text_black" />
+
+                <ImageView
+                    android:id="@+id/iv_sfz"
+                    style="@style/uploadingPhotoStytle" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.xcheng.view.processbtn.SubmitProcessButton
+        android:id="@+id/submit"
+        style="@style/greenCompleteBtnStyle" />
+</com.xcheng.view.widget.TopBarLayoutt>

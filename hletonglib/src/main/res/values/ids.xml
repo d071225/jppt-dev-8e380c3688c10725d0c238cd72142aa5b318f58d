@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--加载更多的id-->
+    <item name="id_textLoadMore" type="id" />
+    <item name="id_progressBarLoadMore" type="id" />
+    <item name="id_emptyView" type="id" />
+
+    <item name="id_ptrHLFrameLayout" type="id" />
+    <item name="id_recyclerView" type="id" />
+    <item name="id_fragment_container" type="id" />
+    <item name="id_header_time" type="id" />
+
+    <item name="id_positiveBtn" type="id" />
+    <item name="id_negativeBtn" type="id" />
+    <item name="id_cancel" type="id" />
+
+    <item name="id_webView" type="id" />
+
+</resources>

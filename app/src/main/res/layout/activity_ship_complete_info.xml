@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/shiprenzheng">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/shipCompleteTip"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/normal_textsize" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/shipNum" />
+
+                <EditText
+                    android:gravity="center_vertical|right"
+                    android:id="@+id/et_shipNumber"
+                    style="@style/normalEditTextStyle"
+                    android:hint="@string/hint_shipNumber" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/RegisterLinearLayoutStyle"
+                app:linePosition="bottom">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/ship_info" />
+
+                <TextView
+                    android:gravity="center_vertical|right"
+                    android:id="@+id/tv_jumpShipInfo"
+                    style="@style/RegisterTextArrow"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/choose" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/RegisterLinearLayoutStyle"
+                app:linePosition="bottom">
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="添加证件资料" />
+
+                <TextView
+                    android:gravity="center_vertical|right"
+                    android:id="@+id/tv_selectUpPhoto"
+                    style="@style/RegisterTextArrow"
+                    android:layout_centerVertical="true"
+                    android:text="请选择一种证件上传" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

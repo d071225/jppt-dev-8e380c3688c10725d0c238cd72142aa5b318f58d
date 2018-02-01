@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/bankCardInfo">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/cv_bankcard_add"
+        style="@style/TransportForecast.View"
+        app:inputGravity="end|center_vertical"
+        app:inputLabel="添加银行卡信息"
+        app:inputText="请添加"
+        app:linePosition="bottom"
+        app:mode="select" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/id_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

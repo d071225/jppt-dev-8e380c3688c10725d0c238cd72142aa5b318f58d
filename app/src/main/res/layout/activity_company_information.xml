@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CompanyInformationActivity"
+    >
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--style="@style/fitSystemWindowToolbar">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/personinformation"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/normal_textsize" />-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout-->
+        <!--style="@style/personInformationStytle"-->
+        <!--app:lineBottomLeft="@dimen/nav_callLog_corner"-->
+        <!--app:linePosition="bottom"-->
+        <!--android:id="@+id/bl_setPhoto">-->
+        <!--<TextView-->
+            <!--style="@style/personalInformationLeftTextStytle"-->
+            <!--android:text="@string/photosetting" />-->
+        <!--<com.hletong.mob.widget.RoundImageView-->
+            <!--android:id="@+id/rd_photo"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:src="@drawable/logo_user" />-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_enterarrow"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginRight="@dimen/marginLeftAndRight"-->
+            <!--android:src="@drawable/ic_enter_arrow" />-->
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout-->
+        <!--style="@style/personInformationStytle"-->
+        <!--app:lineBottomLeft="0dp"-->
+        <!--app:linePosition="bottom">-->
+        <!--<TextView-->
+            <!--style="@style/personalInformationLeftTextStytle"-->
+            <!--android:text="@string/userId" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/userId"-->
+            <!--style="@style/personInformationRightTextStytle"-->
+            <!--android:text="@string/huiyuanbianhao" />-->
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout-->
+        <!--style="@style/LayoutKeyValueDisplay"-->
+        <!--android:layout_marginTop="@dimen/textjumper_margin"-->
+        <!--app:linePosition="bottom|top">-->
+        <!--<TextView-->
+            <!--style="@style/TextKeyDisplay"-->
+            <!--android:text="@string/companyname" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_companyname"-->
+            <!--style="@style/TextValueDisplay"-->
+            <!--android:gravity="right"-->
+            <!--android:text="@string/main_titlename" />-->
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">-->
+
+        <!--<TextView-->
+            <!--style="@style/TextKeyDisplay"-->
+            <!--android:text="@string/username" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_username"-->
+            <!--style="@style/TextValueDisplay"-->
+            <!--android:gravity="right"-->
+            <!--android:text="@string/main_titlename" />-->
+
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">-->
+
+        <!--<TextView-->
+            <!--style="@style/TextKeyDisplay"-->
+            <!--android:text="@string/companyContract" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_relative"-->
+            <!--style="@style/TextValueDisplay"-->
+            <!--android:gravity="right"-->
+            <!--android:text="@string/relative" />-->
+
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">-->
+        <!--<TextView-->
+            <!--style="@style/TextKeyDisplay"-->
+            <!--android:text="@string/relativephonenum" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_PhoneNumber"-->
+            <!--style="@style/TextValueDisplay"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="right"-->
+            <!--android:text="1886888688" />-->
+
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderLinearLayout-->
+        <!--style="@style/LayoutKeyValueDisplay"-->
+        <!--app:lineBottomLeft="0dp">-->
+
+        <!--<TextView-->
+            <!--style="@style/TextKeyDisplay"-->
+            <!--android:text="@string/companyaddress" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_componyaddress"-->
+            <!--style="@style/TextValueDisplay"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="right"-->
+            <!--android:text="@string/CompanyAddress" />-->
+
+    <!--</com.hletong.mob.widget.BorderLinearLayout>-->
+
+    <!--<com.hletong.mob.widget.BorderTextView-->
+        <!--android:id="@+id/bl_copanyinformation"-->
+        <!--style="@style/normalTextViewJumpStyle"-->
+        <!--android:layout_marginTop="@dimen/textjumper_margin"-->
+        <!--android:text="@string/completeinformation"-->
+        <!--android:textColor="@color/text_grey"-->
+        <!--app:linePosition="bottom|top" />-->
+</LinearLayout>

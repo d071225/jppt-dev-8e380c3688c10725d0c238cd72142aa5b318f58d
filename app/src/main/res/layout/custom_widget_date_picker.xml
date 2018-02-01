@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        style="@style/DatePickerWidget"
+        android:id="@+id/from"
+        android:hint="选择日期"/>
+    <TextView
+        style="@style/DatePickerWidget"
+        android:id="@+id/separator"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="至"/>
+    <TextView
+        style="@style/DatePickerWidget"
+        android:id="@+id/to"
+        android:hint="选择日期"/>
+</merge>

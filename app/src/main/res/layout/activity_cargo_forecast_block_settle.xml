@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="付款方"
+        app:inputHint="请选择"
+        android:id="@+id/payer"
+        app:mode="select"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="受票方"
+        app:inputHint="请选择"
+        android:id="@+id/billReceiver"
+        app:mode="select"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="结算权限"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/settleAuth"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="收费依据"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/chargeType"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="发货人"
+        app:inputLabelHint="(选填)"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/shipper"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="收货人"
+        app:inputLabelHint="(选填)"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/receiver"/>
+</LinearLayout>

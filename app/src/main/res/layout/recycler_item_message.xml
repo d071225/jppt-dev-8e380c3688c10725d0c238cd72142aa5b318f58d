@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recycler_item_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_15dp"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.hletong.hyc.ui.widget.FlagTextView
+            style="@style/MessageFlag"
+            android:text="测"
+            android:id="@+id/tv_flag" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_flagText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_black"
+            android:textSize="?normalSize" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:textSize="?smallerSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.2"
+            android:ellipsize="end"
+            android:textColor="#606a6f"
+            android:textSize="?smallSize"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/star"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:src="@drawable/selector_message_collection"/>
+    </LinearLayout>
+</LinearLayout>

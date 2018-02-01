@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.component.simple.MainActivity">
+
+    <android.support.v7.widget.Toolbar style="@style/BaseToolbarStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Form表单验证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.component.simple.CommonInputView
+            app:val_key="truckCode"
+            app:val_name="车辆识别代码"
+            android:id="@+id/cv_truckCode"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*车辆识别代码"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="truckLength"
+            app:val_name="车厢长度"
+            app:val_from="2"
+            app:val_to="8"
+
+            android:id="@+id/cv_truckLength"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*车厢长度"
+            app:inputTextSuffix="@string/meter"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="vehicleMass"
+            android:id="@+id/cv_vehicleMass"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*车辆载重量"
+            app:val_name="车辆载重量"
+
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="loadedVehicleQuality"
+
+            android:id="@+id/cv_loadedVehicleQuality"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*满载车辆重量"
+            app:val_name="满载车辆重量"
+
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="load_ton"
+            android:id="@+id/cv_load_ton"
+            style="@style/TransportForecast.View"
+            app:inputCustomMethod="numberDecimal"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="*载重吨位"
+            app:val_name="载重吨位"
+
+            app:inputTextSuffix="@string/ton"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="load_qualification_certificate"
+            android:id="@+id/cv_qualification_certificate"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="从业资格证书"
+            app:val_name="从业资格证书"
+
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <com.component.simple.CommonInputView
+            app:val_key="road_transport_certificate"
+            android:id="@+id/cv_road_transport_certificate"
+            style="@style/TransportForecast.View"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:val_name="道路运输执照"
+
+            app:inputLabel="道路运输执照"
+            app:lineBottomLeft="@dimen/margin_15dp"
+            app:lineBottomRight="@dimen/margin_15dp"
+            app:linePosition="bottom"
+            app:mode="input" />
+
+        <TextView
+            android:id="@+id/tv_formMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_validator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="表单验证"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="HLETAppTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+    <!--状态栏透明需要设置的样式-->
+    <style name="fitSystemWindowToolbar"  parent="ToolbarStyle">
+        <item name="android:paddingTop">@dimen/statusBar_height</item>
+        <item name="android:layout_height">@dimen/toolbar_height_fitSystemWindows</item>
+    </style>
+</resources>

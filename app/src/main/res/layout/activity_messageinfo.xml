@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:tools="http://schemas.android.com/tools"
+                                     style="@style/topBarStyle"
+                                     tools:context="com.hletong.hyc.ui.activity.AboutUsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_15dp">
+
+            <TextView
+                android:id="@+id/tv_messageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text_black"
+                android:textSize="?normalSize"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="@string/main_title"
+                android:textColor="@color/text_black"
+                android:textSize="?normalSize"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_black"
+                android:textSize="?normalSize"
+                android:visibility="gone"/>
+
+            <ViewStub
+                android:id="@+id/image_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout="@layout/block_image_upload"/>
+            <com.xcheng.view.processbtn.SubmitProcessButton
+                android:id="@+id/submit"
+                android:text="@string/upload"
+                android:visibility="gone"
+                style="@style/greenCompleteBtnStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout="@layout/alert_dialog_two_button"/>
+</com.xcheng.view.widget.TopBarLayout>

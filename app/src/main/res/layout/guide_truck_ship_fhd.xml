@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="40dp"
+        android:src="@drawable/line_guide_fhd"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用于车船会员在装货地装货完毕，\n对实际装货量与发货人共同密码确认\n上传至平台"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_textsize"/>
+</LinearLayout>

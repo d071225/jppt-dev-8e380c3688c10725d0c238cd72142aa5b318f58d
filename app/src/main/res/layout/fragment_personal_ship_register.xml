@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:text="@string/registerAd"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/small_textsize"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/step_margin"
+                android:layout_marginRight="@dimen/step_margin"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_step_sel"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/stroke_step"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_step_nor"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/stroke_step"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_step_nor"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smaller_textsize"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/baseInfo"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/set_password"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/smaller_textsize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/phoneVerificationCode"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/smaller_textsize"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/shipNum"/>
+
+                <EditText
+                    android:id="@+id/et_shipNumber"
+                    style="@style/normalEditTextStyle"
+                    android:hint="@string/hint_shipNumber"/>
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/ship_owner"/>
+
+                <EditText
+                    android:id="@+id/et_shipOwner"
+                    style="@style/normalEditTextStyle"
+                    android:hint="@string/hint_shipOwner"/>
+
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/address"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/RegisterTextArrow"
+                    android:hint="@string/hint_address"/>
+
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+                <TextView
+                    style="@style/RegisterTextKeyStyle"
+                    android:text="@string/member_name"/>
+
+                <EditText
+                    android:id="@+id/et_loginname"
+                    style="@style/normalEditTextStyle"
+                    android:hint="@string/hint_username"/>
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:background="@drawable/shape_bottom_line_whitebg">
+
+                <TextView
+                    android:id="@+id/tv_identify"
+                    style="@style/RegisterTextKeyStyle"
+                    android:layout_marginTop="@dimen/edit_login_padding_12dp"
+                    android:text="@string/sfz"/>
+
+                <TextView
+                    style="@style/RegisterChooseAddStyle"
+                    android:layout_below="@id/tv_identify"/>
+
+                <EditText
+                    android:id="@+id/identify_num"
+                    style="@style/normalEditTextStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_identify"
+                    android:hint="@string/add_info"/>
+
+                <ImageView
+                    android:id="@+id/identify_photo"
+                    style="@style/RegisterTakePhotoStyle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:background="@drawable/shape_bottom_line_whitebg">
+
+                <TextView
+                    android:id="@+id/tvShip_license"
+                    style="@style/RegisterTextKeyStyle"
+                    android:layout_marginTop="@dimen/edit_login_padding_12dp"
+                    android:text="@string/ship_license"/>
+
+                <TextView
+                    style="@style/RegisterChooseAddStyle"
+                    android:layout_below="@id/tvShip_license"/>
+
+                <EditText
+                    android:id="@+id/ship_license_num"
+                    style="@style/normalEditTextStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tvShip_license"
+                    android:hint="@string/add_info"/>
+
+                <ImageView
+                    android:id="@+id/ship_license_photo"
+                    style="@style/RegisterTakePhotoStyle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_bottom_line_whitebg"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp">
+
+                <TextView
+                    android:id="@+id/tvShip_info"
+                    style="@style/RegisterTextKeyStyle"
+                    android:layout_marginTop="@dimen/edit_login_padding_12dp"
+                    android:text="@string/ship_info"/>
+
+                <TextView
+                    style="@style/RegisterChooseAddStyle"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvShip_info"/>
+
+                <TextView
+                    android:id="@+id/jumpShipInfo"
+                    style="@style/RegisterTextArrow"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tvShip_info"
+                    android:hint="@string/choose"/>
+            </RelativeLayout>
+            <include layout="@layout/layout_member_unit" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/bgColor" />
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cv_otherInfos"
+                style="@style/TransportForecast.View"
+                app:inputGravity="end|center_vertical"
+                app:inputHint="@string/choose"
+                app:inputLabel="其他信息"
+                app:linePosition="bottom|top"
+                app:mode="select" />
+        </LinearLayout>
+        <com.hletong.hyc.ui.widget.SmoothClickCheckBox
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:id="@+id/cb_company_ship"
+            android:text="该船舶落户在物流公司，实际为本人所有"/>
+        <com.hletong.hyc.ui.widget.SmoothClickCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="本人已阅读并同意签订"
+            android:id="@+id/agreement"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:paddingTop="@dimen/margin_15dp"
+            android:text="@string/truck_attention"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/small_textsize"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/submitStyle"
+            android:text="@string/next"/>
+    </LinearLayout>
+</ScrollView>

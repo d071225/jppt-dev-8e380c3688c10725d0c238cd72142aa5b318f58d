@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:ev_topBarLayout="@layout/activity_toolbar">
+
+    <include layout="@layout/nav_contact" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_source_details_basic_info" />
+
+            <include layout="@layout/activity_source_details_extra_zzjy" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="?android:windowBackground" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/carrier"
+                style="@style/ModifyOffer"
+                app:inputLabel="承运车辆"
+                app:inputText="" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/count"
+                style="@style/ModifyOffer"
+                app:inputLabel="承运数量"
+                app:inputText="" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/price"
+                style="@style/ModifyOffer"
+                app:inputLabel="报价"
+                app:inputText="" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/totalPrice"
+                style="@style/ModifyOffer"
+                app:inputLabel="报价运费总额"
+                app:inputText="" />
+
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/hint_self_trade_contract"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/submitStyle"
+                android:text="修改报价" />
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="无"
+        android:id="@+id/none"/>
+    <item android:title="11%"
+        android:id="@+id/elp"/>
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_dialog_center"
+    android:minWidth="250dp"
+    android:paddingTop="@dimen/tipDialog_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="@dimen/tipDialog_padding"
+        android:paddingLeft="@dimen/tipDialog_padding"
+        android:paddingBottom="@dimen/tipDialog_padding"
+        android:text="1312312"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/tipDialog_padding"
+        android:paddingLeft="@dimen/tipDialog_padding"
+        android:paddingRight="@dimen/tipDialog_padding"
+        android:text="1312312"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:linePosition="top">
+
+        <TextView
+            android:id="@id/id_negativeBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#78848d"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dae1e5" />
+
+        <TextView
+            android:id="@id/id_positiveBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#00AAEE"
+            android:textSize="18sp" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+</LinearLayout>

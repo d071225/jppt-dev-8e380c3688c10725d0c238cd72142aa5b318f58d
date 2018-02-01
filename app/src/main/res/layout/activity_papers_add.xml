@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/certificateInfo">
+
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:id="@+id/cv_papers"
+        style="@style/TransportForecast.View"
+        app:inputGravity="end|center_vertical"
+        app:inputLabel="添加证件资料"
+        app:inputText="请选择一种证件上传"
+        app:linePosition="bottom"
+        app:mode="select" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/id_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/submitStyle"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

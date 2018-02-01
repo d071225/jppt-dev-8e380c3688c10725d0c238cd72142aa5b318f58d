@@ -1,0 +1,721 @@
+<!DOCTYPE resources[<!ENTITY nbsp "&#160;">]>
+<resources>
+    <string name="app_name">惠龙易通车主版</string>
+
+    <string name="main_title">惠龙易通</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tab_main">应用</string>
+    <string name="history">历史</string>
+    <string name="customer_service">联系客服</string>
+    <string name="failed_to_load_data">加载数据失败</string>
+    <string name="view">查看</string>
+    <string name="official_website">官网 http://www.hletong.com/</string>
+    <string name="apply_etc">申请办理惠龙卡</string>
+    <string name="etc_hint_exit">退出后填写的信息不会保存，确定要退出吗？</string>
+    <string name="update">更新</string>
+    <string name="invalid_param">参数出错</string>
+    <string name="select_hint">请选择</string>
+    <string name="hint">提示</string>
+
+
+    <string name="transport_forecast">运力预报</string>
+    <string name="cargo_forecast">货源预报</string>
+    <string name="cargo_match">撮合货源</string>
+    <string name="cargo_existing">场内货源</string>
+    <string name="gjzp">挂价摘牌</string>
+    <string name="bid_block">竞价投标</string>
+    <string name="contract_block">网签承运</string>
+    <string name="contract_hfht">货方合同</string>
+    <string name="cargo_block">货源公告</string>
+    <string name="invoice_block">发货单</string>
+    <string name="receipt_block">收货单</string>
+    <string name="message_block">信息</string>
+    <string name="payment_block">支付</string>
+    <string name="favorite_routine">常跑路线</string>
+    <string name="add_favorite_routine">添加常跑路线</string>
+    <string name="delete_favorite_routine">删除常跑路线</string>
+    <string name="delete_favorite_routine_message">确定要删除%1$s吗？</string>
+
+    <!--打电话-->
+    <string name="call_customer_service">联系客服</string>
+    <string name="phone_no">0511&#8211;85188888</string>
+    <string name="custom_service_no">0511&#8211;85188888</string>
+
+    <!--登录-->
+
+    <string name="login_member">会员登录</string>
+
+    <string name="hint_username">请输入会员名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="applyCard">申请办理惠龙卡</string>
+    <string name="net">官网 http://www.hletong.com/</string>
+    <string name="userContract">惠龙用户注册协议</string>
+    <string name="apply_info">申请办理惠龙ETC卡为会员特权，如您已有账号请先登录，无账号请注册</string>
+    <string name="handle_etc">办理惠龙卡</string>
+    <string name="service_hot_line">客服热线</string>
+    <string name="hlet_official_website">惠龙易通官网</string>
+    <string name="register_contract">惠龙易通用户注册协议</string>
+    <string name="read_ensure">阅读并确认</string>
+
+    <string name="register_contract_detail">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;欢迎您访问惠龙易通货物运输集中配送平台！\n\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;本平台以实名会员制为基础，平台本身作为主承运人竭诚为您提供最安全、最经济的货物运输服务。请您在注册入会之前，仔细阅读以下内容：\n\n
+    一、申请注册的新用户必须能够独立承担相应的法律责任并遵守国家的法律法规。\n\n
+    二、平台会员主要分为会员管理单位、货方会员、车辆会员、船舶会员及个人代理会员。\n\n
+    三、用户线上注册成为平台会员后，平台根据会员提交资料信息的完整度分配会员权限，货方会员、车辆会员、船舶会员在权限内参与自主交易、自主开票交易、平台开票交易。\n\n
+    四、平台开票交易货运业务是平台作为主承运人向货方会员承接货运业务，并将承接的待运货物信息向所有车船会员公开发布，摘牌中标的车船取得标的货物的实际承运权。货运业务结束，平台向货方会员开票结算，向车船会员支付运费总收入。\n\n
+    五、平台对各类协议、守则、细则及公告等内容拥有最终的解释权和修改权。\n\n
+    </string>
+    <string name="registerAd">注册入会有货运&#160;&#160;&#160;&#160;现金结算速度快\n车船贷款利率低&#160;&#160;&#160;&#160;加油通行优惠多</string>
+    <string name="registerAd_cargo">注册入会车船多&#160;&#160;&#160;&#160;空驶运力运费低\n货运安全有保障&#160;&#160;&#160;&#160;运费贷款利率低</string>
+
+    <!--船主版-->
+    <string name="shipNum">船号</string>
+    <string name="hint_shipNumber">请输入船号</string>
+    <string name="ship_owner">船舶所有人</string>
+    <string name="hint_shipOwner">请输入船舶所有人</string>
+
+    <string name="ship_license">船舶国籍证书</string>
+    <string name="ship_info">船舶信息</string>
+    <string name="ship_type">船舶类型</string>
+    <string name="ship_length">船长</string>
+    <string name="ship_width">型宽</string>
+    <string name="ship_deep">型深</string>
+    <string name="ship_full">满载吃水</string>
+    <string name="ship_capacity">载重吨位</string>
+
+    <!--注册底部电话Dialog-->
+    <string name="contactService">联系电话</string>
+    <string name="phoneService">0511&#8211;851888888</string>
+
+    <string name="personalRegister">个人注册</string>
+    <string name="companyRegister">公司注册</string>
+
+    <string name="carNumber">车牌号</string>
+    <string name="carNum">车号</string>
+    <string name="hint_carNumber">请输入车号</string>
+
+    <string name="xinming">姓名</string>
+    <string name="hint_xinming">请输入姓名</string>
+
+    <string name="username">用户名</string>
+    <string name="member_name">会员名</string>
+    <string name="car_owner">车辆所有人</string>
+    <string name="hint_carOwner">请输入车辆所有人</string>
+
+    <string name="address">住址</string>
+    <string name="companyAddress">公司地址</string>
+
+    <string name="hint_address">请选择住址</string>
+    <string name="hint_companyAddress">请选择公司地址</string>
+
+
+    <string name="baseInfo">基本信息</string>
+    <string name="set_password">密码设置</string>
+    <string name="phoneVerificationCode">手机验证码</string>
+
+    <string name="hint_input_password">请输入6&#8211;20位数字或字母</string>
+    <string name="hint_confirm_psw">请再次输入密码</string>
+
+    <string name="hint_phone_number">请输入手机号码</string>
+
+    <string name="verificationCode">验证码</string>
+    <string name="hint_verificationCode">请输入验证码</string>
+    <string name="get_verificationCode">获取验证码</string>
+
+
+    <string name="companyName">公司名</string>
+    <string name="hint_companyName">请输入公司名</string>
+
+    <string name="busiContract">业务联系人</string>
+    <string name="hint_busiContract">请输入业务联系人</string>
+
+    <string name="upload_front_photo">请上传身份证正面照片</string>
+    <string name="upload_contrary_photo">请上传身份证反面照片</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="upload_photo_please">请拍照上传照片</string>
+
+    <string name="truck_attention">提示：完善选填项信息后您将成为自主开票交易会员，如需参与自主交易，请注册完成后联系所属会员管理单位办理中国建设银行惠龙卡上线摘牌承运</string>
+    <string name="add_info">请输入证件号码，上传照片</string>
+    <string name="vehicle_info">车辆信息</string>
+    <string name="axle_info">轮轴信息</string>
+    <string name="tuo_gua">拖挂轮轴</string>
+    <string name="axle_number">车辆轴数</string>
+    <string name="carriage_length">车厢长度</string>
+    <string name="carriage_width">车厢宽度</string>
+    <string name="breast_board_width">栏板高度</string>
+    <string name="max_match_capacity">最大配载量</string>
+    <string name="driving_license_info">请拍照上传行驶证正副本照片</string>
+    <string name="backup_num">请输入备用号码</string>
+    <string name="hlet_user_protocol">本人已阅读并自愿遵守《惠龙易通用户注册协议》</string>
+    <string name="please_input">请输入</string>
+
+
+    <!--挂价摘牌-->
+    <string name="source_list">挂价摘牌</string>
+    <string name="source_history">挂价历史</string>
+    <string name="gj_input_confirm">确认摘牌</string>
+
+    <!--竞价投标-->
+    <string name="bidding_history">历史投标</string>
+    <string name="competitive_bidding">竞价投标</string>
+    <string name="competitive_history">历史竞价</string>
+    <string name="cb_modify_price">修改竞价</string>
+    <string name="hall">大厅</string>
+    <string name="hint_bid_list">竞价排名只显示前8名</string>
+
+    <!--货源详情-->
+    <string name="source_not_available">该货源当前不可摘牌</string>
+    <string name="goodsSourceDetails">货源详情</string>
+    <string name="good">货品</string>
+    <string name="count">数量</string>
+    <string name="weight">重量</string>
+    <string name="fromLocation">出发地</string>
+    <string name="toLocation">目的地</string>
+    <string name="loading_period">装货时间：</string>
+    <string name="loading_unload_days">装卸货天数</string>
+    <string name="transport_deadline">运输期限</string>
+    <string name="carRequire">车型要求</string>
+    <string name="specialRequire">特别要求</string>
+    <string name="volume">长/宽/高</string>
+    <string name="measure_type">计量方式</string>
+    <string name="transport_loss">运输消耗</string>
+    <string name="charge_method">计费依据</string>
+    <string name="settle_method">结算方式</string>
+    <string name="cargo_value">总货值</string>
+    <string name="comprehensive_tax_tare">综合税率</string>
+    <string name="confer_price">参考价格：</string>
+    <string name="bidding_imm">立即竞价</string>
+    <string name="guajia">挂价：</string>
+    <string name="lijizhaipai">立即摘牌</string>
+    <string name="unit_ton">元/吨</string>
+    <string name="deductible_tax_rate">抵扣税率</string>
+    <string name="from">从</string>
+    <string name="to">到</string>
+    <string name="length">长</string>
+    <string name="width">宽</string>
+    <string name="height">高</string>
+    <string name="optional">（选填）</string>
+
+    <!--时间选择-->
+    <string-array name="timePickers">
+        <item>不限</item>
+        <item>当天</item>
+        <item>近三天</item>
+        <item>近一周</item>
+        <item>近一个月</item>
+    </string-array>
+    <string name="date_picker_unlimited">不限</string>
+    <string name="date_picker_today">当天</string>
+    <string name="date_picker_in_three_days">近三天</string>
+    <string name="date_picker_in_a_week">近一周</string>
+    <string name="date_picker_in_a_month">近一个月</string>
+
+    <!--竞挂价输入-->
+    <string name="rank">排名\n(价格由低到高)</string>
+    <string name="bidding_price">竞价价格</string>
+    <string name="cb_again">再次竞价</string>
+    <string name="cb_hall">竞价大厅</string>
+    <string name="carrier">承运车辆</string>
+    <string name="carry_number">承运数量</string>
+    <string name="carry_weight">承运重量</string>
+    <string name="transport_total_fee">交易运费总额</string>
+
+    <string name="hint_number">请填写数量</string>
+    <string name="hint_weight">请填写重量</string>
+    <string name="hint_money">请填写金额</string>
+    <string name="sureToubiao">确认投标</string>
+    <string name="commit_title_cb">投标确认</string>
+    <string name="commit_title_gj">摘牌确认</string>
+    <string name="commit_content_without_tax">确认提交摘牌内容？</string>
+    <string name="commit_content_tax">（您需给平台提供11.00%的增值税专用发票）</string>
+    <string name="commit_succeed_title">投标完成</string>
+    <string name="commit_succeed_content">赶快去竞价大厅看看您的排名吧</string>
+    <string name="cargo_reserve_ct_start">货源剩余</string>
+    <string name="zhaipai_succeed">摘牌成功</string>
+    <string name="zhaipai_succeed_zzjy">摘牌成功,请及时联系货方</string>
+    <string name="available_cargo">可承运货物%1$s</string>
+    <string name="count_down">本场次%1$s后结束</string>
+    <string name="count_down_finished">当前场次已结束</string>
+    <string name="hint_self_trade_contract">我已认真阅读并理解《自主交易货物运输三方协议》，自愿遵守</string>
+    <string name="hint_transport_contract">我已认真阅读并理解《自主开票交易货物运输三方协议》，自愿遵守</string>
+
+    <string name="cb_input_hint_no_tax_selected">请选择抵扣税率</string>
+    <string name="cb_input_hint_no_car_selected">请选择车辆</string>
+    <string name="cb_input_hint_no_ship_selected">请选择船舶</string>
+
+    <string name="cb_input_hint_number_incorrect">请输入正确的数量</string>
+    <string name="cb_input_hint_weight_incorrect">请输入正确的重量</string>
+    <string name="cb_input_hint_price_incorrect">请输入竞价价格</string>
+    <!--惠龙储蓄卡-->
+    <string name="hl_deposit_card_introduce">惠龙卡介绍</string>
+    <string name="hl_deposit_card_introduce_advantage">会员好处多！办理惠龙卡好处多！</string>
+    <string name="hl_deposit_card_introduce_1">在线收取运费快！</string>
+    <string name="hl_deposit_card_introduce_2">免年费、免账户管理费！\n免建行柜面及自助设备跨行转账手续费！</string>
+    <string name="hl_deposit_card_introduce_3">卡内资金流量可作为会员在建行无抵押信用贷款依据，流量越大、信用额度越高！</string>
+    <string name="hl_deposit_card_introduce_4">会员办理“惠龙借记卡”方可办理“惠龙ETC信用卡”，高速通行可透支优惠多；还可通过惠龙“汽车贷”低息融资购买“惠龙专车”！</string>
+    <string name="hl_deposit_card_introduce_contact_area_title">办理惠龙卡，请您联系所属会员管理单位</string>
+
+    <!--竞价投标历史-->
+    <string name="bidding">竞价中</string>
+    <string name="bid_failed">未中标</string>
+    <string name="bid_succeed">已中标</string>
+
+    <!--运力发布-->
+    <string name="transport_forecast_title">发布运力预报</string>
+    <string name="revoke">撤销</string>
+    <string name="view_transporter_info">运力信息</string>
+    <string name="label_user_phone">会员手机号</string>
+    <string name="label_backup_phone">备用联系电话</string>
+    <string name="hint_backup_phone">请输入备用电话</string>
+    <string name="car_unavailable">不存在可用车辆，请先添加车辆</string>
+    <string name="ship_unavailable">不存在可用船舶，请先添加船舶</string>
+    <string name="transport_submit_message">确定要发布运力预报?</string>
+    <string name="transport_revoke_message">确定要撤销此运力预报?</string>
+    <string name="transport_submit_failed">发布失败</string>
+    <string name="load_cars_list_failed">获取车辆列表失败</string>
+    <string name="hint_car">请选择车辆</string>
+    <string name="hint_ship">请选择船舶</string>
+    <string name="hint_capacity">请填写可配载量</string>
+    <string name="hint_loading_address">请选择起始地</string>
+    <string name="hint_unload_address">请选择目的地</string>
+    <string name="hint_loading_time">请选择起始时间</string>
+    <string name="hint_unloading_time">请选择结束时间</string>
+    <string name="hint_time_early_than_today">开始时间不能早于今天</string>
+    <string name="hint_end_before_start">结束时间不能早于开始时间</string>
+    <string name="hint_incorrect_phone_number">请输入正确的电话号码</string>
+
+    <!--时间选择-->
+    <string name="time_selector_hint_no_item_selected">没有内容被选中</string>
+
+    <!--设置页面-->
+    <string name="setting">设置</string>
+    <string name="memberCert">会员信息补充</string>
+    <string name="historyOrder">历史订单</string>
+    <string name="kehufuwu">在线客服</string>
+    <string name="textSizeSet">字体大小设置</string>
+    <string name="userGuide">操作手册</string>
+    <string name="exitAccount">退出账号</string>
+    <string name="applyHlCard">申请惠龙易通ETC信用卡</string>
+    <string name="toolbox">工具箱</string>
+    <string name="route_plan">路径规划</string>
+
+    <!--关于惠龙易通-->
+    <string name="company_history">公司历程</string>
+    <string name="partner">合作伙伴</string>
+
+    <!--退出Dialog-->
+    <string name="sign_out_message">确认退出吗?</string>
+    <string name="signOut">退出登录</string>
+
+
+    <!-- 上传发货单发货单-->
+    <string name="invoice_upload">上传发货单</string>
+    <string name="business_doc_no">业务单据号</string>
+    <string name="plate">车牌号</string>
+    <string name="hint_plate">请输入车牌号</string>
+    <string name="cargo_name">货物名称</string>
+    <string name="cargo_number">填写数量</string>
+    <string name="cargo_weight">填写重量</string>
+    <string name="loading_psw">发货密码</string>
+    <string name="hint_loading_psw">填写6位数字</string>
+    <string name="commit">提交</string>
+    <string name="cargo_des">摘牌数量|重量</string>
+    <string name="loading_date">装货日期</string>
+    <string name="loading_address">装货地</string>
+    <string name="loading_contact">发货联系人</string>
+    <string name="contract_review">查看合同</string>
+    <string name="call_contact">发货联系人</string>
+    <string name="send">发送</string>
+    <!-- 个人资料界面-->
+
+    <string name="user_info">个人资料</string>
+    <string name="avatar">头像设置</string>
+    <string name="company_name">公司名称</string>
+    <string name="contact_phone_no">联系人手机号</string>
+    <string name="company_address">公司地址</string>
+    <string name="CompanyAddress">浙江省杭州市西湖区文二路马塍路口东部软件园</string>
+    <string name="userId">会员编号</string>
+    <string name="personal_address">地址</string>
+    <string name="contact">联系人</string>
+
+    <!--签约合同-->
+    <string name="contract_details">查看合同</string>
+    <string name="third_party_contract">三方协议</string>
+    <string name="contract_history">历史合同</string>
+    <string name="contract_submit_succeed">合同签订成功</string>
+    <string name="signContract">签约合同</string>
+    <string name="signContractCommit">签订合同</string>
+    <string name="unload_contact">提货人</string>
+    <string name="hint_unload_contact">请填写提货人姓名</string>
+    <string name="sfzID">身份证号码</string>
+    <string name="hint_sfzID">填写提货人身份证号码</string>
+    <string name="loading_time">预装货时间</string>
+    <string name="suggest_loading_time">预装货时间</string>
+    <string name="hint_suggest_loading_time">请选择预装货时间</string>
+    <string name="cargo_desc">数量|重量</string>
+    <string name="transport_unit_price">交易单价</string>
+    <string name="transport_fee">运费额</string>
+
+    <string name="confirm_password">确认密码</string>
+    <string name="set_cargo_psw">设置收发货密码</string>
+    <string name="set_transport_psw">设置装卸货密码</string>
+
+    <string name="transport_password">装卸货密码</string>
+    <string name="transport_password_hint">请输入装卸货密码</string>
+    <string name="transport_password_confirm_hint">请确认装卸货密码</string>
+
+    <string name="ship_password">发货密码</string>
+    <string name="ship_password_hint">请输入发货密码</string>
+    <string name="ship_password_confirm_hint">请确认发货密码</string>
+
+    <string name="receive_password">收货密码</string>
+    <string name="receive_password_hint">请输入收货密码</string>
+    <string name="receive_password_confirm_hint">请确认收货密码</string>
+
+    <string name="hint_unmatched_password">两次输入的密码不一致</string>
+    <string name="hint_id_no_incorrect">请输入正确的身份证号码</string>
+    <string name="hint_trans_psw_incorrect">卸货密码为6位数字</string>
+    <string name="error_contract_missing">未找到对应合同信息</string>
+
+    <!--完善车辆信息-->
+    <string name="fill_vehicle_information">完善车辆信息</string>
+    <string name="fill_company_information">完善公司信息</string>
+    <string name="company_contact_tel">公司电话</string>
+    <string name="hint_company_contact_tel">请填写公司电话号码</string>
+    <string name="business_license">营业执照</string>
+    <string name="organization_license">组织机构代码证</string>
+    <string name="tax_license">税务登记证</string>
+    <string name="transport_license">道路运输经营许可证</string>
+    <string name="sfzCard">身份证号码</string>
+    <string name="addSfzID">请填写车辆联系人身份证号</string>
+    <string name="phone_number">手机号码</string>
+    <string name="hint_vehicle_contact_tel">请填写车辆联系人手机号</string>
+    <string name="truckType">车辆类型</string>
+    <string name="normal_truck">普通货车</string>
+    <string name="max_capacity">最大配载量</string>
+    <string name="hint_max_capacity">请填写车辆最大装载重量</string>
+    <string name="ton">吨</string>
+    <string name="truck_length">车厢长</string>
+    <string name="truck_width">车厢宽</string>
+    <string name="truck_height">栏板高</string>
+    <string name="hint_truck_length">请填写车辆长度</string>
+    <string name="hint_truck_width">请填写车厢宽度</string>
+    <string name="hint_truck_height">请填写车厢栏板高度</string>
+    <string name="meter">米</string>
+    <string name="sfz">身份证</string>
+    <string name="jsz">驾驶证</string>
+    <string name="xsz">行驶证</string>
+    <string name="busi_license">营业执照</string>
+    <string name="hint_busi_license">请输入编号，上传照片</string>
+    <string name="busi_license_tip">请上传新版三证合一营业执照或旧版营业执照</string>
+    <string name="busi_license_new">三证合一营业执照</string>
+    <string name="busi_license_old">旧版营业执照</string>
+
+    <!--修改登录密码-->
+    <string name="modifyLoginPsw">修改登录密码</string>
+    <string name="oldPsw">旧密码</string>
+    <string name="newPsw">新密码</string>
+    <string name="inputOldPsw">请输入旧密码</string>
+    <string name="inputNewPsw">请输入6&#8211;20位新密码</string>
+    <string name="inputNewPswAgain">请再次输入新密码</string>
+    <string name="sure">确认</string>
+
+    <!--关于惠龙易通-->
+    <string name="about_hlet">关于惠龙易通</string>
+    <string name="our_full_company_name">惠龙易通国际物流股份有限公司</string>
+    <string name="phone_num">电话：0511&#8211;85188888</string>
+    <string name="copyright">Copyright@2016 www.hletong.com</string>
+    <string name="company_history_detail_p_1">　　惠龙易通国际物流股份有限公司是由镇江中油京惠石油化工有限公司、镇江市京惠石油化工有限公司共同投资兴建。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_2">　　惠龙的投资方京惠石油在1993年注册成立，历时七年到1999年在镇江地区建成了104国道、312国道镇江段和镇江城区最大型加油站，特别是在亚洲金融风暴的1997年大兴土木，于1999年建成了镇江地区最大型的12万立方米中油京惠9811油库。合资建设了4万吨的港龙石化专用码头。中油京惠9811油库是中石油南下华东地区、西进华中地区的重要成品油辐射中转库，年吞吐成品油超200万吨，中油京惠也是中国第一批取得成品油批发资质的民营企业。历史上与中石化、中石油、中海油、中化道达尔有着长期战略合作关系。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_3">　　2003年非典肆虐，历时5年共投资17亿元人民币、征地1500亩，在当时没有电、没有路、没有水的滩地上建设了七座5000吨—7万吨公共码头。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_4">　　2007年—2009年投资3.2亿元人民币在传统公共码头基础上搭建八大服务平台，建成了全国最大的螺纹钢、线材、热卷和密度板、纤维板期货交割库；建成了海关保税仓库和海关出口监管仓库以及对外开放码头，引入边防、海关、商检、海事、银行进驻惠龙港。建成8万平方米的各种配套用房，实现了客户的集聚、产业的集中、成本的节约，完成了传统公用码头向专业钢铁物流基地的成功升级。被国务院发展研究中心、中国物流采购联合会和中国钢铁工业协会认定为“中国钢铁物流标准示范实验基地”，课题组总顾问由原国务院研究室主任、党组书记，现任河南省省委书记谢伏瞻和原中国物流与采购联合会会长、物资部和内贸部副部长陆江担任。课题组顾问由吴溪淳（原中国钢铁工业协会会长、冶金部副部长）、谢企华（原宝钢集团董事长）、何黎明（中国物流与采购联合会会长）等担任。开创了税费对地方贡献超传统公用码头30倍的先例。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_5">　　2009年—2010年投资5800万元人民币创建十大信息化系统，使专业钢铁物流基地升级为标准化可复制的智能物流基地。董事长施文进被中物联评为2010中国物流十大年度人物，项目被中物联评为“2014年中国物流与采购信息化优秀案例”。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_6">　　2011年—2014年投资2.6亿元人民币建设打造了全国性的智能化货物运输集中配送电子商务平台。平台协同引入了保险、电信、银行三大运营商的总部，共同整合全国的空驶车船运力帮助货方承运各种商品，做到空驶运力与待运货物的信息在线预报、智能实时配对，在线网签承运合同、在线收发货电子单证回笼、在线运费收付、在线理赔、在线跟踪呼叫调度服务，实现全国一张网、货物集中配送全覆盖。&lt;br>&lt;br></string>
+    <string name="company_history_detail_p_7">　　2015年已立项投资3.8亿元人民币建设打造标准交割库及电子商务平台项目。&lt;br>&lt;br></string>
+
+    <string name="partners">中国建设银行、太平洋保险、中国电信、中信银行、华润燃气、陕汽重卡、浦林成山、高科润滑油</string>
+
+    <!--发货单-->
+    <string name="invoice_history">历史发货单</string>
+    <string name="upload">上传</string>
+    <string name="cargo_number_incorrect">请填写货源数量</string>
+    <string name="cargo_weight_incorrect">请填写货源重量</string>
+    <string name="incorrect_number_password">密码必须为6位数字</string>
+    <string name="invoice_upload_succeed">发货单上传成功</string>
+    <string name="view_invoice">发货单信息</string>
+
+    <!--收货单-->
+    <string name="receipt_upload_title">上传收货单</string>
+    <string name="receipt_upload_content">回传重量或数量与发货单量不等，确认提交？</string>
+    <string name="receipt_history">历史收货单</string>
+    <string name="origin_weight">发货重量</string>
+    <string name="origin_ct">发货数量</string>
+    <string name="arrival_weight">收货重量</string>
+    <string name="arrival_ct">收货数量</string>
+    <string name="upload_shipping_doc">运单回传</string>
+    <string name="shipping_doc">运单</string>
+    <string name="hint_shipping_doc">(必填:最多三张)</string>
+    <string name="receipt">发货单上传成功</string>
+    <string name="view_receipt">收货单信息</string>
+    <string name="receipt_upload_succeed">收货单上传成功</string>
+    <string name="fee_delay_title_transporter">到票有异议，同意货方延迟支付运费</string>
+    <string name="fee_delay_title_cargo">到票有异议，同意拒付运费</string>
+    <string name="fee_delay_content">承运方发票信息有误，重新开票与货方确认无误后，再进入此页面完善信息，平台审核完后，货方支付运费</string>
+
+    <!--消息tab-->
+    <string name="tab_upcoming">待办事项</string>
+    <string name="tab_message">消息</string>
+
+    <!--申请退会-->
+    <string name="apply_exit">申请退会</string>
+    <string name="exit_reason">退会原因</string>
+    <string name="hint_exit_reason">请输入退会原因</string>
+    <string name="exitMember">退会</string>
+    <string name="exitMemberWarm">尊敬的会员：退会后将不再享有会员特权，再次入会需先交纳会员费。确定退会吗?</string>
+    <string name="exiMemberTip">二次入会请到所属会员管理单位</string>
+    <string name="exiMemberSuccess">退会成功</string>
+
+
+    <!--上传照片-->
+    <string name="take_pic">拍照</string>
+    <string name="selected_pic">选择照片</string>
+    <string name="image_list_empty_hint">请先选择图片</string>
+    <string name="image_upload_failed">文件上传失败</string>
+
+    <!--地址选择-->
+    <string name="select_province">选择省</string>
+    <string name="select_city">选择市</string>
+    <string name="select_county">选择区</string>
+    <string name="select_start_address">选择出发地</string>
+    <string name="select_destination_address">选择目的地</string>
+    <string name="select_loading_address">选择装货地</string>
+    <string name="select_unloading_address">选择卸货地</string>
+
+    <string name="click_select_start_address">点击选择出发地</string>
+    <string name="click_select_destination_address">点击选择目的地</string>
+    <!--字体大小-->
+    <string name="text_size">字体大小</string>
+    <string name="list_text_size">列表文字预览</string>
+    <string name="standard_list_text_size">标准列表文字</string>
+    <string name="assist_text_size">标准辅助文字</string>
+    <string name="small_size">小号</string>
+    <string name="standard_size">标准</string>
+    <string name="large_size">大号</string>
+
+    <!--订单跟踪-->
+    <string name="order_track">订单跟踪</string>
+    <string name="order_complete">订单完成</string>
+
+    <!--消息详情-->
+    <string name="appeal">申诉</string>
+    <string name="legal_title">法务单确认</string>
+    <string name="resign_contract_confirm">确认提交补签合同？</string>
+    <string name="legal_doc_confirm">确认提交法务单？</string>
+    <string name="stagnation_title">滞压单回传</string>
+    <string name="resign_contract_title">补签合同确认</string>
+
+    <!--货源预报-->
+    <string name="copy">复制</string>
+    <string name="copy_source">复制货源</string>
+    <string name="forecast_source">发布货源</string>
+    <string name="search_hint">联系人/电话/装货地/卸货地/货物</string>
+    <string name="search_history">历史搜索</string>
+    <string name="clear_history">清空历史</string>
+    <!--开票信息-->
+    <string name="billing_info">开票信息</string>
+    <string name="billing_total_money">总开票金额(元)</string>
+    <string name="wait_billing_money">未开票金额(元)</string>
+    <string name="billed">已开票</string>
+    <!--新增货物-->
+    <string name="cargo_name_label">品名</string>
+    <string name="add_cargo">新增货物</string>
+    <string name="charge_type">计费依据</string>
+    <string name="freight_price">运费单价</string>
+    <string name="insurance_hint">温馨提示：\n1. 尊敬的会员:您投保的货物货运险费率为0.018%(大型设备、精密仪器、易碎品、粮食另行计价)\n2.平台按电子发货单运量的总贷值代为投保，总货值、运量不符，平台不承担责任！保费由平台连同运费统一代扣代付。</string>
+    <string name="bargain_hint">选择议价后，运费单价由承运方报价，双方协商后决定</string>
+
+    <!--ETC-车辆信息-->
+    <string name="vehicle_information">车辆信息</string>
+    <string name="new_vehicle_information">新增车辆信息</string>
+    <string name="vehicle_owner">车辆所有人</string>
+    <string name="vehicle_code">车辆识别代号</string>
+    <string name="vehicle_style">车辆类型</string>
+    <string name="vehicle_length">车辆长度</string>
+    <string name="vehicle_color">车牌颜色</string>
+    <string name="choose">请选择</string>
+    <string name="seats">座位数</string>
+    <string name="vehicleMass">核定载质量</string>
+    <string name="loadedVehicleQuality">总质量</string>
+    <string name="vehicle_address">会员地址</string>
+    <string name="next_step">下一步</string>
+    <string name="vehicle_discern_code">车辆识别代号</string>
+    <string name="please_write">请填写</string>
+    <string name="write_by_license">请根据行驶证内容填写</string>
+
+    <string name="detail_address">请填写详细地址</string>
+    <string name="address_hint">请选择省市区</string>
+
+    <!--ETC-基本信息-->
+    <string name="chinese_name">中文姓名</string>
+    <string name="pinyin_name">姓名拼音</string>
+    <string name="card_id">身份证件</string>
+    <string name="card_is_valid">证件是否长期有效</string>
+    <string name="certificate_id">证件号码</string>
+    <string name="zhi">至</string>
+    <string name="sex">性别</string>
+    <string name="date_birth">出生日期</string>
+    <string name="is_read">本人已阅读全部申请材料</string>
+    <string name="certificate_date">证件有效期</string>
+    <string name="long_valid">长期有效</string>
+    <string name="date_use">证件到期日期</string>
+    <string name="capital">QWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="pin_yin_name">例如张三：ZHANG SAN</string>
+    <string name="input_documentCode">请输入证件号码</string>
+    <string name="selected_card">已选卡片%1$s（%2$s）</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+
+    <string name="introducePager">介绍信\n<font color='#c2c9cc'>(选填)</font></string>
+
+    <!--ETC-选择卡片-->
+    <string name="card_detail">透支消费、高速通行有优惠</string>
+    <string name="hl_etc_card">惠龙易通ETC信用卡</string>
+    <string name="see_detail">查看详情</string>
+    <string name="choose_card">选择卡片</string>
+    <string name="apply_record">申请记录</string>
+    <string name="apply_now">立即申请</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="apply_not_online">无在线申请办卡功能</string>
+    <string name="hl_credit_card">惠龙信用卡</string>
+    <string name="hl_etc_deposit_card">惠龙ETC借记卡</string>
+    <string name="cancel_apply">撤销申请</string>
+    <string name="cancel_apply_success">撤销申请成功</string>
+    <string name="revoked">已撤销</string>
+    <string name="cancel_apply_default">撤销申请失败，具体查看申请进度或联系建设银行</string>
+    <string name="known">知道了</string>
+
+
+    <!--ETC-卡片详情-->
+    <string name="hlCard_detail">该卡具备了建行龙卡信用卡的金融透支、8000多家商户的消费优惠功能、ETC储值卡全国高速通行优惠功能以及惠龙易通物流行业应用增值服务
+                （如撬装加油、园区管理等）功能，为持卡人提供衣、食、住、行等各方面的便利。\n\n<b>透支消费额度高、高速通行优惠多、平台增值服务优!</b></string>
+    <string name="hlCard_detail2">“惠龙易通ETC信用卡”是惠龙易通联合中国建设银行总行、江苏高速面向惠龙易通物流电商平台全国会员发行的互联网创新型联名ETC信用卡。</string>
+    <string name="hlCard_safe">使用了CPU芯片，具有独立运算、加解密和存储能力，安全性能更高。同时，卡片与读卡器之间采用加密的数据通信方式交换数据，
+                具有很强的安全认证机制，为客户提供更安全的交易环境。</string>
+    <string name="hlCard_speedy">1.芯片中加载MTC应用，可实现高速公路电子缴费功能。\n2.可绑定惠龙卡借记卡实现约定账户还款。</string>
+    <string name="hlCard_overflow">不论客户身处何地，凭卡面专属热购标识享全国联盟商户优惠权益。</string>
+    <string name="hlCard_intimate">为您提供7×24小时全天候客户服务热线、中国建设银行微信公众号即可查询本期账单、帐户余额、信用额度、积分余额。</string>
+    <string name="Card_detail">卡片详情</string>
+    <string name="Card_Saturday">龙卡星期六</string>
+    <string name="safe">安全</string>
+    <string name="safe_introduce">芯片介质,安全用卡</string>
+    <string name="speedy_introduce">高速畅行,便捷还款</string>
+    <string name="overflow_introduce">高速畅行,便捷还款</string>
+    <string name="intimate_introduce">贴心服务，全天恭候</string>
+    <string name="food_introduce">哈根达斯满60减30,必胜客满100减50</string>
+    <string name="cost_introduce">满300送30元屈臣氏、全家便利店电子购物券1张！</string>
+    <string name="speedy">便捷</string>
+    <string name="overflow">超值</string>
+    <string name="intimate">贴心</string>
+    <string name="food">周六5折享美食！</string>
+    <string name="movie">周六蜘蛛网5元看电影！</string>
+    <string name="cost">周六单笔消费</string>
+    <string name="scenic">周六同程网1元玩景点！</string>
+    <string name="stage">分期功能</string>
+    <string name="car_stage">购车分期</string>
+    <string name="business_stage">商户分期</string>
+    <string name="fitment_stage">装修分期</string>
+    <string name="pay_stage">账单分期</string>
+    <string name="money_stage">现金分期</string>
+    <string name="apply_progress">申请进度查询</string>
+    <string name="tip_introduce"><u>车辆所有人是法人公司，请下载\"介绍信\"，填写完整并盖章拍照上传</u></string>
+    <string name="holdOn_please">友情提示：已办理高速公路通行卡的车辆，须将原卡注销，再办理惠龙ETC信用卡！</string>
+    <string name="money_stage_introduce">持卡人可通过网银、建行善融商务、网点等渠道办理无担保、无抵押现金分期业务，并可自由选择3、6、12、18、24期分期还款。\n具体活动详情以中国建设银行当期活动为准！</string>
+    <string name="pay_stage_introduce">持卡人可通过微信、手机银行、短信等渠道申请办理最高90%账单余额的账单分期业务，并可自由选择3、6、12、18、24期分期还款。</string>
+    <string name="fitment_stage_introduce">持卡人可在建材、装修、装潢、家具类等指定商户享受0利息、低手续费率的装修分期付款服务。</string>
+    <string name="business_stage_introduce">持卡人可在苏宁电器、百安居、美克美家等知名商户享受商户分期服务，并享有积分回馈礼遇。</string>
+    <string name="car_stage_introduce">持卡人可享受上海大众、一汽大众、一汽奥迪等知名品牌指定车型最长36月、最高50万元的购车分期服务。</string>
+    <string name="add_car">新增车辆</string>
+    <string name="no_useful">非长期有效</string>
+    <string name="select_address">选择住址</string>
+
+
+    <!--三方协议（有两个三方协议，一个是自主交易的，另一个是自主开票的）-->
+    <string name="self_trade_third_party_contract_title">自主交易货物运输三方协议</string><!--这个是自主交易的三方-->
+    <string name="transport_third_party_contract_title">自主开票交易货物运输三方协议</string><!--这个是自主开票的三方-->
+    <string name="third_party_sentence_1_platform">　平　　台：&lt;u>惠龙易通国际物流股份有限公司赣州分公司&lt;/u>&lt;br>　地　　址：&lt;u>江西省赣州市章贡区兴国路61号总部经济区东座&lt;/u>&lt;br>　联系号码：&lt;u>0797&#8211;8845555&lt;/u>&lt;br>　客服电话：&lt;u>0511&#8211;85188888&lt;/u>&lt;br>&lt;br></string>
+    <string name="third_party_sentence_1_provider_and_carrier">　货方会员：&lt;u>%1$s&lt;/u>&lt;br>　车船会员：&lt;u>%2$s&lt;/u>&lt;br>&lt;br></string>
+    <string name="third_party_sentence_1_source_provider">　货方会员：&lt;u>%1$s&lt;/u>&lt;br>　电话号码：&lt;u>%2$s&lt;/u>&lt;br>　联系地址：&lt;u>%3$s&lt;/u>&lt;br>　传真号码：&lt;u>%4$s&lt;/u>&lt;br>&lt;br></string>
+    <string name="third_party_sentence_1_carrier">　车船会员：&lt;u>%1$s&lt;/u>&lt;br>　手机号码：&lt;u>%2$s&lt;/u>&lt;br>　联系地址：&lt;u>%3$s&lt;/u>&lt;br>　电话号码：&lt;u>%4$s&lt;/u>&lt;br>&lt;br></string>
+    <string name="third_party_sentence_2">　平台、货方会员、车船会员（车辆会员和船舶会员的简称）三方经友好协商，本着互惠互利的原则，就货方会员通过平台寻配车船会员承运货物相关事宜签署本协议，以供共同履行和遵守。&lt;br>&lt;br></string>
+    <string name="third_party_sentence_3_block_1">　&lt;b>一、诚信与守约原则&lt;/b>&lt;br>　（一）货方会员、车船会员自愿遵守平台制订的《会员守则》、《违规违约处理细则》、《结算细则》等规则，并在操作平台业务时，积极履行守约与诚信义务。&lt;br>　（二）货方会员、车船会员使用自己会员名和密码登录平台系统发出的任何数据、信息均为货方会员、车船会员真实意思表示，由此产生的责任由货方会员、车船会员承担。货方会员、车船会员应妥善保管、使用密码，如因保管不善导致密码泄露，造成的损失由其自行承担。&lt;br>　（三）货方会员、车船会员同意平台根据业务需要，将必须对外提供的信息、资料对外发布。&lt;br>　（四）未经平台书面授权，货方会员、车船会员不得使用平台知识产权，如若发现侵权行为，平台有权终止其会员资格并追究其相关责任。&lt;br>　（五）免责条款&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_1">　1、由于平台需对系统进行定期维护或升级，平台会有短时间中断服务情况，平台可提前在网站公告中通知会员。如遇网络通路的偶然阻塞造成访问减慢或临时中断，或因光缆意外故障，或因平台系统意外故障，影响平台提供正常服务和支持时，不属于平台违约，平台不承担因此给货方会员、车船会员造成损失的赔偿责任。当平台因故无法正常在网上操作业务时，货方会员、车船会员有义务积极配合平台的工作人员转入人工操作业务流程。&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_2">　2、因不可抗力（战争、自然灾害、国家法律法规发生重大改变等）原因导致一方或多方不能或不能完全履行本协议时，三方相互不承担违约责任。在不可抗力影响消除后，三方仍将继续履行本协议，对于能部分履行的协议条款三方应继续履约遵守。&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_3">&lt;b>　（六）保密条款&lt;br>　在任何时候，货方会员、车辆会员及其工作人员不得向外泄露平台的商业秘密。该商业秘密包括但不限于：&lt;/b>&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_3_sub_1">&lt;b>　1、技术信息：包括技术方案、设计要求、服务内容、实现方法、运作流程、技术指标、软件系统、数据库、运行环境、作业平台、测试结果、图纸、样本、模型、使用手册、技术文档、涉及技术秘密的业务函电等等；&lt;/b>&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_3_sub_2">&lt;b>　2、经营信息：包括客户名称、客户地址及联系方式、需求信息、营销计划、采购资料、定价政策、进货渠道、产销策略、招投标中的标底及标书内容、项目组人员构成、费用预算、利润情况及不公开的财务资料等等；&lt;/b>&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_3_sub_3">&lt;b>　3、协议与合同：平台与为本平台服务的当事人签订的战略合作协议、入会协议、运输合同、技术合同以及与本平台相关联的一切契约、协议以及合同等等；&lt;/b>&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_3_sub_4">&lt;b>　4、其他事项：平台依照法律规定和有关协议的约定要求货方会员、车船会员承担保密义务的其他事项。&lt;/b>&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_4">　（七）违约责任&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_4_sub_1">　1、三方应恪守诚信经营原则，不得损害其他两方利益。货方会员、车船会员及其工作人员不得以任何手段危害平台的正常运行，一经发现，平台有权限制会员权限，直至终止其会员资格，并有权追究其相关责任。&lt;br></string>
+    <string name="third_party_sentence_3_block_1_sub_4_sub_2">　2、本协议履行期内，因一方违反本协议的约定，给其他方造成损失的，违约方承担全部的赔偿责任。&lt;br></string>
+    <string name="third_party_sentence_3_block_2">&lt;br>　二、运输协议&lt;br>　（一）运输协议标的物信息&lt;br>　品名：%1$s&lt;br>　长/宽/高：%2$s&lt;br>　重量：%3$s&lt;br>　数量：%4$s&lt;br>　运费单价：%5$s&lt;br>　运输方式：%6$s&lt;br></string>
+    <string name="third_party_sentence_3_block_2_truck">　车型要求：%1$s&lt;br>　车长要求：%2$s&lt;br></string>
+    <string name="third_party_sentence_3_block_2_ship">　船型要求：%1$s&lt;br></string>
+    <string name="third_party_sentence_3_block_2_">　装货日期：%1$s&lt;br>　装货地：%2$s&lt;br>　卸货地：%3$s&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_1">&lt;br>　（二）货物装卸与在途运输&lt;br>　1、货方会员必须按照国家和主管部门规定的标准对托运货物进行包装；没有统一规定包装标准的，应根据保证货物运输安全的原则进行包装。不得在包装内夹带危险品、国家有关规定明令禁止托运的货物及与合同内容规定的托运货物不相符的其他物品。货方会员应及时做好收、发货方的联系工作，以便及时装货、卸货。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_2">　2、承运车船会员应根据货方会员要求提供真实、有效的车辆或船舶相关证照资料信息。承运车船会员应确保车船状况处于良好适运状态，根据承运货物运输要求配备完整足够的篷布和绳索等安全装运备品备件，并及时前往装货地装货。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_3">　3、装货完毕，货方会员（或货方会员指定的发货人）应积极配合车船会员利用移动终端进入平台系统共同密码确认上传《电子发货单》至平台&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_4">　4、货方会员因变更卸货地而增加运费的，由货方会员与车船会员自行协商解决。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_5">　5、车船会员应保证货物在运输途中的安全，货物在装货入车厢/船舱起至卸货出车厢/船舱落地查验止的运输过程中出现的货损、货差、灭失、污染、变质等给货方会员造成的损失，应全额赔偿给货方会员。若车船会员在运输途中发生事故，在保护好现场的同时，应及时报警并通知保险公司、货方会员。&lt;br>货方会员若通过平台投保货运险的，出现的货损、货差、灭失、污染、变质等由货方会员直接向承保的保险公司报案处理，保险理赔不足的部分由货方会员直接向车船会员追偿。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_6">　6、车船会员应确保货物按时送达。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_7">　7、车船会员将货物送达到货方会员指定的卸货地，卸货完毕，车船会员、货方会员各自登录平台系统确认运输完成。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_8">　8、承运车船会员须保证货物在运输途中的安全，由于下列原因造成的货损、货差、灭失、变质、污染等，承运车船会员不承担违约赔偿责任：&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_8_sub_1">　①不可抗力；&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_8_sub_2">　②货物本身的缺陷、自然属性，以及货物包装不善；&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_8_sub_3">　③货物的合理损耗；&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_8_sub_4">　④货方会员收、发货方本身的故意行为或过失。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_9">　9、平台对货方会员和车船会员仅提供配对、履约保证金冻结解冻和货运投保服务，平台对货运风险不承担任何责任，出现货运事故由货方会员和车船会员自行报险协商处理，货方会员和车船会员对此无异议。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_10_zzjy">&lt;br>　（三）费用结算&lt;br>　1、货方会员和车船会员自主结付运费。&lt;br>　2、货方会员在发布货源预报勾选确认《自主交易货物运输三方协议》时，履约保证金由平台直接在其账户中冻结。车船会员在摘牌勾选确认《自主交易货物运输三方协议》时，履约保证金由平台直接在其账户中冻结。&lt;br>　车船会员未办理惠龙卡或冻结履约保证金不成功时，可向属地会员管理单位申请垫付履约保证金。因车船会员违约导致会员管理单位垫付的履约保证金被平台扣取支付给守约方，车船会员应在7日内归还会员管理单位被扣履约保证金；如车船会员拒不归还，会员管理单位可向车船会员追诉并要求偿还被扣履约保证金，同时车船会员应承担30%的违约金。平台有权在车船会员通过平台承运货物时，直接在运费中扣取上述金额支付给会员管理单位，同时将车船会员的违约信息提交银行、保险系统。&lt;br>　3、货方会员履约保证金：车运总运量40吨以下(含)为300元/车次；40吨以上为总运量/40*300元；船运总运量1000吨以下（含）为1000元/船次；1000吨以上为总运量/1000*1000元。&lt;br>　4、车辆会员履约保证金为：300元/车次。&lt;br>　5、船舶会员履约保证金为：船舶载重吨100吨以下（含）为1000元/船次；船舶载重吨1000吨以上为载重吨*1元/船次。&lt;br>　6 、货方会员在预报待运货物未被车船会员摘牌前可自行撤销，履约保证金自动解冻。三方协议签订完毕，货方会员、车船会员违约，平台有权视货方会员、车船会员违约情况，将履约保证金划付给守约方作为补偿。&lt;br>　7、货方会员和车船会员双方确认运输完成，平台自动解冻双方履约保证金。&lt;br></string>
+    <string name="third_party_sentence_3_block_2_sub_10_zzkp">&lt;br>　（三）费用结算&lt;br>　1、协议中所述的运费是指装货地到卸货地运输过程中所发生的一切费用。货物港务费、港口建设费等其他国家明文规定的规费，由货方会员自行提前缴纳，与车船会员和平台无关。&lt;br>　2、交易费：货方会员、车船会员通过平台运输商品，应按1元/吨（方）或50元/车分别向平台交纳交易费或由平台直接在其账户中冻结解冻划付，车船会员的交易费由平台在划付运费时划付到平台账户。&lt;br>　3、货方会员在网签本协议时，履约保证金由平台直接在其账户中冻结。车船会员在网签本协议时，履约保证金由平台直接在其账户中冻结。 货方会员履约保证金：车运总运量40吨以下（含）为300元/车次；40吨以上为总运量/40*300元；船运总运量1000吨以下（含）为1000元/船次；1000吨以上为总运量/1000*1000元。 车辆会员履约保证金为300元/车次。 船舶会员履约保证金为1000元/船次。 货方会员在预报待运货物未被车船会员摘牌前可自行撤销。三方协议签订完毕，货方会员、车船会员违约，平台有权视货方会员、车船会员违约情况，将履约保证金划付给守约方作为补偿。&lt;br>　4、平台在收到经相关方共同密码确认的电子发货单时，自动根据电子发货单的数据和合同的运价计算运费和交易费，并在线通知银行将货方会员账户中该笔运费和交易费冻结。若账户余额不足以支付，平台通知货方会员补足。&lt;br>　5、平台在收到经相关方共同密码确认的电子收货单时，在线通知银行解冻货方会员账户中冻结的金额，并立即代货方会员将运费划付给承运车船会员、将交易费划付到平台账户。&lt;br>　6、如货方会员账户余额不足以支付应付运费、交易费、保费，导致平台未能及时足额冻结，承运车船会员可延迟卸货，直至费用付清或足额冻结，同时车船会员有权根据平台《会员守则》、 《违规违约处理细则》及《结算细则》等条款标准直接向货方会员收取滞期费等费用，由此给货方会员造成的损失，车船会员及平台不承担责任。&lt;br>　7、货方会员与车船会员在共同密码确认上传电子收货单时，视同到票无异议，平台可自动划付运费。若到票有异议，平台暂时冻结运费，直至货方会员确认到票无异议，平台将冻结运费划付给承运车船会员。 到票异议不影响平台对交易费、保费的划付，车船会员与货方会员自行协商解决。&lt;br></string>
+    <string name="third_party_sentence_3_block_3">&lt;br>　三、争议解决&lt;br>　凡因本协议引起的任何争议及纠纷，平台不承担相关责任，货方会员与车船会员应先行协商解决，如协商不成，任何一方可向平台所在地的人民法院提起诉讼。&lt;br>&lt;br>　四、货方会员、车船会员已认真阅读并理解本协议及《会员守则》、《违规违约处理细则》、《结算细则》所有条款内容，并承诺自愿遵守。如平台《会员守则》、《违规违约处理细则》、《结算细则》等内容有所变更，平台通过官网公告的形式向会员公示，货方会员、车船会员如有异议须在平台公示之日起三日内向平台书面提出异议，否则视为无异议并同意遵守。&lt;br>　</string>
+    <!--会员权限-->
+    <string name="cargoCompleteTip">货主认证通过后才能找车运货,\n请填写您的真实信息</string>
+    <string name="hfrenzheng">货方认证</string>
+    <string name="sfz_upload_hint">请上传身份证照片</string>
+    <string name="truckrenzheng">车辆认证</string>
+    <string name="truckCompleteTip">车辆认证通过后才能运货挣钱,\n请填写您的真实信息</string>
+    <string name="shiprenzheng">船舶认证</string>
+    <string name="shipCompleteTip">船舶认证通过后才能运货挣钱,\n请填写您的真实信息</string>
+    <string name="endDate">到期日期</string>
+
+    <!--赣州分公司入会协议-->
+    <string name="membershipAgreement">本人已阅读并同意签订《惠龙易通国际物流股份有限公司、惠龙易通国际物流股份有限公司赣州分公司入会协议书》</string>
+    <string name="_truckOwner">*车辆所有人</string>
+    <string name="_memberPhoneNumber">*会员手机号</string>
+    <string name="_identifyNumber">*身份证号</string>
+    <string name="_dlysxkz">*道路运输许可证号</string>
+    <string name="_address">*住址</string>
+    <string name="certificateInfo">证件资料信息</string>
+    <string name="bankCardInfo">银行卡信息</string>
+    <string name="invoiceInfo">开票信息</string>
+
+    <string name="_load_ton">*载重吨位</string>
+    <string name="_cyzgzh">*从业资格证号</string>
+    <string name="_dlyszh">*道路运输字号</string>
+
+    <!--中国好司机-->
+    <string name="onlineVoter">在线报名</string>
+    <string name="goodDriver">中国好司机</string>
+    <string name="difficultDriver">中国特困司机</string>
+    <string name="voterTip">报名须知\n1、活动仅限从事货运的司机参加。\n2、关注"惠龙易通微信公众号"后方可参加报名或投票。\n3、报名需上传本人的头像、身份证、行驶证、从业资格证。\n4、上传的证件资料不齐全、不正确视为报名不成功。\n5、报名后需要将活动在朋友圈转发，领取时要出示截图，否则视为无效。</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+</resources>

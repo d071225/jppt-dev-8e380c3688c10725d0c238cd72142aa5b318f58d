@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:context="com.hletong.hyc.ui.activity.BasicInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/selected_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#334d97ff"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/normal_textsize"
+                tools:ignore="RtlSymmetry" />
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/chinese_name" />
+
+                <EditText
+                    android:id="@+id/chinese_name"
+                    style="@style/EtcBasicInfoTextValueStyle"
+                    android:background="@null"
+                    android:hint="@string/please_input"
+                    android:maxLength="10"
+                    android:textColor="@color/text_black" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pinyin_name" />
+
+                <EditText
+                    android:id="@+id/pinying_name"
+                    style="@style/EtcBasicInfoTextValueStyle"
+                    android:background="@null"
+                    android:hint="@string/pin_yin_name"
+                    android:lineSpacingMultiplier="1.2" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/card_id" />
+
+                <TextView
+                    android:id="@+id/identify_card"
+                    style="@style/EtcBasicInfoTextValueStyle"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:text="@string/sfz" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/certificate_id" />
+
+                <EditText
+                    android:id="@+id/certificate_num"
+                    style="@style/EtcBasicInfoTextValueStyle"
+                    android:background="@null"
+                    android:hint="@string/please_input"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLength="18" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:layout_width="100dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/certificate_date"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:id="@+id/validity"
+                    style="@style/EtcBasicInfoTextValueStyle"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:text="@string/no_useful"
+                    android:textColor="@color/text_black" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/expire_date"
+                style="@style/LayoutKeyValueDisplay"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/date_use" />
+
+                <TextView
+                    android:id="@+id/validDate"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="right"
+                    android:hint="@string/choose"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/LayoutKeyValueDisplay"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom|top"
+                app:lineTopLeft="@dimen/margin_15dp">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    style="@style/TextValueDisplay"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="right"
+                    android:text="男"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/date_birth" />
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="right"
+                    android:hint="@string/choose"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/EtcBasicInfoTextKeyStyle"
+                    android:text="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/tv_PhoneNumber"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/please_input"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.xcheng.view.widget.CommonView
+                android:id="@+id/cv_introduce"
+                style="@style/CVStyle.WhiteBg.Select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ev_bottomToLeft="0dp"
+                app:ev_bottomToRight="0dp"
+                app:ev_cv_hint="请拍照上传"
+                app:ev_cv_label="@string/introducePager" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:paddingBottom="@dimen/margin_15dp"
+                android:paddingTop="@dimen/margin_15dp"
+                android:text="@string/is_read"
+                tools:ignore="RtlHardcoded"
+                android:visibility="gone"
+                android:checked="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:enabled="true"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

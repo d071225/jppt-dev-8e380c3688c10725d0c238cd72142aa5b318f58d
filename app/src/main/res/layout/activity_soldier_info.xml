@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="退伍军人"
+    tools:context="com.hletong.hyc.ui.activity.AboutUsActivity">
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:id="@+id/layoutIs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="10dp"
+        app:linePosition="bottom|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/isSoldier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_circle_checkbox_selector"
+            android:checked="false"
+            android:clickable="false" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:id="@+id/layoutNot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="10dp"
+        app:linePosition="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="否"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/notSoldier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_circle_checkbox_selector"
+            android:checked="false"
+            android:clickable="false" />
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.hletong.hyc.ui.widget.CommonInputView
+            style="@style/TransportForecast.View"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="军种"
+            app:linePosition="bottom|top"
+            app:mode="input"
+            app:val_key="@string/key_soldierKind"
+            app:val_name="军种" />
+        <com.hletong.hyc.ui.widget.CommonInputView
+            style="@style/TransportForecast.View"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="服役部队"
+            app:linePosition="bottom|top"
+            app:mode="input"
+            app:val_key="@string/key_soldierArmy"
+            app:val_name="服役部队" />
+
+        <com.hletong.hyc.ui.widget.CommonInputView
+            style="@style/TransportForecast.View"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:inputGravity="end|center_vertical"
+            app:inputHint="@string/please_input"
+            app:inputLabel="服役军衔"
+            app:linePosition="bottom|top"
+            app:mode="input"
+            app:val_key="@string/key_soldierLevel"
+            app:val_name="服役军衔" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:layout_marginBottom="@dimen/submit_marginTop"
+        android:layout_marginTop="@dimen/submit_marginTop"
+        android:text="@string/commit" />
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textSize="16sp"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp"
+    android:textColor="@color/bottom_selector_item_text_color"
+    android:drawableRight="@drawable/radio_source_filter"/>

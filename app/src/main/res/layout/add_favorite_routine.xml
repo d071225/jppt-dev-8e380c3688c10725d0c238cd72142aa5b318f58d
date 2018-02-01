@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/topBarStyle"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp">
+
+        <TextView
+            style="@style/FavoriteRoutineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="从"/>
+
+        <TextView
+            android:id="@+id/start_address"
+            style="@style/FavoriteRoutineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:hint="@string/click_select_start_address"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp">
+
+        <TextView
+            style="@style/FavoriteRoutineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到"/>
+
+        <TextView
+            android:id="@+id/end_address"
+            style="@style/FavoriteRoutineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:hint="@string/click_select_destination_address"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="添加"/>
+</com.xcheng.view.widget.TopBarLayout>

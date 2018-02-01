@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#334d97ff"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="6dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:text="@string/holdOn_please"
+        android:textColor="#4D97FF"
+        android:textSize="@dimen/normal_textsize" />
+
+    <include
+        layout="@layout/common_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:textSize="@dimen/small_textsize"
+        android:id="@+id/tv_introduce"
+        android:textColor="@color/login_text_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='@string/tip_introduce' />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/submitStyle"
+        android:enabled="false"
+        android:text="@string/next_step" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cargo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/margin_15dp">
+    <TextView
+        android:id="@+id/title"
+        style="@style/CargoForecastRecyclerTitle"/>
+
+    <TextView
+        android:id="@+id/measure_type"
+        style="@style/CargoInformationItem"
+        android:layout_below="@id/title"/>
+    <TextView
+        android:id="@+id/unit"
+        style="@style/CargoInformationItem.Right"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/measure_type"/>
+    <!--<TextView-->
+        <!--android:id="@+id/transport_fee"-->
+        <!--style="@style/CargoInformationItem"-->
+        <!--android:layout_below="@id/measure_type"/>-->
+    <TextView
+        android:id="@+id/transport_loss"
+        style="@style/CargoInformationItem"
+        android:layout_below="@id/measure_type"/>
+    <TextView
+        android:id="@+id/volume"
+        style="@style/CargoInformationItem.Right"
+        android:layout_below="@id/measure_type"
+        android:layout_toRightOf="@id/transport_loss"
+        android:layout_marginLeft="@dimen/margin_15dp"/>
+    <TextView
+        android:id="@+id/carrier_model"
+        style="@style/CargoInformationItem"
+        android:layout_below="@id/transport_loss"/>
+    <TextView
+        android:id="@+id/carrier_length"
+        style="@style/CargoInformationItem.Right"
+        android:layout_below="@id/volume"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/carrier_model"
+        android:layout_marginLeft="@dimen/margin_15dp"/>
+    <com.hletong.mob.gallery.widget.PickerRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carrier_model"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:id="@+id/gallery"/>
+</RelativeLayout>

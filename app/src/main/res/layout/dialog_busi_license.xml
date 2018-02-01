@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/margin_15dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_white_corner_lt_rt_15dp"
+        android:padding="@dimen/margin_15dp"
+        android:text="@string/busi_license_tip"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/normal_textsize"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/tv_busi_license_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/busi_license_new"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/tv_busi_license_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:background="@drawable/shape_bg_white_corner_lb_rb_15dp"
+        android:gravity="center"
+        android:text="@string/busi_license_old"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/larger_textsize"/>
+
+    <TextView
+        android:id="@id/id_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_bg_white_corners_15dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/larger_textsize"/>
+
+</LinearLayout>

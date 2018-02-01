@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/tv_carId"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="48dp"
+          android:drawableRight="@drawable/bg_circle_checkbox_selector"
+          android:paddingLeft="@dimen/margin_15dp"
+          android:paddingRight="@dimen/margin_15dp"
+          android:textColor="@color/recycler_item_plate_text_color"
+          android:textSize="@dimen/normal_textsize"
+          android:gravity="center_vertical"
+          android:background="@color/white"
+          tools:ignore="RtlHardcoded"/>

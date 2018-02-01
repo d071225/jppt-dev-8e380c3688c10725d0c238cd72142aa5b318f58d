@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        layout="@layout/address_and_time_selector"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"
+        android:layout_marginTop="48dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingLeft="@dimen/margin_15dp"/>
+</FrameLayout>

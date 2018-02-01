@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hletong.mob.widget.BorderLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:linePosition="top|bottom"
+    android:gravity="right|center_vertical"
+    android:background="@color/white"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    tools:ignore="RtlHardcoded">
+    <TextView
+        style="@style/CargoTrackButton"
+        android:id="@+id/bl"/>
+    <TextView
+        style="@style/CargoTrackButton"
+        android:id="@+id/br"/>
+</com.hletong.mob.widget.BorderLinearLayout>

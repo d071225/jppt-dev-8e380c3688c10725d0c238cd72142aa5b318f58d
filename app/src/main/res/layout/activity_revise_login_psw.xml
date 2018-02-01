@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/modifyLoginPsw"
+    tools:context=".ui.activity.ModifyLoginPswActivity">
+
+    <com.xcheng.view.widget.CommonView
+        android:id="@+id/cv_oldPsw"
+        style="@style/CVStyle.WhiteBg"
+        android:layout_marginTop="10dp"
+        app:ev_cv_gravity="end"
+        app:ev_cv_hint="@string/inputOldPsw"
+        app:ev_cv_inputType="textPassword"
+        app:ev_cv_label="@string/oldPsw"
+        app:ev_position="bottom|top"
+        app:ev_topToLeft="0dp"
+        app:ev_topToRight="0dp" />
+
+    <com.xcheng.view.widget.CommonView
+        android:id="@+id/cv_newPsw"
+        style="@style/CVStyle.WhiteBg"
+        app:ev_cv_gravity="end"
+        app:ev_cv_hint="@string/inputNewPsw"
+        app:ev_cv_inputType="textPassword"
+        app:ev_cv_label="@string/newPsw" />
+
+    <com.xcheng.view.widget.CommonView
+        android:id="@+id/cv_confirmNewPsw"
+        style="@style/CVStyle.WhiteBg"
+        app:ev_bottomToLeft="0dp"
+        app:ev_bottomToRight="0dp"
+        app:ev_cv_gravity="end"
+        app:ev_cv_hint="@string/inputNewPswAgain"
+        app:ev_cv_inputType="textPassword"
+        app:ev_cv_label="@string/confirm_password"
+        app:ev_position="bottom" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        style="@style/submitStyle"
+        android:text="@string/sure" />
+</com.xcheng.view.widget.TopBarLayout>

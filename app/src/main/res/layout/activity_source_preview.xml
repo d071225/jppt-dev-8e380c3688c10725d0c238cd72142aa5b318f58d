@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/special_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="@dimen/margin_15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/large_textsize"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                style="@style/NormalLinearLayoutStyle"
+                android:layout_marginBottom="@dimen/margin_15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/cargoName"
+                    style="@style/SourceDetailTextKeyStyle"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/cargoDesc"
+                    style="@style/CargoWeight"/>
+            </LinearLayout>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/from"
+                style="@style/SourcePreview.Large"
+                app:inputLabel="@string/from"
+                app:inputText=""
+                android:layout_marginBottom="@dimen/margin_15dp"/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/to"
+                style="@style/SourcePreview.Large"
+                app:inputLabel="@string/to"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/shipper"
+                style="@style/SourcePreview.Large"
+                android:visibility="gone"
+                app:inputLabel="发"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/receiver"
+                style="@style/SourcePreview.Large"
+                android:visibility="gone"
+                app:inputLabel="收"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/loading_dt"
+                style="@style/SourcePreview.Large"
+                app:inputLabelAsTitle="false"
+                app:inputLabelDrawable="@drawable/loading_date"
+                app:inputText="装货日期："/>
+
+            <com.hletong.mob.gallery.widget.PickerRecyclerView
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@color/divider"/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cargo_value"
+                style="@style/SourcePreview.Small"
+                android:layout_marginTop="@dimen/margin_15dp"
+                app:inputLabel="货物价值"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/volume"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="@string/volume"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/measure_type"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="@string/measure_type"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/ct"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="数量"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/weight"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="重量"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/charge_type"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="@string/charge_type"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/freight_price"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="@string/freight_price"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/loading_tm"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="@string/loading_time"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/transportType"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="运输方式"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/carrier_model"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="车型要求"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/carrierLength"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="车长要求"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/multi_transport"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="整车运输"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/settleType"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="结算方式"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/settleAuth"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="结算权限"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/billingType"
+                style="@style/SourcePreview.Small"
+                app:inputLabel="收费依据"
+                app:inputText=""/>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/appoint"
+                style="@style/SourcePreview.Small"
+                android:layout_marginBottom="10dp"
+                app:inputLabel="兜底运输"
+                app:inputText=""/>
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

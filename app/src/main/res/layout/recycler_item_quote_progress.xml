@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        app:linePosition="bottom"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/status"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:textColor="@color/text_grey"/>
+    </com.hletong.mob.widget.BorderLinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/carrier"-->
+        <!--style="@style/QuoteProgressItemStyle"/>-->
+    <include
+        layout="@layout/layout_evaluate_large"/>
+
+    <TextView
+        android:id="@+id/book"
+        style="@style/QuoteProgressItemStyle"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/QuoteProgressItemStyle"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

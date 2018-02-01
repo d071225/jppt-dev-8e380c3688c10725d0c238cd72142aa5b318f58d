@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:context="com.hletong.hyc.ui.activity.CardDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                style="@style/BasicEtcCardStyle"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/margin_15dp"
+                android:paddingTop="@dimen/margin_15dp"
+                android:src="@drawable/hl_etc_credit_card_large" />
+
+            <TextView
+                android:id="@+id/tv_etc2"
+                style="@style/EtcCardTextStyle"
+                android:text="@string/hlCard_detail2" />
+
+            <TextView
+                android:id="@+id/tv_etc3"
+                style="@style/EtcCardTextStyle"
+                android:layout_marginBottom="@dimen/yunli_item_space"
+                android:text="@string/hlCard_detail" />
+
+            <LinearLayout style="@style/EtcCardLinearLayoutStyle">
+
+                <TextView
+                    style="@style/EtcTitleTextStyle"
+                    android:drawableLeft="@drawable/icon_safe"
+                    android:text="@string/safe" />
+
+                <TextView
+                    style="@style/EtcCardTitleTextValueStyle"
+                    android:text="@string/safe_introduce" />
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/hlCard_safe" />
+
+            <LinearLayout style="@style/EtcCardLinearLayoutStyle">
+
+                <TextView
+                    style="@style/EtcTitleTextStyle"
+                    android:drawableLeft="@drawable/hl_card_speedy"
+                    android:text="@string/speedy" />
+
+                <TextView
+                    style="@style/EtcCardTitleTextValueStyle"
+                    android:text="@string/speedy_introduce" />
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/hlCard_speedy" />
+
+            <LinearLayout style="@style/EtcCardLinearLayoutStyle">
+
+                <TextView
+                    style="@style/EtcTitleTextStyle"
+                    android:drawableLeft="@drawable/hl_card_overflow"
+                    android:text="@string/overflow" />
+
+                <TextView
+                    style="@style/EtcCardTitleTextValueStyle"
+                    android:text="商户特惠，全国畅享" />
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/hlCard_overflow" />
+
+            <LinearLayout style="@style/EtcCardLinearLayoutStyle">
+
+                <TextView
+                    style="@style/EtcTitleTextStyle"
+                    android:drawableLeft="@drawable/hl_card_intimate"
+                    android:text="@string/intimate" />
+
+                <TextView
+                    style="@style/EtcCardTitleTextValueStyle"
+                    android:text="@string/intimate_introduce" />
+            </LinearLayout>
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/hlCard_intimate"
+                app:lineBottomLeft="0dp"
+                app:linePosition="bottom" />
+
+            <TextView
+                style="@style/EtcTitleKeyTextStyle"
+                android:text="@string/Card_Saturday" />
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/EtcCardLinearLayoutStyle"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hl_card_food" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/yunli_item_space"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/title_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food_introduce"
+                        android:textColor="#606a6f"
+                        android:textSize="@dimen/smaller_textsize" />
+                </LinearLayout>
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/EtcCardLinearLayoutStyle"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hl_card_movie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/movie"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/EtcCardLinearLayoutStyle"
+                app:lineBottomLeft="@dimen/margin_15dp"
+                app:linePosition="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hl_card_cost" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/yunli_item_space"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cost"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/title_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cost_introduce"
+                        android:textColor="@color/dialog_body_text_color"
+                        android:textSize="@dimen/smaller_textsize" />
+                </LinearLayout>
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                style="@style/EtcCardLinearLayoutStyle"
+                app:lineBottomLeft="0dp"
+                app:linePosition="bottom">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hl_card_scenic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/yunli_item_space"
+                    android:text="@string/scenic"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <TextView
+                style="@style/EtcTitleKeyTextStyle"
+                android:text="@string/stage" />
+
+            <TextView
+                style="@style/EtcTextViewTitleStyle"
+                android:text="@string/car_stage" />
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/car_stage_introduce" />
+
+            <TextView
+                style="@style/EtcTextViewTitleStyle"
+                android:text="@string/business_stage" />
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/business_stage_introduce" />
+
+            <TextView
+                style="@style/EtcTextViewTitleStyle"
+                android:text="@string/fitment_stage" />
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/fitment_stage_introduce" />
+
+            <TextView
+                style="@style/EtcTextViewTitleStyle"
+                android:text="@string/pay_stage" />
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/pay_stage_introduce" />
+
+            <TextView
+                style="@style/EtcTextViewTitleStyle"
+                android:text="@string/money_stage" />
+
+            <com.hletong.mob.widget.BorderTextView
+                style="@style/EtcCardBorderTextViewStyle"
+                android:text="@string/money_stage_introduce" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:tag="@string/hl_tag_login"
+        android:id="@+id/apply_now"
+        style="@style/normalButtonStytle"
+        android:text="@string/apply_now" />
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_15dp"
+    android:background="@drawable/shape_bottom_line_whitebg">
+
+    <TextView
+        android:id="@+id/tv_unit"
+        style="@style/RegisterTextKeyStyle"
+        android:layout_marginTop="@dimen/edit_login_padding_12dp"
+        android:text="会管编号" />
+
+    <TextView
+        style="@style/RegisterChooseAddStyle"
+        android:layout_below="@id/tv_unit" />
+
+    <com.hletong.mob.validator.view.ValEditText
+        android:id="@+id/unitCode"
+        style="@style/normalEditTextStyle"
+        android:layout_alignTop="@+id/tv_unit"
+        android:layout_toRightOf="@id/tv_unit"
+        android:hint="请输入会管编号"
+        android:paddingBottom="5dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:id="@+id/unitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/unitCode"
+        android:layout_below="@id/unitCode"
+        android:paddingLeft="@dimen/edit_login_padding_12dp"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/small_textsize" />
+</RelativeLayout>

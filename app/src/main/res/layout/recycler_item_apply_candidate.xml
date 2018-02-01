@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    tools:ignore="RtlHardcoded">
+
+    <ImageView
+        android:id="@id/ev_id_headerPhoto"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@color/ev_text_hint"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/ev_normalSize" />
+
+        <TextView
+            android:id="@+id/tv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/ev_smallSize" />
+
+        <TextView
+            android:id="@+id/tv_vote_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/ev_smallSize" />
+    </LinearLayout>
+
+    <com.xcheng.view.processbtn.FlatButton
+        style="@style/flatBtnStyle"
+        android:layout_width="wrap_content"
+        android:minHeight="35dp"
+        android:text="立即投票"
+        android:textSize="@dimen/ev_smallSize" />
+</LinearLayout>

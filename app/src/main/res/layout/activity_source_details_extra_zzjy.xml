@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hletong.mob.widget.BorderLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:linePosition="top"
+    app:lineTopLeft="@dimen/margin_15dp"
+    app:lineTopRight="@dimen/margin_15dp"
+    android:background="@color/white">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/SourcePreview.Small"
+        android:id="@+id/bus_doc_no"
+        app:inputLabel="@string/business_doc_no"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/SourcePreview.Small"
+        android:id="@+id/volume"
+        app:inputLabel="@string/volume"
+        android:layout_marginBottom="10dp"/>
+    <ViewStub
+        android:id="@+id/trade_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout="@layout/activity_source_details_extra_self_trade_after_trade"/>
+</com.hletong.mob.widget.BorderLinearLayout>

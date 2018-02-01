@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#334d97ff"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="6dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:text="@string/holdOn_please"
+        android:textColor="#4D97FF"
+        android:textSize="@dimen/normal_textsize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_carId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_15dp"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.hletong.mob.widget.BorderLinearLayout
+                android:id="@+id/plate_container"
+                style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/plate"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_cardId"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/hint_plate"
+                    android:maxLength="10"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_owner"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_carOwner"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/please_write"
+                    android:maxLength="10"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_code"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_carCode"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/please_write"
+                    android:maxLength="30"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_style"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_carStyle"
+                    style="@style/TextValueDisplay"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="end"
+                    android:hint="@string/choose"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_length"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_carLength"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/please_write"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="米"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_color"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_carColor"
+                    style="@style/TextValueDisplay"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="end"
+                    android:hint="@string/choose"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/seats"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_carSeats"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/please_write"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="个"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="行驶证车辆类型"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_vehicleType"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="如：重型仓栅式货车"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="行驶证品牌型号"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_vehicleModel"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="如：福田牌BJ5*******J-7"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="发动机号码"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_engineNum"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="如:B410C****67"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="整备质量"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_maintenanceMass"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/write_by_license"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:maxLength="9"
+                    android:text="kg"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="外廓尺寸"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_out_l"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="长度"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_out_w"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="宽度"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_out_h"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="高度"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:maxLength="9"
+                    android:text="mm"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/loadedVehicleQuality"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_loadedVehicleQuality"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/write_by_license"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:maxLength="9"
+                    android:text="kg"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicleMass"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_vehicleMass"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/write_by_license"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:maxLength="9"
+                    android:text="kg"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="准牵引总质量"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <EditText
+                    android:id="@+id/et_permittedTowWeight"
+                    style="@style/TextValueDisplay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/write_by_license"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:maxLength="9"
+                    android:text="kg"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+            <com.hletong.mob.widget.BorderLinearLayout style="@style/LayoutKeyValueDisplay">
+
+                <TextView
+                    style="@style/TextKeyDisplay"
+                    android:text="@string/vehicle_address"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/TextValueDisplay"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_enter_arrow"
+                    android:gravity="end"
+                    android:hint="@string/hint_address"
+                    android:textSize="@dimen/normal_textsize" />
+            </com.hletong.mob.widget.BorderLinearLayout>
+
+
+            <FrameLayout style="@style/LayoutKeyValueDisplay">
+
+                <EditText
+                    android:id="@+id/et_detailAddress"
+                    style="@style/TextValueDisplay"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="@string/detail_address" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/submitStyle"
+        android:text="@string/next_step" />
+</com.xcheng.view.widget.TopBarLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/rank"
+        style="@style/BiddingHallItem"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/t_price"
+        style="@style/BiddingHallItem"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/o_price"
+        style="@style/BiddingHallItem"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/BiddingHallItem"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/weight"
+        style="@style/BiddingHallItem"/>
+</LinearLayout>

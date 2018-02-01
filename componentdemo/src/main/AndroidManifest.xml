@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.component.simple">
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShapeActivity"
+            android:label="绚丽多彩的Shape"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomViewActivity"
+            android:label="自定义上下划线"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BottomDialogActivity"
+            android:label="灵活的底部Dialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GalleryActivity"
+            android:label="便捷的图库选择器"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RefreshActivity"
+            android:label="灵活的的列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HttpActivity"
+            android:label="HTTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FormValidatorActivity"
+            android:label="Form表单提交"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

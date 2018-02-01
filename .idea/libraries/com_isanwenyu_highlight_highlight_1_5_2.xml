@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.isanwenyu.highlight:highlight-1.5.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/highlight-1.5.2.aar/ae8a31898c86a024d6ca88d322267f10/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/highlight-1.5.2.aar/ae8a31898c86a024d6ca88d322267f10/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.isanwenyu.highlight/highlight/1.5.2/6648fd355c501e084edb80a15297fbf5c2cc91e5/highlight-1.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

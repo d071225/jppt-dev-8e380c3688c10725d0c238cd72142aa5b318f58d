@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="@dimen/margin_15dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:id="@+id/checkbox"
+        android:layout_centerVertical="true"
+        android:src="@drawable/checkbox_custom_circle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BlackTitle"
+        android:id="@+id/carrier"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_marginLeft="@dimen/margin_15dp"/>
+    <com.hletong.hyc.ui.widget.RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:layout_alignTop="@id/carrier"
+        android:layout_alignBottom="@id/carrier"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/carrier"
+        android:layout_marginLeft="4dp"
+        app:asIndicator="true"
+        app:starDrawable="@drawable/star_small"
+        app:starMargin="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:layout_below="@id/carrier"
+        android:layout_alignLeft="@id/carrier"
+        android:layout_marginTop="8dp"
+        android:id="@+id/favor_rate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:layout_alignTop="@id/favor_rate"
+        android:layout_toRightOf="@id/favor_rate"
+        android:id="@+id/trade_ct"
+        android:layout_marginLeft="@dimen/margin_15dp"/>
+
+    <TextView
+        style="@style/CargoForecastRecyclerItem"
+        android:id="@+id/member"
+        android:layout_alignLeft="@id/carrier"
+        android:layout_below="@id/favor_rate"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        style="@style/CargoForecastRecyclerItem"
+        android:id="@+id/address"
+        android:layout_alignLeft="@id/carrier"
+        android:layout_below="@id/member"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        style="@style/CargoForecastRecyclerItem"
+        android:id="@+id/personal_member"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/member"
+        android:layout_toRightOf="@id/member"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:gravity="right"/>
+</RelativeLayout>

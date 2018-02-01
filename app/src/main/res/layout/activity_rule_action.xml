@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="活动规则"
+    tools:context="com.hletong.hyc.ui.activity.ActionRuleActivity">
+
+
+    <TextView
+        android:id="@+id/tv_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        android:lineSpacingExtra="5dp"
+        android:text="1、活动仅限从事货运的司机参加。\n2、关注“惠龙易通微信公众号”后方可参加报名或投票。\n3、报名需上传本人的头像、身份证、行驶证、从业资格证。\n4、上传的证件资料不齐全、不正确视为报名不成功。\n5、报名后需将活动在朋友圈内转发，领奖时要出示截图，否则视为无效。"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_textsize" />
+</com.xcheng.view.widget.TopBarLayout>

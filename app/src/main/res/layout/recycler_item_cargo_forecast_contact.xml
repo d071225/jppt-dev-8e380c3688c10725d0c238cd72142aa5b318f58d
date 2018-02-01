@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/margin_15dp">
+    <TextView
+        style="@style/CargoForecastRecyclerTitle"
+        android:id="@+id/title"/>
+    <TextView
+        style="@style/CargoForecastRecyclerItem"
+        android:id="@+id/tax"
+        android:layout_below="@id/title"
+        android:layout_marginTop="12dp"/>
+</RelativeLayout>

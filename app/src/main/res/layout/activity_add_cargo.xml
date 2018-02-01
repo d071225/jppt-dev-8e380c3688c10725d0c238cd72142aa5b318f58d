@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/cargoName"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputHint="请输入品名"
+                app:inputLabel="@string/cargo_name_label"
+                app:linePosition="none" />
+
+            <com.hletong.mob.gallery.widget.PickerRecyclerView
+                android:id="@+id/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin_15dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.hletong.hyc.ui.widget.CommonInputView
+                    style="@style/CommonInputViewNormalStyle.White"
+                    android:layout_height="48dp"
+                    app:inputLabel="重传图片"
+                    app:linePosition="top" />
+
+                <com.hletong.mob.gallery.widget.PickerRecyclerView
+                    android:id="@+id/picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/margin_15dp"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/measureType"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputHint="请选择计量方式"
+                app:inputLabel="@string/measure_type"
+                app:linePosition="top|bottom"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/unit"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputHint="请选择单位"
+                app:inputLabel="单位"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/length"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputCustomMethod="numberDecimal"
+                app:inputHint="请输入货物长度"
+                app:inputLabel="@string/length"
+                app:inputLabelHint="@string/optional"
+                app:inputTextSuffix="米" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/width"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputCustomMethod="numberDecimal"
+                app:inputHint="请输入货物宽度"
+                app:inputLabel="@string/width"
+                app:inputLabelHint="@string/optional"
+                app:inputTextSuffix="米" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/height"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputCustomMethod="numberDecimal"
+                app:inputHint="请输入货物高度"
+                app:inputLabel="@string/height"
+                app:inputLabelHint="@string/optional"
+                app:inputTextSuffix="米" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/waste_rt"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputCustomMethod="numberDecimal"
+                app:inputHint="请填写运输损耗"
+                app:inputLabel="运输损耗"
+                app:inputTextSuffix="‰" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/transporter_type"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputLabel="运输方式"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/transporter_model"
+                style="@style/CommonInputViewNormalStyle.White"
+                app:inputHint="请选择"
+                app:inputLabel="车型要求"
+                app:mode="select" />
+
+            <com.hletong.hyc.ui.widget.CommonInputView
+                android:id="@+id/transporter_length"
+                style="@style/CommonInputViewNormalStyle.White"
+                android:visibility="gone"
+                app:inputHint="请选择"
+                app:inputLabel="车长要求"
+                app:mode="select" />
+
+            <com.xcheng.view.processbtn.SubmitProcessButton
+                android:id="@+id/submit"
+                style="@style/greenCompleteBtnStyle"
+                android:text="保存"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</com.xcheng.view.widget.TopBarLayout>

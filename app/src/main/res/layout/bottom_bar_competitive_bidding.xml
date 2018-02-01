@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hletong.mob.widget.BorderLinearLayout android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    app:linePosition="top"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confer_price"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/normal_textsize" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/price"
+        android:textColor="@color/yellow"
+        android:textSize="20sp" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        android:text="@string/bidding_imm"
+        android:tag="1"
+        android:textColor="@color/white"
+        android:id="@+id/confirm"
+        android:textSize="@dimen/normal_textsize" />
+</com.hletong.mob.widget.BorderLinearLayout>

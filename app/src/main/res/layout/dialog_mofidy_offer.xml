@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/modify_area">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inputLabel="重量"
+        app:inputHint="请输入"
+        app:inputTextSuffix="吨"
+        android:id="@+id/ct"
+        app:linePosition="left|top|right"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inputLabel="运费单价"
+        app:inputHint="请输入报价"
+        app:inputTextSuffix="元/吨"
+        android:id="@+id/price"
+        app:inputCustomMethod="money"
+        app:linePosition="left|top|right|bottom"/>
+</LinearLayout>

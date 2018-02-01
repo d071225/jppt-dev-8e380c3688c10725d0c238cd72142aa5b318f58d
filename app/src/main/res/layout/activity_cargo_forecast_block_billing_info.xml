@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="投保方式"
+        app:inputHint="请选择"
+        app:mode="select"
+        app:linePosition="none"
+        android:id="@+id/insureType"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingBottom="@dimen/margin_15dp"
+        android:visibility="gone"
+        android:id="@+id/insurance_hint"
+        android:text="@string/insurance_hint"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:linePosition="top|bottom"
+        app:inputLabel="结算方式"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/settleType"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="兜底运输"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/manualMatch"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        app:inputLabel="兜底车辆/船舶"
+        app:inputHint="请选择"
+        app:mode="select"
+        android:id="@+id/manualMatchCarrier"
+        android:visibility="gone"/>
+</LinearLayout>

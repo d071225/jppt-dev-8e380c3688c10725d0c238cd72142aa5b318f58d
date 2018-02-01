@@ -1,0 +1,7 @@
+@startuml
+:定义临时参数,mTotalLength;
+
+while(! last virtual child)
+
+endwhile
+@enduml

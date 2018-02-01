@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    tools:context=".ui.activity.truck.RegisterTruckInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="@string/truckType" />
+
+            <TextView
+                android:gravity="right|center_vertical"
+                android:id="@+id/vehicle_type"
+                style="@style/RegisterTextArrow"
+                android:hint="@string/choose" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="@string/vehicle_color" />
+
+            <TextView
+                android:gravity="right|center_vertical"
+                android:id="@+id/color_type"
+                style="@style/RegisterTextArrow"
+                android:hint="@string/choose" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="驾驶员性别" />
+
+            <TextView
+                android:gravity="right|center_vertical"
+                android:id="@+id/sex_type"
+                style="@style/RegisterTextArrow"
+                android:hint="@string/choose" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="@string/carriage_length" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/vehicle_length"
+                style="@style/normalEditTextStyle"
+                android:layout_weight="1"
+                android:hint="@string/please_input"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/TextValueDisplay.Unit"
+                android:text="@string/meter" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="车辆载重量" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/et_vehicleMass"
+                style="@style/normalEditTextStyle"
+                android:layout_weight="1"
+                android:hint="@string/please_input"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/TextValueDisplay.Unit"
+                android:text="@string/ton" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+
+        <com.hletong.mob.widget.BorderLinearLayout style="@style/RegisterLinearLayoutStyle">
+
+            <TextView
+                style="@style/RegisterTextKeyStyle"
+                android:text="满载车辆重量" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/et_loadedVehicleQuality"
+                style="@style/normalEditTextStyle"
+                android:layout_weight="1"
+                android:hint="@string/please_input"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/TextValueDisplay.Unit"
+                android:text="@string/ton" />
+        </com.hletong.mob.widget.BorderLinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/submitStyle"
+        android:text="保存" />
+</com.xcheng.view.widget.TopBarLayout>

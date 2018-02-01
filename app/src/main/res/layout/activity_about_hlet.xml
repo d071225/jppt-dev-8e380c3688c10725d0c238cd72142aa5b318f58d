@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/topBarStyle"
+    app:ev_topBarTitle="@string/about_hlet"
+    tools:context="com.hletong.hyc.ui.activity.AboutUsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/textjumper_margin"
+        android:layout_marginTop="@dimen/toplogo_margin"
+        android:src="@drawable/logo_login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:text="货畅惠龙　易通天下"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_textsize" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/toplogo_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/small_textsize" />
+
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_hlyt"
+        style="@style/normalTextViewJumpStyle"
+        android:text="@string/company_history"
+        android:textColor="@color/text_black"
+        app:lineBottomLeft="0dp"
+        app:linePosition="bottom|top"
+        app:lineTopLeft="0dp"
+        android:minHeight="48dp"/>
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_hzdw"
+        style="@style/normalTextViewJumpStyle"
+        android:layout_marginTop="@dimen/textjumper_margin"
+        android:text="@string/partner"
+        android:textColor="@color/text_black"
+        app:lineBottomLeft="0dp"
+        app:linePosition="bottom|top"
+        app:lineTopLeft="0dp"
+        android:minHeight="48dp"/>
+    <com.hletong.hyc.ui.widget.CommonInputView
+        style="@style/CommonInputViewNormalStyle.White"
+        android:layout_marginTop="@dimen/textjumper_margin"
+        app:linePosition="bottom|top"
+        app:inputLabel="检查更新"
+        app:mode="select"
+        android:id="@+id/update"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/our_full_company_name"
+            android:textColor="@color/dialog_body_text_color"
+            android:textSize="@dimen/small_textsize" />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:paddingTop="@dimen/margin_15dp"
+            android:text="@string/phone_num"
+            android:textColor="@color/dialog_body_text_color"
+            android:textSize="@dimen/small_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:text="@string/copyright"
+            android:textColor="@color/text_grey" />
+    </LinearLayout>
+</com.xcheng.view.widget.TopBarLayout>

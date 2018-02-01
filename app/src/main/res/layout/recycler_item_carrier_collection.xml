@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp">
+
+        <include
+            layout="@layout/layout_evaluate_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_evaluate"/>
+
+        <TextView
+            android:id="@+id/inform"
+            style="@style/InformButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="通知摘牌"/>
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_evaluate"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:textColor="@color/text_black"
+            android:textSize="?largeSize"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="@dimen/margin_15dp"-->
+    <!--android:layout_marginBottom="36dp">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="?largeSize"-->
+    <!--android:textColor="@color/text_black"-->
+    <!--android:id="@+id/title"/>-->
+    <!--<android.support.v7.widget.AppCompatRatingBar-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--style="@style/Widget.AppCompat.RatingBar.Small"-->
+    <!--android:layout_below="@id/title"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:id="@+id/rate"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/favor_rate"-->
+    <!--android:layout_below="@id/rate"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:textColor="@color/text_grey"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/trade_count"-->
+    <!--android:layout_alignTop="@id/favor_rate"-->
+    <!--android:layout_toRightOf="@id/favor_rate"-->
+    <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:textColor="@color/text_grey"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="?largeSize"-->
+    <!--android:textColor="@color/text_black"-->
+    <!--android:layout_below="@id/favor_rate"-->
+    <!--android:layout_marginTop="@dimen/margin_15dp"-->
+    <!--android:id="@+id/model"/>-->
+    <!--<TextView-->
+    <!--android:text="通知摘牌"-->
+    <!--android:id="@+id/inform"-->
+    <!--style="@style/CargoTrackButton"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"/>-->
+    <!--</RelativeLayout>-->
+    <com.hletong.mob.widget.BorderLinearLayout
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        app:linePosition="top">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_call"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="联系车船"
+            android:textColor="@color/colorAccent"
+            android:textSize="?normalSize"/>
+    </com.hletong.mob.widget.BorderLinearLayout>
+</FrameLayout>

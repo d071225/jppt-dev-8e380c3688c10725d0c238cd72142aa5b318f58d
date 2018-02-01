@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xcheng.view.widget.TopBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/topBarStyle">
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_PathPlanning"
+        style="@style/normalTextViewJumpStyle"
+        android:drawableLeft="@drawable/icon_map"
+        android:text="@string/route_plan"
+        app:linePosition="bottom" />
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_textSizeSet"
+        style="@style/normalTextViewJumpStyle"
+        android:drawableLeft="@drawable/ic_textsize_set"
+        android:text="@string/textSizeSet"
+        app:linePosition="bottom" />
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_changeLoginPassword"
+        style="@style/normalTextViewJumpStyle"
+        android:drawableLeft="@drawable/ic_change_password"
+        android:tag="@string/hl_tag_login"
+        android:text="@string/modifyLoginPsw"
+        app:lineBottomLeft="@dimen/margin_15dp"
+        app:linePosition="bottom" />
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_shenqingtuihui"
+        style="@style/normalTextViewJumpStyle"
+        android:drawableLeft="@drawable/ic_shengqingtuihui"
+        android:tag="@string/hl_tag_login"
+        android:text="@string/apply_exit"
+        app:linePosition="bottom" />
+
+    <com.hletong.mob.widget.BorderTextView
+        android:id="@+id/tv_signout"
+        style="@style/normalTextViewJumpStyle"
+        android:layout_marginTop="@dimen/textjumper_margin"
+        android:drawableLeft="@drawable/ic_signout"
+        android:text="@string/exitAccount"
+        app:linePosition="bottom|top" />
+</com.xcheng.view.widget.TopBarLayout>
