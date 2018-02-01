@@ -40,6 +40,7 @@ public class AppCargoFragment extends AppFragment implements AppContract.View {
         }*/
         switch (v.getId()) {
             case R.id.hyyb:
+                //新实现   Activity
                 toActivity(CargoMatchActivity.class, null, null);
 //                toActivity(CommonWrapFragmentActivity.class, CommonWrapFragmentActivity.getBundle(getString(R.string.cargo_forecast), CargoSourceListFragment.class), null);
                 break;

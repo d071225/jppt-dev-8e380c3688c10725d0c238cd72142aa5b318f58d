@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.hletong.hyc.R;
-import com.hletong.hyc.ui.fragment.MessageCollectionFragment;
 import com.hletong.mob.base.BaseViewPagerActivity;
 import com.xcheng.view.adapter.TabInfo;
 import com.xcheng.view.util.LocalDisplay;

@@ -1,5 +1,6 @@
 package com.hletong.hyc.ui.activity.test;
 
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,6 +16,13 @@ import com.hletong.hyc.ui.fragment.AppFragment;
  */
 
 public class CargoMatchFragment extends AppFragment implements AppContract.View {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
     @Override
     public void setUnToDoInfo(UnTodo unTodo) {
 
